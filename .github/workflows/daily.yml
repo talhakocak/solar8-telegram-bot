@@ -1,8 +1,12 @@
 name: Solar8 Daily News
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 5 * * *"   # Türkiye 08:00
+
   workflow_dispatch:
     inputs:
       mode:
@@ -15,16 +19,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.13"
 
       - name: Install packages
         run: pip install -r requirements.txt
 
-      - name: Run
+      - name: Run news script
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -35,3 +43,11 @@ jobs:
           else
             python daily_news.py
           fi
+
+      - name: Commit updated memory
+        run: |
+          git config user.name "solar8-news-bot"
+          git config user.email "solar8-news-bot@users.noreply.github.com"
+          git add sent_events.json
+          git commit -m "Update sent events memory" || echo "No memory changes"
+          git push

@@ -5,6 +5,7 @@ import json
 import hashlib
 import asyncio
 import sys
+from datetime import datetime, timezone, timedelta
 
 import feedparser
 from openai import OpenAI
@@ -14,11 +15,17 @@ from telegram import Bot
 from telegram.request import HTTPXRequest
 
 load_dotenv()
-print(os.getenv("DEEPSEEK_API_KEY"))
 
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
+
+if not BOT_TOKEN:
+    raise ValueError("TELEGRAM_BOT_TOKEN bulunamadı.")
+if not CHAT_ID:
+    raise ValueError("CHAT_ID bulunamadı.")
+if not DEEPSEEK_API_KEY:
+    raise ValueError("DEEPSEEK_API_KEY bulunamadı.")
 
 client = OpenAI(
     api_key=DEEPSEEK_API_KEY,
@@ -58,17 +65,37 @@ SOLAR_KEYWORDS = [
 ]
 
 
+def is_recent_entry(entry, max_days=30):
+    if not hasattr(entry, "published_parsed") or entry.published_parsed is None:
+        return True
+
+    published = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
+    cutoff = datetime.now(timezone.utc) - timedelta(days=max_days)
+
+    return published >= cutoff
+
+
 def load_sent_events():
     if not os.path.exists(SENT_EVENTS_FILE):
         return set()
 
-    with open(SENT_EVENTS_FILE, "r", encoding="utf-8") as file:
-        return set(json.load(file))
+    try:
+        with open(SENT_EVENTS_FILE, "r", encoding="utf-8") as file:
+            return set(json.load(file))
+    except Exception:
+        return set()
 
 
 def save_sent_events(sent_events):
     with open(SENT_EVENTS_FILE, "w", encoding="utf-8") as file:
-        json.dump(list(sent_events), file, ensure_ascii=False, indent=2)
+        json.dump(sorted(list(sent_events)), file, ensure_ascii=False, indent=2)
+
+
+def reset_memory():
+    with open(SENT_EVENTS_FILE, "w", encoding="utf-8") as file:
+        json.dump([], file, ensure_ascii=False, indent=2)
+
+    print("Hafıza sıfırlandı.")
 
 
 def clean_text(text):
@@ -126,11 +153,12 @@ def fetch_article_text(url):
     return article.text[:900]
 
 
-def ai_analyze_news(title, article_text, region):
+def ai_analyze_news(title, article_text, rss_region):
     prompt = f"""
 Aşağıdaki haberin güneş enerjisi haberi olup olmadığını analiz et.
 
-Bölge: {region}
+Kaynak RSS bölgesi:
+{rss_region}
 
 Başlık:
 {title}
@@ -143,17 +171,20 @@ Sadece geçerli JSON döndür. Markdown kullanma.
 JSON formatı:
 {{
   "is_solar_related": true,
+  "detected_region": "Türkiye / Küresel",
   "category": "Yatırım / Teknoloji / Depolama / Regülasyon / Genel / Araştırma",
   "summary": "Türkçe, tarafsız, en fazla 2 kısa cümle."
 }}
 
 Kurallar:
-- Ana konu güneş enerjisi, GES, fotovoltaik, solar panel, güneş paneli, solar inverter, çatı GES veya solar elektrik üretimi ise true.
-- Güneş enerjisi verimliliğini, hava kirliliğinin güneş üretimine etkisini veya bilimsel fotovoltaik araştırmaları anlatıyorsa true.
-- Rüzgar enerjisi ana konuysa false.
-- “Rüzgar aslında güneş enerjisidir” gibi dolaylı bağlantıları güneş haberi sayma.
-- Doğalgaz, kömür, nükleer veya sadece genel enerji politikası haberi ise false.
+- Ana konu güneş enerjisi, GES, fotovoltaik, solar panel, güneş paneli, solar inverter, çatı GES veya solar elektrik üretimi ise is_solar_related true.
+- Güneş enerjisi verimliliğini, hava kirliliğinin güneş üretimine etkisini veya bilimsel fotovoltaik araştırmaları anlatıyorsa is_solar_related true.
+- Rüzgar enerjisi ana konuysa is_solar_related false.
+- "Rüzgar aslında güneş enerjisidir" gibi dolaylı/felsefi bağlantıları güneş haberi sayma.
+- Doğalgaz, kömür, nükleer veya sadece genel enerji politikası haberi ise is_solar_related false.
 - Genel batarya haberi false olsun; ancak güneş enerjisiyle birlikte depolama anlatılıyorsa true olabilir.
+- detected_region haberin konusu Türkiye ile ilgiliyse "Türkiye" olsun.
+- Haber Türkçe yazılmış olsa bile konu İtalya, ABD, Hindistan, Irak, Kürdistan Bölgesi, Avrupa vb. ise "Küresel" olsun.
 - Haber metni kısa veya yetersizse başlığa göre karar ver.
 """
 
@@ -170,7 +201,7 @@ Kurallar:
             },
         ],
         temperature=0.1,
-        max_tokens=180,
+        max_tokens=220,
     )
 
     content = response.choices[0].message.content.strip()
@@ -207,12 +238,13 @@ async def send_message(text, parse_mode=None):
                 parse_mode=parse_mode,
                 disable_web_page_preview=True,
             )
-            return
+            return True
         except Exception as e:
             print(f"Telegram gönderim hatası. Deneme {attempt + 1}/3: {e}")
             await asyncio.sleep(5)
 
     print("Telegram mesajı 3 denemede gönderilemedi, devam ediliyor.")
+    return False
 
 
 async def main():
@@ -225,10 +257,14 @@ async def main():
         ("Küresel", RSS_GLOBAL, RSS_LIMIT_GLOBAL),
     ]
 
-    for region, rss_url, limit in sources:
+    for rss_region, rss_url, limit in sources:
         feed = feedparser.parse(rss_url)
 
         for entry in feed.entries[:limit]:
+            if not is_recent_entry(entry):
+                print(f"Geçildi eski haber: {getattr(entry, 'title', '')}")
+                continue
+
             title = clean_text(entry.title)
             link = entry.link
             dedupe_key = normalize_for_key(title)
@@ -250,7 +286,7 @@ async def main():
                 if len(article_text) < 100:
                     article_text = title
 
-                data, usage = ai_analyze_news(title, article_text, region)
+                data, usage = ai_analyze_news(title, article_text, rss_region)
 
                 if usage:
                     total_tokens += usage.total_tokens
@@ -259,8 +295,12 @@ async def main():
                     print(f"Geçildi AI güneş değil: {title}")
                     continue
 
+                detected_region = data.get("detected_region", rss_region)
+                if detected_region not in ["Türkiye", "Küresel"]:
+                    detected_region = rss_region
+
                 candidates.append({
-                    "region": region,
+                    "region": detected_region,
                     "title": title,
                     "link": link,
                     "category": data.get("category", "Genel"),
@@ -294,22 +334,18 @@ async def main():
             f'🔗 <a href="{item["link"]}">Haberi Oku</a>'
         )
 
-        await send_message(text, parse_mode="HTML")
+        sent_ok = await send_message(text, parse_mode="HTML")
 
-        sent_events.add(item["dedupe_key"])
-        save_sent_events(sent_events)
+        if sent_ok:
+            sent_events.add(item["dedupe_key"])
+            save_sent_events(sent_events)
 
         print("=" * 40)
         print(item["title"])
+        print(f"Bölge: {item['region']}")
         print(f"Tokens: {item['tokens']}")
 
     print(f"Toplam token: {total_tokens}")
-
-def reset_memory():
-    with open(SENT_EVENTS_FILE, "w", encoding="utf-8") as file:
-        json.dump([], file)
-
-    print("Hafıza sıfırlandı.")
 
 
 if __name__ == "__main__":
