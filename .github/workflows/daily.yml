@@ -12,7 +12,7 @@ on:
         default: "send"
 
   schedule:
-    - cron: "*/5 * * * *"   # TEST: her 5 dakikada bir
+    - cron: "0 5 * * *" 
 
 jobs:
   run-news:
