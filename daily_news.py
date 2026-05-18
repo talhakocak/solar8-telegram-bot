@@ -3,24 +3,28 @@ import re
 import html
 import json
 import hashlib
-from datetime import time
-from zoneinfo import ZoneInfo
+import asyncio
+import sys
 
 import feedparser
 from openai import OpenAI
 from newspaper import Article
 from dotenv import load_dotenv
-from telegram import Update
-from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
+from telegram import Bot
 
 load_dotenv()
+print(os.getenv("DEEPSEEK_API_KEY"))
 
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
-OWNER_ID = int(os.getenv("OWNER_ID", "0"))
 
-client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url="https://api.deepseek.com")
+client = OpenAI(
+    api_key=DEEPSEEK_API_KEY,
+    base_url="https://api.deepseek.com"
+)
+
+bot = Bot(token=BOT_TOKEN)
 
 RSS_TR = "https://news.google.com/rss/search?q=%22güneş+enerjisi%22+OR+%22çatı+üstü+güneş%22+OR+%22GES%22+OR+%22solar+panel%22+OR+%22güneş+paneli%22+OR+%22fotovoltaik%22&hl=tr&gl=TR&ceid=TR:tr"
 RSS_GLOBAL = "https://news.google.com/rss/search?q=%22solar+energy%22+OR+photovoltaic+OR+%22solar+panel%22+OR+%22solar+inverter%22+OR+%22solar+power%22&hl=en-US&gl=US&ceid=US:en"
@@ -42,14 +46,6 @@ SOLAR_KEYWORDS = [
 ]
 
 
-def is_authorized(update: Update):
-    return update.effective_user and update.effective_user.id == OWNER_ID
-
-
-async def reject(update: Update):
-    await update.message.reply_text("Bu bot özel kullanım içindir.")
-
-
 def load_sent_events():
     if not os.path.exists(SENT_EVENTS_FILE):
         return set()
@@ -61,11 +57,6 @@ def load_sent_events():
 def save_sent_events(sent_events):
     with open(SENT_EVENTS_FILE, "w", encoding="utf-8") as file:
         json.dump(list(sent_events), file, ensure_ascii=False, indent=2)
-
-
-def reset_memory():
-    if os.path.exists(SENT_EVENTS_FILE):
-        os.remove(SENT_EVENTS_FILE)
 
 
 def clean_text(text):
@@ -147,7 +138,9 @@ JSON formatı:
 Kurallar:
 - Ana konu güneş enerjisi, GES, fotovoltaik, solar panel, güneş paneli, solar inverter, çatı GES veya solar elektrik üretimi ise true.
 - Güneş enerjisi verimliliğini, hava kirliliğinin güneş üretimine etkisini veya bilimsel fotovoltaik araştırmaları anlatıyorsa true.
-- Doğalgaz, kömür, nükleer, rüzgar veya sadece genel enerji politikası haberi ise false.
+- Rüzgar enerjisi ana konuysa false.
+- “Rüzgar aslında güneş enerjisidir” gibi dolaylı bağlantıları güneş haberi sayma.
+- Doğalgaz, kömür, nükleer veya sadece genel enerji politikası haberi ise false.
 - Genel batarya haberi false olsun; ancak güneş enerjisiyle birlikte depolama anlatılıyorsa true olabilir.
 - Haber metni kısa veya yetersizse başlığa göre karar ver.
 """
@@ -193,13 +186,18 @@ def select_news(candidates):
     return selected[:MAX_NEWS_PER_RUN]
 
 
-async def collect_and_send_news(send_func, silent_if_empty=False):
+async def send_message(text, parse_mode=None):
+    await bot.send_message(
+        chat_id=CHAT_ID,
+        text=text,
+        parse_mode=parse_mode
+    )
+
+
+async def main():
     sent_events = load_sent_events()
     candidates = []
     total_tokens = 0
-
-    if not silent_if_empty:
-        await send_func("☀️ Solar8 Günlük Enerji Bülteni hazırlanıyor...")
 
     sources = [
         ("Türkiye", RSS_TR, RSS_LIMIT_TR),
@@ -215,7 +213,7 @@ async def collect_and_send_news(send_func, silent_if_empty=False):
             dedupe_key = normalize_for_key(title)
 
             if dedupe_key in sent_events:
-                print(f"Geçildi tekrar başlık: {dedupe_key}")
+                print(f"Geçildi tekrar: {dedupe_key}")
                 continue
 
             if not is_solar_keyword_match(title):
@@ -237,7 +235,7 @@ async def collect_and_send_news(send_func, silent_if_empty=False):
                     total_tokens += usage.total_tokens
 
                 if not data.get("is_solar_related", False):
-                    print(f"Geçildi AI güneş odaklı değil: {title}")
+                    print(f"Geçildi AI güneş değil: {title}")
                     continue
 
                 candidates.append({
@@ -257,16 +255,12 @@ async def collect_and_send_news(send_func, silent_if_empty=False):
     selected = select_news(candidates)
 
     if not selected:
-        if not silent_if_empty:
-            await send_func(
-                "☀️ Solar8 Günlük Enerji Bülteni\n\n"
-                "Bugün güneş enerjisi odaklı yeni bir haber bulunamadı."
-            )
+        print("Yeni haber bulunamadı. Kanal sessiz geçildi.")
         return
 
-    await send_func(
-        f"☀️ Bugün {len(selected)} güneş enerjisi haberi bulundu.\n"
-        f"📊 Yaklaşık AI kullanımı: {total_tokens} token"
+    await send_message(
+        f"☀️ Günlük Solar8 Enerji Bülteni\n\n"
+        f"Bugün {len(selected)} güneş enerjisi haberi bulundu."
     )
 
     for item in selected:
@@ -279,134 +273,26 @@ async def collect_and_send_news(send_func, silent_if_empty=False):
             f'🔗 <a href="{item["link"]}">Haberi Oku</a>'
         )
 
-        await send_func(text, parse_mode="HTML")
+        await send_message(text, parse_mode="HTML")
 
         sent_events.add(item["dedupe_key"])
         save_sent_events(sent_events)
 
         print("=" * 40)
         print(item["title"])
-        print(f"Dedupe key: {item['dedupe_key']}")
         print(f"Tokens: {item['tokens']}")
 
+    print(f"Toplam token: {total_tokens}")
 
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if not is_authorized(update):
-        await reject(update)
-        return
+def reset_memory():
+    with open(SENT_EVENTS_FILE, "w", encoding="utf-8") as file:
+        json.dump([], file)
 
-    await update.message.reply_text(
-        "☀️ Solar8 Enerji Haber Botu aktif!\n\n"
-        "/news → Sana özel manuel test gönderir\n"
-        "/sendnow → Kanala şimdi bülten gönderir\n"
-        "/test → 1 haberlik ucuz test\n"
-        "/reset → Haber hafızasını sıfırlar\n\n"
-        "Her sabah 08:00'de kanala otomatik bülten gönderir."
-    )
-
-
-async def news(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if not is_authorized(update):
-        await reject(update)
-        return
-
-    async def send_func(text, parse_mode=None):
-        await update.message.reply_text(text, parse_mode=parse_mode)
-
-    await collect_and_send_news(send_func)
-
-
-async def sendnow(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if not is_authorized(update):
-        await reject(update)
-        return
-
-    await update.message.reply_text("Kanala bülten gönderimi başlatıldı.")
-
-    async def send_func(text, parse_mode=None):
-        await context.bot.send_message(
-            chat_id=CHAT_ID,
-            text=text,
-            parse_mode=parse_mode
-        )
-
-    await collect_and_send_news(send_func, silent_if_empty=False)
-
-
-async def test(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if not is_authorized(update):
-        await reject(update)
-        return
-
-    global MAX_NEWS_PER_RUN
-
-    old_limit = MAX_NEWS_PER_RUN
-    MAX_NEWS_PER_RUN = 1
-
-    async def send_func(text, parse_mode=None):
-        await update.message.reply_text(text, parse_mode=parse_mode)
-
-    await collect_and_send_news(send_func)
-
-    MAX_NEWS_PER_RUN = old_limit
-
-
-async def reset(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if not is_authorized(update):
-        await reject(update)
-        return
-
-    reset_memory()
-    await update.message.reply_text(
-        "🧹 Haber hafızası sıfırlandı.\n\n"
-        "Artık bot haberleri sıfırdan değerlendirecek."
-    )
-
-
-async def channeltest(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if not is_authorized(update):
-        await reject(update)
-        return
-
-    await context.bot.send_message(
-        chat_id=CHAT_ID,
-        text="☀️ Solar8 kanal bağlantı testi başarılı."
-    )
-
-    await update.message.reply_text("Kanal test mesajı gönderildi.")
-
-
-async def daily_news_job(context: ContextTypes.DEFAULT_TYPE):
-    async def send_func(text, parse_mode=None):
-        await context.bot.send_message(
-            chat_id=CHAT_ID,
-            text=text,
-            parse_mode=parse_mode
-        )
-
-    await collect_and_send_news(send_func, silent_if_empty=True)
-
-
-def main():
-    app = ApplicationBuilder().token(BOT_TOKEN).build()
-
-    app.add_handler(CommandHandler("start", start))
-    app.add_handler(CommandHandler("news", news))
-    app.add_handler(CommandHandler("sendnow", sendnow))
-    app.add_handler(CommandHandler("test", test))
-    app.add_handler(CommandHandler("reset", reset))
-    app.add_handler(CommandHandler("channeltest", channeltest))
-
-    app.job_queue.run_daily(
-        daily_news_job,
-        time=time(hour=8, minute=0, tzinfo=ZoneInfo("Europe/Istanbul")),
-        name="daily_solar8_news"
-    )
-
-    print("Bot çalışıyor...")
-    print("Her sabah 08:00'de kanala otomatik haber gönderecek.")
-    app.run_polling()
+    print("Hafıza sıfırlandı.")
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1 and sys.argv[1] == "reset":
+        reset_memory()
+    else:
+        asyncio.run(main())
