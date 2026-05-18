@@ -319,9 +319,11 @@ async def main():
         print("Yeni haber bulunamadı. Kanal sessiz geçildi.")
         return
 
+    today = datetime.now().strftime("%d.%m.%Y")
+
     await send_message(
-        f"☀️ Günlük Solar8 Enerji Bülteni\n\n"
-        f"Bugün {len(selected)} güneş enerjisi haberi bulundu."
+        f"☀️ Solar8 Günlük Enerji Bülteni | {today}\n\n"
+        f"Bugün seçilen {len(selected)} güneş enerjisi gelişmesi aşağıda."
     )
 
     for item in selected:
