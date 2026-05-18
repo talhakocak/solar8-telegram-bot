@@ -177,17 +177,59 @@ JSON formatı:
 }}
 
 Kurallar:
-- Ana konu güneş enerjisi, GES, fotovoltaik, solar panel, güneş paneli, solar inverter, çatı GES veya solar elektrik üretimi ise is_solar_related true.
-- Güneş enerjisi verimliliğini, hava kirliliğinin güneş üretimine etkisini veya bilimsel fotovoltaik araştırmaları anlatıyorsa is_solar_related true.
-- Rüzgar enerjisi ana konuysa is_solar_related false.
-- "Rüzgar aslında güneş enerjisidir" gibi dolaylı/felsefi bağlantıları güneş haberi sayma.
-- Doğalgaz, kömür, nükleer veya sadece genel enerji politikası haberi ise is_solar_related false.
-- Genel batarya haberi false olsun; ancak güneş enerjisiyle birlikte depolama anlatılıyorsa true olabilir.
-- detected_region haberin konusu Türkiye ile ilgiliyse "Türkiye" olsun.
-- Haber Türkçe yazılmış olsa bile konu İtalya, ABD, Hindistan, Irak, Kürdistan Bölgesi, Avrupa vb. ise "Küresel" olsun.
-- Haber metni kısa veya yetersizse başlığa göre karar ver.
-- Devlet kurumu dokümantasyonu, genel bilgi sayfası, rehber, teknik standart sayfası veya evergreen kaynak sayfası ise is_solar_related false olsun.
-- Sadece güncel haber, yatırım, araştırma bulgusu, regülasyon değişikliği, pazar gelişmesi veya şirket gelişmesi ise true olsun.
+
+- Ana konu güneş enerjisi, GES, fotovoltaik, güneş paneli, solar inverter veya güneşten elektrik üretimi değilse is_solar_related false.
+
+- Haber gerçekten yeni ve paylaşmaya değer bir gelişme içermeli.
+
+Paylaşmaya değer örnekler:
+• Yeni GES yatırımı
+• Şirket yatırımı veya fabrika açılışı
+• Yeni teknoloji veya ürün duyurusu
+• Bilimsel araştırma sonucu
+• Regülasyon değişikliği
+• Pazar/veri gelişmesi
+• Rekor üretim veya önemli istatistik
+• Büyük ölçekli proje duyurusu
+
+Düşük değerli veya tekrar eden içerikleri false yap:
+
+• Genel bilgi sayfaları
+• Rehberler
+• Teknik standart dokümanları
+• Strateji/hedef sayfaları
+• "2030 goals", "cost benchmarks", "reliability", "hardening", "basics" gibi bilgi içerikleri
+• Sadece görüş yazıları
+• Tek cümlelik siyasi açıklamalar
+• Küçük yerel tartışmalar
+• Sürekli tekrar eden yasa tasarıları
+• Haber niteliği taşımayan kurum sayfaları
+
+Önem değerlendirmesi:
+
+Yüksek:
+- Yeni yatırım
+- Yeni teknoloji
+- Büyük proje
+- Şirket gelişmesi
+- Araştırma sonucu
+
+Orta:
+- Regülasyon
+- Pazar verisi
+- Enerji üretim istatistikleri
+
+Düşük:
+- Yorumlar
+- Eski haberler
+- Genel bilgi içerikleri
+
+Sadece yüksek veya orta önem seviyesindekileri true yap.
+
+- detected_region haber Türkiye ile ilgiliyse "Türkiye"
+- Diğer ülkeler için "Küresel"
+
+- Haber metni kısa ise başlıktan mantıklı çıkarım yap.
 """
 
     response = client.chat.completions.create(
@@ -318,7 +360,11 @@ async def main():
     selected = select_news(candidates)
 
     if not selected:
-        print("Yeni haber bulunamadı. Kanal sessiz geçildi.")
+        print("="*50)
+        print("BUGÜN YETERLİ KALİTEDE HABER BULUNAMADI")
+        print(f"Toplam analiz edilen aday: {len(candidates)}")
+        print("="*50)
+    
         return
 
     today = datetime.now().strftime("%d.%m.%Y")
