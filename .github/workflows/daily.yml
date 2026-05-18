@@ -12,6 +12,7 @@ on:
         default: "send"
 
   schedule:
+    # Keep this on a non-test cadence; changing the workflow file also refreshes GitHub's schedule registration.
     - cron: "0 5 * * *" 
 
 jobs:
