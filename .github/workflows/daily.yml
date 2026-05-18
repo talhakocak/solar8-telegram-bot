@@ -4,15 +4,15 @@ permissions:
   contents: write
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"
-
   workflow_dispatch:
     inputs:
       mode:
         description: "send veya reset"
         required: true
         default: "send"
+
+  schedule:
+    - cron: "*/5 * * * *"   # TEST: her 5 dakikada bir
 
 jobs:
   run-news:
@@ -37,6 +37,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
+
         run: |
           if [ "${{ github.event.inputs.mode }}" = "reset" ]; then
             python daily_news.py reset
@@ -45,6 +46,7 @@ jobs:
           fi
 
       - name: Commit updated memory
+        if: always()
         run: |
           git config user.name "solar8-news-bot"
           git config user.email "solar8-news-bot@users.noreply.github.com"
