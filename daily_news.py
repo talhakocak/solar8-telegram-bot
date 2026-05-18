@@ -11,6 +11,7 @@ from openai import OpenAI
 from newspaper import Article
 from dotenv import load_dotenv
 from telegram import Bot
+from telegram.request import HTTPXRequest
 
 load_dotenv()
 print(os.getenv("DEEPSEEK_API_KEY"))
@@ -24,7 +25,18 @@ client = OpenAI(
     base_url="https://api.deepseek.com"
 )
 
-bot = Bot(token=BOT_TOKEN)
+request = HTTPXRequest(
+    connection_pool_size=8,
+    connect_timeout=60,
+    read_timeout=60,
+    write_timeout=60,
+    pool_timeout=60,
+)
+
+bot = Bot(
+    token=BOT_TOKEN,
+    request=request
+)
 
 RSS_TR = "https://news.google.com/rss/search?q=%22güneş+enerjisi%22+OR+%22çatı+üstü+güneş%22+OR+%22GES%22+OR+%22solar+panel%22+OR+%22güneş+paneli%22+OR+%22fotovoltaik%22&hl=tr&gl=TR&ceid=TR:tr"
 RSS_GLOBAL = "https://news.google.com/rss/search?q=%22solar+energy%22+OR+photovoltaic+OR+%22solar+panel%22+OR+%22solar+inverter%22+OR+%22solar+power%22&hl=en-US&gl=US&ceid=US:en"
@@ -187,11 +199,20 @@ def select_news(candidates):
 
 
 async def send_message(text, parse_mode=None):
-    await bot.send_message(
-        chat_id=CHAT_ID,
-        text=text,
-        parse_mode=parse_mode
-    )
+    for attempt in range(3):
+        try:
+            await bot.send_message(
+                chat_id=CHAT_ID,
+                text=text,
+                parse_mode=parse_mode,
+                disable_web_page_preview=True,
+            )
+            return
+        except Exception as e:
+            print(f"Telegram gönderim hatası. Deneme {attempt + 1}/3: {e}")
+            await asyncio.sleep(5)
+
+    print("Telegram mesajı 3 denemede gönderilemedi, devam ediliyor.")
 
 
 async def main():
