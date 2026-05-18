@@ -186,6 +186,8 @@ Kurallar:
 - detected_region haberin konusu Türkiye ile ilgiliyse "Türkiye" olsun.
 - Haber Türkçe yazılmış olsa bile konu İtalya, ABD, Hindistan, Irak, Kürdistan Bölgesi, Avrupa vb. ise "Küresel" olsun.
 - Haber metni kısa veya yetersizse başlığa göre karar ver.
+- Devlet kurumu dokümantasyonu, genel bilgi sayfası, rehber, teknik standart sayfası veya evergreen kaynak sayfası ise is_solar_related false olsun.
+- Sadece güncel haber, yatırım, araştırma bulgusu, regülasyon değişikliği, pazar gelişmesi veya şirket gelişmesi ise true olsun.
 """
 
     response = client.chat.completions.create(
