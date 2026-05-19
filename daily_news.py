@@ -172,6 +172,7 @@ JSON formatı:
 {{
   "is_solar_related": true,
   "detected_region": "Türkiye / Küresel",
+  "canonical_topic": "haberin ana konusu, kısa ve kaynak isminden bağımsız",
   "category": "Yatırım / Teknoloji / Depolama / Regülasyon / Genel / Araştırma",
   "summary": "Türkçe, tarafsız, en fazla 2 kısa cümle."
 }}
@@ -181,6 +182,15 @@ Kurallar:
 - Ana konu güneş enerjisi, GES, fotovoltaik, güneş paneli, solar inverter veya güneşten elektrik üretimi değilse is_solar_related false.
 
 - Haber gerçekten yeni ve paylaşmaya değer bir gelişme içermeli.
+
+- canonical_topic aynı olayı anlatan farklı haber kaynaklarında aynı veya çok benzer olmalı.
+
+- canonical_topic çok genel olmamalı.
+- "Türkiye GES yatırımı", "Solar teknoloji haberi" gibi aşırı geniş ifadeler kullanma.
+- Şirket, teknoloji veya projenin ayırt edici ana konusu korunmalı.
+- Aynı olayın farklı kaynakları birleşmeli, fakat farklı olaylar tek konu altında toplanmamalı.
+
+- Kaynak adını, şehir adını gereksizse ve küçük başlık farklarını canonical_topic içine alma.
 
 Paylaşmaya değer örnekler:
 • Yeni GES yatırımı
@@ -311,10 +321,10 @@ async def main():
 
             title = clean_text(entry.title)
             link = entry.link
-            dedupe_key = normalize_for_key(title)
+            title_dedupe_key = normalize_for_key(title)
 
-            if dedupe_key in sent_events:
-                print(f"Geçildi tekrar: {dedupe_key}")
+            if title_dedupe_key in sent_events:
+                print(f"Geçildi tekrar başlık: {title_dedupe_key}")
                 continue
 
             if not is_solar_keyword_match(title):
@@ -338,17 +348,26 @@ async def main():
                 if not data.get("is_solar_related", False):
                     print(f"Geçildi AI güneş değil: {title}")
                     continue
-
+                
+                canonical_topic = data.get("canonical_topic", title)
+                dedupe_key = normalize_for_key(canonical_topic)
+                
+                if dedupe_key in sent_events:
+                    print(f"Geçildi tekrar konu: {dedupe_key}")
+                    continue
+                
                 detected_region = data.get("detected_region", rss_region)
+                
                 if detected_region not in ["Türkiye", "Küresel"]:
                     detected_region = rss_region
-
+                
                 candidates.append({
                     "region": detected_region,
                     "title": title,
                     "link": link,
                     "category": data.get("category", "Genel"),
                     "dedupe_key": dedupe_key,
+                     "canonical_topic": canonical_topic,
                     "summary": data.get("summary", "").strip(),
                     "tokens": usage.total_tokens if usage else 0,
                 })
@@ -392,6 +411,7 @@ async def main():
 
         print("=" * 40)
         print(item["title"])
+        print(f"Canonical: {item.get('canonical_topic')}")
         print(f"Bölge: {item['region']}")
         print(f"Tokens: {item['tokens']}")
 
