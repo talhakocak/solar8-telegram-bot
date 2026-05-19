@@ -153,7 +153,7 @@ def fetch_article_text(url):
     return article.text[:900]
 
 
-def ai_analyze_news(title, article_text, rss_region):
+def ai_analyze_news(title, article_text, rss_region, previous_topics):
     prompt = f"""
 Aşağıdaki haberin güneş enerjisi haberi olup olmadığını analiz et.
 
