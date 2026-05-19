@@ -166,11 +166,15 @@ Başlık:
 Haber metni:
 {article_text}
 
+Daha önce gönderilen haber konuları:
+{json.dumps(previous_topics, ensure_ascii=False, indent=2)}
+
 Sadece geçerli JSON döndür. Markdown kullanma.
 
 JSON formatı:
 {{
   "is_solar_related": true,
+  "is_duplicate": false,
   "detected_region": "Türkiye / Küresel",
   "canonical_topic": "haberin ana konusu, kısa ve kaynak isminden bağımsız",
   "category": "Yatırım / Teknoloji / Depolama / Regülasyon / Genel / Araştırma",
@@ -189,6 +193,11 @@ Kurallar:
 - "Türkiye GES yatırımı", "Solar teknoloji haberi" gibi aşırı geniş ifadeler kullanma.
 - Şirket, teknoloji veya projenin ayırt edici ana konusu korunmalı.
 - Aynı olayın farklı kaynakları birleşmeli, fakat farklı olaylar tek konu altında toplanmamalı.
+
+- Daha önce gönderilen haber konularıyla aynı olayı anlatıyorsa is_duplicate true olsun.
+- Aynı haber farklı kaynak, farklı başlık veya küçük kelime farkıyla gelmişse is_duplicate true olsun.
+- Farklı şirket, farklı proje, farklı ülke veya farklı yatırım ise is_duplicate false olsun.
+- Benzer kategoriye ait olması duplicate sayılmaz; aynı olay olması gerekir.
 
 - Kaynak adını, şehir adını gereksizse ve küçük başlık farklarını canonical_topic içine alma.
 
@@ -339,14 +348,24 @@ async def main():
 
                 if len(article_text) < 100:
                     article_text = title
-
-                data, usage = ai_analyze_news(title, article_text, rss_region)
+    
+                previous_topics = list(sent_events)[-40:]
+                data, usage = ai_analyze_news(
+                    title,
+                    article_text,
+                    rss_region,
+                    previous_topics
+                )
 
                 if usage:
                     total_tokens += usage.total_tokens
 
                 if not data.get("is_solar_related", False):
                     print(f"Geçildi AI güneş değil: {title}")
+                    continue
+                    
+                if data.get("is_duplicate", False):
+                    print(f"Geçildi AI tekrar: {title}")
                     continue
                 
                 canonical_topic = data.get("canonical_topic", title)
@@ -367,7 +386,7 @@ async def main():
                     "link": link,
                     "category": data.get("category", "Genel"),
                     "dedupe_key": dedupe_key,
-                     "canonical_topic": canonical_topic,
+                    "canonical_topic": canonical_topic,
                     "summary": data.get("summary", "").strip(),
                     "tokens": usage.total_tokens if usage else 0,
                 })
