@@ -264,7 +264,7 @@ Sadece yüksek veya orta önem seviyesindekileri true yap.
             },
         ],
         temperature=0.1,
-        max_tokens=220,
+        max_tokens=180,
     )
 
     content = response.choices[0].message.content.strip()
@@ -349,7 +349,7 @@ async def main():
                 if len(article_text) < 100:
                     article_text = title
     
-                previous_topics = list(sent_events)[-40:]
+                previous_topics = list(sent_events)[-20:]
                 data, usage = ai_analyze_news(
                     title,
                     article_text,
