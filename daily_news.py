@@ -152,10 +152,9 @@ def fetch_article_text(url):
     article.parse()
     return article.text[:900]
 
-
 def ai_analyze_news(title, article_text, rss_region, previous_topics):
     prompt = f"""
-Aşağıdaki haberin güneş enerjisi haberi olup olmadığını analiz et.
+Aşağıdaki içeriği Solar8 günlük güneş enerjisi bülteni için haber editörü gibi analiz et.
 
 Kaynak RSS bölgesi:
 {rss_region}
@@ -176,79 +175,62 @@ JSON formatı:
   "is_solar_related": true,
   "is_duplicate": false,
   "detected_region": "Türkiye / Küresel",
-  "canonical_topic": "haberin ana konusu, kısa ve kaynak isminden bağımsız",
+  "canonical_topic": "aynı olayı anlatan farklı haberlerde aynı kalacak kısa konu adı",
   "category": "Yatırım / Teknoloji / Depolama / Regülasyon / Genel / Araştırma",
-  "summary": "Türkçe, tarafsız, en fazla 2 kısa cümle."
+  "summary": "Türkçe, somut bilgiler içeren, sayısal verileri koruyan, en fazla 3 kısa cümle."
 }}
 
-Kurallar:
+Karar kuralları:
 
-- Ana konu güneş enerjisi, GES, fotovoltaik, güneş paneli, solar inverter veya güneşten elektrik üretimi değilse is_solar_related false.
+- Ana konu güneş enerjisi, GES, fotovoltaik, güneş paneli, solar inverter, çatı GES veya güneşten elektrik üretimi değilse is_solar_related false.
+- Haber yeni ve paylaşmaya değer bir gelişme içermiyorsa is_solar_related false.
+- Genel bilgi sayfası, rehber, teknik standart dokümanı, strateji/hedef sayfası, evergreen kurum sayfası veya haber niteliği taşımayan kaynak sayfası ise false.
+- "2030 goals", "cost benchmarks", "reliability", "hardening", "basics" gibi bilgi/dokümantasyon içerikleri genellikle false.
+- Rüzgar, doğalgaz, kömür, nükleer veya genel enerji politikası ana konuysa false.
+- Genel batarya haberi false; güneş enerjisiyle doğrudan ilişkili depolama haberi true olabilir.
 
-- Haber gerçekten yeni ve paylaşmaya değer bir gelişme içermeli.
+Paylaşmaya değer içerikler:
 
-- canonical_topic aynı olayı anlatan farklı haber kaynaklarında aynı veya çok benzer olmalı.
+- Yeni GES yatırımı
+- Şirket yatırımı veya fabrika açılışı
+- Yeni teknoloji, ürün veya panel geliştirmesi
+- Bilimsel araştırma sonucu
+- Regülasyon değişikliği
+- Pazar/veri gelişmesi
+- Rekor üretim veya önemli istatistik
+- Büyük ölçekli proje duyurusu
+- Kapasite, üretim, tasarruf veya yatırım miktarı içeren somut gelişmeler
 
-- canonical_topic çok genel olmamalı.
-- "Türkiye GES yatırımı", "Solar teknoloji haberi" gibi aşırı geniş ifadeler kullanma.
-- Şirket, teknoloji veya projenin ayırt edici ana konusu korunmalı.
-- Aynı olayın farklı kaynakları birleşmeli, fakat farklı olaylar tek konu altında toplanmamalı.
+Tekrar kontrolü:
 
-- Daha önce gönderilen haber konularıyla aynı olayı anlatıyorsa is_duplicate true olsun.
-- Aynı haber farklı kaynak, farklı başlık veya küçük kelime farkıyla gelmişse is_duplicate true olsun.
-- Farklı şirket, farklı proje, farklı ülke veya farklı yatırım ise is_duplicate false olsun.
+- Daha önce gönderilen haber konularıyla aynı olayı anlatıyorsa is_duplicate true.
+- Aynı haber farklı kaynak, farklı başlık veya küçük kelime farkıyla gelmişse is_duplicate true.
+- Farklı şirket, farklı proje, farklı ülke, farklı tesis veya farklı yatırım ise is_duplicate false.
 - Benzer kategoriye ait olması duplicate sayılmaz; aynı olay olması gerekir.
 
-- Kaynak adını, şehir adını gereksizse ve küçük başlık farklarını canonical_topic içine alma.
+canonical_topic kuralları:
 
-Paylaşmaya değer örnekler:
-• Yeni GES yatırımı
-• Şirket yatırımı veya fabrika açılışı
-• Yeni teknoloji veya ürün duyurusu
-• Bilimsel araştırma sonucu
-• Regülasyon değişikliği
-• Pazar/veri gelişmesi
-• Rekor üretim veya önemli istatistik
-• Büyük ölçekli proje duyurusu
+- canonical_topic aynı olayı anlatan farklı haber kaynaklarında aynı veya çok benzer olmalı.
+- Çok genel yazma. "Türkiye GES yatırımı", "solar teknoloji haberi", "enerji yatırımı" gibi ifadeler kullanma.
+- Şirket, proje, teknoloji, şehir, ülke veya ayırt edici ana unsur korunmalı.
+- Kaynak adını canonical_topic içine alma.
+- Küçük başlık farklarını ve gereksiz kelimeleri canonical_topic içine alma.
 
-Düşük değerli veya tekrar eden içerikleri false yap:
+Bölge kuralları:
 
-• Genel bilgi sayfaları
-• Rehberler
-• Teknik standart dokümanları
-• Strateji/hedef sayfaları
-• "2030 goals", "cost benchmarks", "reliability", "hardening", "basics" gibi bilgi içerikleri
-• Sadece görüş yazıları
-• Tek cümlelik siyasi açıklamalar
-• Küçük yerel tartışmalar
-• Sürekli tekrar eden yasa tasarıları
-• Haber niteliği taşımayan kurum sayfaları
+- Haber Türkiye ile ilgiliyse detected_region "Türkiye" olsun.
+- Diğer ülkeler, küresel pazar, ABD, Çin, Hindistan, Avrupa, Irak, Kürdistan Bölgesi vb. için detected_region "Küresel" olsun.
+- Haberin Türkçe yazılmış olması tek başına Türkiye haberi olduğu anlamına gelmez.
 
-Önem değerlendirmesi:
+Özet kuralları:
 
-Yüksek:
-- Yeni yatırım
-- Yeni teknoloji
-- Büyük proje
-- Şirket gelişmesi
-- Araştırma sonucu
-
-Orta:
-- Regülasyon
-- Pazar verisi
-- Enerji üretim istatistikleri
-
-Düşük:
-- Yorumlar
-- Eski haberler
-- Genel bilgi içerikleri
-
-Sadece yüksek veya orta önem seviyesindekileri true yap.
-
-- detected_region haber Türkiye ile ilgiliyse "Türkiye"
-- Diğer ülkeler için "Küresel"
-
-- Haber metni kısa ise başlıktan mantıklı çıkarım yap.
+- Genel ve boş ifadeler kullanma.
+- Haberin en önemli somut bilgisini ilk cümlede ver.
+- MW, kW, panel sayısı, yatırım miktarı, üretim kapasitesi, tasarruf miktarı, şirket adı, proje adı veya bölge bilgisi varsa özette mutlaka geçir.
+- Kullanıcı habere tıklamadan ana bilgiyi anlayabilmeli.
+- "Önemli bir adım", "odaklanıyor", "hedefliyor", "değerlendiriliyor", "katkı sağlayacak" gibi genel ifadeleri mümkün olduğunca kullanma.
+- En fazla 3 kısa cümle yaz.
+- Bilgi metinde yoksa uydurma; sadece haber metnindeki verileri kullan.
 """
 
     response = client.chat.completions.create(
@@ -256,7 +238,7 @@ Sadece yüksek veya orta önem seviyesindekileri true yap.
         messages=[
             {
                 "role": "system",
-                "content": "Sen güneş enerjisi haberlerini filtreleyen ve kısa özetleyen tarafsız bir haber editörüsün."
+                "content": "Sen güneş enerjisi sektörünü takip eden, tekrar haberleri ayıklayan ve somut verileri koruyarak kısa bülten özeti hazırlayan tarafsız bir haber editörüsün."
             },
             {
                 "role": "user",
@@ -264,7 +246,7 @@ Sadece yüksek veya orta önem seviyesindekileri true yap.
             },
         ],
         temperature=0.1,
-        max_tokens=180,
+        max_tokens=260,
     )
 
     content = response.choices[0].message.content.strip()
