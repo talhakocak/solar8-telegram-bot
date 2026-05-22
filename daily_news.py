@@ -49,6 +49,7 @@ RSS_TR = "https://news.google.com/rss/search?q=%22güneş+enerjisi%22+OR+%22çat
 RSS_GLOBAL = "https://news.google.com/rss/search?q=%22solar+energy%22+OR+photovoltaic+OR+%22solar+panel%22+OR+%22solar+inverter%22+OR+%22solar+power%22&hl=en-US&gl=US&ceid=US:en"
 
 SENT_EVENTS_FILE = "sent_events.json"
+NEWS_ARCHIVE_FILE = "news_archive.json"
 
 MAX_NEWS_PER_RUN = 5
 MAX_TR_NEWS = 3
@@ -89,6 +90,50 @@ def load_sent_events():
 def save_sent_events(sent_events):
     with open(SENT_EVENTS_FILE, "w", encoding="utf-8") as file:
         json.dump(sorted(list(sent_events)), file, ensure_ascii=False, indent=2)
+
+
+def load_news_archive():
+    if not os.path.exists(NEWS_ARCHIVE_FILE):
+        return []
+
+    try:
+        with open(NEWS_ARCHIVE_FILE, "r", encoding="utf-8") as file:
+            data = json.load(file)
+            return data if isinstance(data, list) else []
+    except Exception:
+        return []
+
+
+def save_news_archive(news_archive):
+    with open(NEWS_ARCHIVE_FILE, "w", encoding="utf-8") as file:
+        json.dump(news_archive, file, ensure_ascii=False, indent=2)
+
+
+def archive_sent_news(item):
+    news_archive = load_news_archive()
+    dedupe_key = item["dedupe_key"]
+    sent_at = datetime.now()
+
+    news_archive = [
+        archived_item for archived_item in news_archive
+        if archived_item.get("dedupe_key") != dedupe_key
+    ]
+
+    news_archive.append({
+        "sent_at": sent_at.isoformat(timespec="seconds"),
+        "sent_date": sent_at.strftime("%Y-%m-%d"),
+        "title": item["title"],
+        "link": item["link"],
+        "region": item["region"],
+        "category": item["category"],
+        "importance_score": item["importance_score"],
+        "importance_reason": item["importance_reason"],
+        "summary": item["summary"],
+        "canonical_topic": item["canonical_topic"],
+        "dedupe_key": dedupe_key,
+    })
+
+    save_news_archive(news_archive)
 
 
 def reset_memory():
@@ -152,6 +197,16 @@ def fetch_article_text(url):
     article.parse()
     return article.text[:900]
 
+
+def normalize_importance_score(value):
+    try:
+        score = int(value)
+    except (TypeError, ValueError):
+        return 5
+
+    return max(1, min(score, 10))
+
+
 def ai_analyze_news(title, article_text, rss_region, previous_topics):
     prompt = f"""
 Aşağıdaki içeriği Solar8 günlük güneş enerjisi bülteni için haber editörü gibi analiz et.
@@ -177,6 +232,8 @@ JSON formatı:
   "detected_region": "Türkiye / Küresel",
   "canonical_topic": "aynı olayı anlatan farklı haberlerde aynı kalacak kısa konu adı",
   "category": "Yatırım / Teknoloji / Depolama / Regülasyon / Genel / Araştırma",
+  "importance_score": 8,
+  "importance_reason": "Haberin sektör için neden önemli olduğunu açıklayan tek kısa cümle.",
   "summary": "Türkçe, somut bilgiler içeren, sayısal verileri koruyan, en fazla 3 kısa cümle."
 }}
 
@@ -222,6 +279,20 @@ Bölge kuralları:
 - Diğer ülkeler, küresel pazar, ABD, Çin, Hindistan, Avrupa, Irak, Kürdistan Bölgesi vb. için detected_region "Küresel" olsun.
 - Haberin Türkçe yazılmış olması tek başına Türkiye haberi olduğu anlamına gelmez.
 
+Önem derecesi kuralları:
+
+- importance_score 1 ile 10 arasında tam sayı olmalı.
+- Ortalama haber puanı 5-6 civarında olmalı.
+- 9-10 çok nadir kullanılmalı; sadece gerçekten büyük ölçekli, pazarı etkileyen veya stratejik önemdeki haberlerde ver.
+- Büyük haber yoksa yüksek puan verme.
+- 9-10: Büyük ölçekli GES yatırımı, ciddi kapasite artışı, önemli regülasyon değişikliği, büyük şirket/fabrika hamlesi, çığır açıcı teknoloji veya pazarı etkileyen somut veri.
+- 7-8: Yeni proje, ölçülebilir kapasite/üretim/tasarruf bilgisi, şirket yatırımı, yerel ölçekte güçlü gelişme veya dikkat çekici ürün/teknoloji haberi.
+- 5-6: Sektörle ilgili ama etkisi sınırlı haber, küçük ölçekli proje, etkinlik, niyet/hedef açıklaması veya detayları eksik gelişme.
+- 3-4: Solar bağlantısı zayıf, somut verisi az, tekrar niteliğine yakın veya sektörel değeri düşük içerik.
+- 1-2: Paylaşmaya değmez düzeyde zayıf içerik. Bu durumda genellikle is_solar_related false olmalı.
+- Puanı şişirme. Haberde MW, kW, yatırım tutarı, şirket adı, tesis/proje adı, ülke/şehir veya regülasyon etkisi varsa puanı buna göre gerekçelendir.
+- importance_reason tek kısa cümle olsun; genel övgü değil, puanın nedenini söylesin.
+
 Özet kuralları:
 
 - Genel ve boş ifadeler kullanma.
@@ -256,6 +327,11 @@ Bölge kuralları:
 
 
 def select_news(candidates):
+    candidates = sorted(
+        candidates,
+        key=lambda item: item.get("importance_score", 5),
+        reverse=True,
+    )
     tr_news = [item for item in candidates if item["region"] == "Türkiye"]
     global_news = [item for item in candidates if item["region"] == "Küresel"]
 
@@ -367,6 +443,8 @@ async def main():
                     "title": title,
                     "link": link,
                     "category": data.get("category", "Genel"),
+                    "importance_score": normalize_importance_score(data.get("importance_score")),
+                    "importance_reason": data.get("importance_reason", "").strip(),
                     "dedupe_key": dedupe_key,
                     "canonical_topic": canonical_topic,
                     "summary": data.get("summary", "").strip(),
@@ -399,6 +477,7 @@ async def main():
             "☀️ Solar8 Enerji Haberleri\n\n"
             f"🌍 Bölge: {item['region']}\n"
             f"🏷️ Kategori: {html.escape(item['category'])}\n\n"
+            f"⭐ Önem: {item['importance_score']}/10 — {html.escape(item['importance_reason'])}\n\n"
             f'📰 <a href="{item["link"]}">{html.escape(item["title"])}</a>\n\n'
             f"🧠 Özet:\n{html.escape(item['summary'])}\n\n"
             f'🔗 <a href="{item["link"]}">Haberi Oku</a>'
@@ -409,11 +488,16 @@ async def main():
         if sent_ok:
             sent_events.add(item["dedupe_key"])
             save_sent_events(sent_events)
+            try:
+                archive_sent_news(item)
+            except Exception as e:
+                print(f"Arşiv yazma hatası: {e}")
 
         print("=" * 40)
         print(item["title"])
         print(f"Canonical: {item.get('canonical_topic')}")
         print(f"Bölge: {item['region']}")
+        print(f"Önem: {item['importance_score']}/10 - {item['importance_reason']}")
         print(f"Tokens: {item['tokens']}")
 
     print(f"Toplam token: {total_tokens}")
