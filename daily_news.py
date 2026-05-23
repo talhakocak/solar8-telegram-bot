@@ -65,13 +65,6 @@ SOLAR_KEYWORDS = [
     "solar power", "solar inverter"
 ]
 
-GENERIC_TOPIC_WORDS = {
-    "ges", "gunes", "enerjisi", "solar", "panel", "panelleri",
-    "yatirim", "yatirimi", "proje", "projesi", "tesisi",
-    "santrali", "elektrik", "maliyet", "maliyeti", "azaltma",
-    "yeni", "ikinci", "tamamlanmasi", "kurulumu", "kuruldu",
-}
-
 
 def is_recent_entry(entry, max_days=30):
     if not hasattr(entry, "published_parsed") or entry.published_parsed is None:
@@ -193,44 +186,6 @@ def normalize_for_key(text):
     return normalized
 
 
-def topic_tokens(text):
-    return {
-        token for token in normalize_for_key(text).split("_")
-        if token and token not in GENERIC_TOPIC_WORDS and len(token) > 2
-    }
-
-
-def is_similar_topic(first_text, second_text):
-    first_tokens = topic_tokens(first_text)
-    second_tokens = topic_tokens(second_text)
-
-    if not first_tokens or not second_tokens:
-        return False
-
-    shared_tokens = first_tokens & second_tokens
-    smaller_size = min(len(first_tokens), len(second_tokens))
-
-    return len(shared_tokens) >= 2 and len(shared_tokens) / smaller_size >= 0.8
-
-
-def is_duplicate_topic(dedupe_key, sent_events):
-    return any(is_similar_topic(dedupe_key, sent_event) for sent_event in sent_events)
-
-
-def upsert_candidate(candidates, new_candidate):
-    for index, existing_candidate in enumerate(candidates):
-        if is_similar_topic(new_candidate["dedupe_key"], existing_candidate["dedupe_key"]):
-            if new_candidate["importance_score"] > existing_candidate["importance_score"]:
-                candidates[index] = new_candidate
-                print(f"Aynı gün benzer haber değiştirildi: {new_candidate['dedupe_key']}")
-            else:
-                print(f"Geçildi aynı gün benzer haber: {new_candidate['dedupe_key']}")
-
-            return
-
-    candidates.append(new_candidate)
-
-
 def is_solar_keyword_match(title):
     lowered = title.lower()
     return any(keyword in lowered for keyword in SOLAR_KEYWORDS)
@@ -252,7 +207,7 @@ def normalize_importance_score(value):
     return max(1, min(score, 10))
 
 
-def ai_analyze_news(title, article_text, rss_region, previous_topics):
+def ai_analyze_news(title, article_text, rss_region, previous_topics, current_topics):
     prompt = f"""
 Aşağıdaki içeriği Solar8 günlük güneş enerjisi bülteni için haber editörü gibi analiz et.
 
@@ -267,6 +222,11 @@ Haber metni:
 
 Daha önce gönderilen haber konuları:
 {json.dumps(previous_topics, ensure_ascii=False, indent=2)}
+
+Bu çalıştırmada zaten aday olarak seçilmiş haber konuları:
+{json.dumps(current_topics, ensure_ascii=False, indent=2)}
+
+Not: Bu listelerde canonical_topic, normalleştirilmiş dedupe key veya haber başlığı bulunabilir.
 
 Sadece geçerli JSON döndür. Markdown kullanma.
 
@@ -306,7 +266,10 @@ Paylaşmaya değer içerikler:
 Tekrar kontrolü:
 
 - Daha önce gönderilen haber konularıyla aynı olayı anlatıyorsa is_duplicate true.
+- Bu çalıştırmada zaten aday olarak seçilmiş haber konularıyla aynı olayı anlatıyorsa is_duplicate true.
 - Aynı haber farklı kaynak, farklı başlık veya küçük kelime farkıyla gelmişse is_duplicate true.
+- Aynı şirketin aynı GES yatırımı, aynı projesi veya aynı tesis haberi farklı kaynaklarda geçiyorsa is_duplicate true.
+- Örnek: "Selva Gıda GES yatırımı" ile "Selva Gıda yeni GES tesisiyle elektrik maliyetini azaltacak" aynı olaydır, ikinci gelen duplicate olmalı.
 - Farklı şirket, farklı proje, farklı ülke, farklı tesis veya farklı yatırım ise is_duplicate false.
 - Benzer kategoriye ait olması duplicate sayılmaz; aynı olay olması gerekir.
 
@@ -452,12 +415,17 @@ async def main():
                 if len(article_text) < 100:
                     article_text = title
     
-                previous_topics = list(sent_events)[-20:]
+                previous_topics = sorted(sent_events)
+                current_topics = [
+                    f"{item['canonical_topic']} | {item['title']}"
+                    for item in candidates[-10:]
+                ]
                 data, usage = ai_analyze_news(
                     title,
                     article_text,
                     rss_region,
-                    previous_topics
+                    previous_topics,
+                    current_topics
                 )
 
                 if usage:
@@ -474,7 +442,7 @@ async def main():
                 canonical_topic = data.get("canonical_topic", title)
                 dedupe_key = normalize_for_key(canonical_topic)
                 
-                if dedupe_key in sent_events or is_duplicate_topic(dedupe_key, sent_events):
+                if dedupe_key in sent_events:
                     print(f"Geçildi tekrar konu: {dedupe_key}")
                     continue
                 
@@ -483,7 +451,7 @@ async def main():
                 if detected_region not in ["Türkiye", "Küresel"]:
                     detected_region = rss_region
                 
-                upsert_candidate(candidates, {
+                candidates.append({
                     "region": detected_region,
                     "title": title,
                     "link": link,
