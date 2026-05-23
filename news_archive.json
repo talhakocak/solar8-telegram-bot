@@ -1,1 +1,67 @@
-[]
+[
+  {
+    "sent_at": "2026-05-23T07:29:45",
+    "sent_date": "2026-05-23",
+    "title": "Selva Gıda yeni GES tesisiyle elektrik maliyetini azaltacak - Paratic Haber",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUWg0MnZIWG9KQVNXckdHTlEyVlIxWGZDeVFZdFpnNHBBWmNXTDItRGpqVmU1ZXA0TllmUzBNd2VldkNkN0l6bU53MjlaMFdlb1l4WUMzbkdZZC1kV0VkVzVXVWxta1I4U0ZmbHdPRnNhMk5tNHpTM0NHRXh3U3pmR1pGcVcycmM?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 6,
+    "importance_reason": "Selva Gıda'nın yeni GES tesisiyle elektrik maliyetini düşürmesi, gıda sektöründe güneş enerjisi yatırımına somut bir örnek oluşturuyor.",
+    "summary": "Selva Gıda, yeni bir güneş enerjisi santrali (GES) tesisi kurarak elektrik maliyetlerini azaltmayı hedefliyor. Haberde projenin kapasitesi veya yatırım tutarı gibi somut veriler yer almıyor.",
+    "canonical_topic": "selva_gida_ges_yatirimi_elektrik_maliyeti_azaltma",
+    "dedupe_key": "selva_gida_ges_yatirimi_elektrik_maliyeti_azaltma"
+  },
+  {
+    "sent_at": "2026-05-23T07:29:45",
+    "sent_date": "2026-05-23",
+    "title": "Selva Gıda'nın GES yatırımı - hibya.com",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9HWVk2N240QlFTOXFQTDA1NFYxSTFZWDhCaEsxMTh0YWpGblU0U1lxZmpkTlF0YmdiRVNwZzBrN2F1eGhHYkpBVGtPNU50LTJLTDNqbEU3aUl2NTR1SXRUeA?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 5,
+    "importance_reason": "Selva Gıda'nın GES yatırımı, somut kapasite veya yatırım miktarı bilgisi içermediği için orta düzeyde önemli.",
+    "summary": "Selva Gıda, güneş enerjisi yatırımı yapıyor. Haberde yatırımın kapasitesi veya büyüklüğüne dair somut veri bulunmuyor.",
+    "canonical_topic": "selva_gida_ges_yatirimi",
+    "dedupe_key": "selva_gida_ges_yatirimi"
+  },
+  {
+    "sent_at": "2026-05-23T07:29:46",
+    "sent_date": "2026-05-23",
+    "title": "Kızılcahamam'a İkinci Güneş Enerjisi Santrali Yapılıyor - Bizim Ankara",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMXVvTDBZTFlOY0NWTmJ6cWR1RlFGZkVmODgzOVR4N1g4MGF3N2lwdktyNFdZb1h6Tnh4OUtnd19wYURRbEpoUEM4R2trYXdIVFcxRDNyU3c3RmpzWUQ0MmdHODgxOW16X0xSZXlYODN0VUc1OUFZRkZ2V1ZNMWUzMTlWVzBSMFVCWEZXUHVR0gGTAUFVX3lxTFAtQWhialFpdUFaQmhZT3hLMzFKdHczUzVYNXFSeDROY1JrTzdFMkpoYXREaTBnQ1Q1amluVXNIc3dXUWhxWVNyQ2tPWlkwaFkxT056Y2ZvSS14YjVwZWFpMzVCVDNOZzF2b29hNmNIRXhQTW1nM0cyUjVjMTE4a0NWdTBLX25ucGZscGpEeGl4UWsyUQ?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 5,
+    "importance_reason": "Yerel ölçekte yeni bir GES yatırımı haberi olmakla birlikte somut kapasite veya yatırım miktarı bilgisi içermiyor.",
+    "summary": "Kızılcahamam'da ikinci bir güneş enerjisi santrali kurulacağı duyuruldu. Proje detaylarına ilişkin kapasite veya yatırım miktarı bilgisi paylaşılmadı.",
+    "canonical_topic": "kizilcahamam_ikinci_ges_yatirimi",
+    "dedupe_key": "kizilcahamam_ikinci_ges_yatirimi"
+  },
+  {
+    "sent_at": "2026-05-23T07:29:46",
+    "sent_date": "2026-05-23",
+    "title": "Duke Energy Florida completes solar energy site in Sumter County, estimates $250 million in customer savings over its service lifetime - Duke Energy | News Center",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9ZMHdlSTEzaHVLZmlULXRaN1gyalJYVFh1UDg3WEpBVV84VURDbzlXdi1mQ3NranJpVk5Yay1ZV1BWMG9mWVljeVZUR0NZSGFwUk9TZ0FMbm5YRTZwMEZhMExGZmVGUQ?oc=5",
+    "region": "Küresel",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "Duke Energy'nin Florida'da tamamladığı GES projesi, 250 milyon dolarlık müşteri tasarrufu vaadiyle somut ve ölçülebilir bir yatırım haberi.",
+    "summary": "Duke Energy Florida, Sumter County'deki güneş enerjisi santralini tamamladı. Şirket, tesisin ömrü boyunca müşterilere 250 milyon dolar tasarruf sağlayacağını tahmin ediyor.",
+    "canonical_topic": "duke_energy_florida_sumter_ges_250_milyon_dolar_tasarruf",
+    "dedupe_key": "duke_energy_florida_sumter_ges_250_milyon_dolar_tasarruf"
+  },
+  {
+    "sent_at": "2026-05-23T07:29:53",
+    "sent_date": "2026-05-23",
+    "title": "Fairfax County completes largest solar energy project so far on I-95 landfill - FFXnow",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSGt6UE0tcEl2N3pHdjItYmh6WTJvNm10TGZwT1JCM0RQWWhxLXI3ZlZKTzBWQTFnWFBITVM1VjZqdkc5REMxR1RfQ2t4djdOckY5eUZmZV9yaEdHa1pRaHo1TzBoVzdNVE9fOC1RYkI0TzltS0tCMTJrTDZERVhwTFhVWVpFQjBlZDN5TjA0amdKWDVhREk4YnU0T25xbnJXaXZ0elRIMW55TVREVm1jdmpn?oc=5",
+    "region": "Küresel",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "Fairfax County'nin bugüne kadarki en büyük güneş enerjisi projesini tamamlaması, atık sahası dönüşümüyle ölçeklenebilir bir model sunuyor.",
+    "summary": "Fairfax County, I-95 çöplük alanı üzerinde şimdiye kadarki en büyük güneş enerjisi projesini tamamladı. Proje, atık sahasının yeniden kullanımıyla temiz enerji üretimini hedefliyor.",
+    "canonical_topic": "fairfax_county_95_landfill_ges_projesi",
+    "dedupe_key": "fairfax_county_landfill_ges_projesi"
+  }
+]
