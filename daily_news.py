@@ -415,7 +415,7 @@ async def main():
                 if len(article_text) < 100:
                     article_text = title
     
-                previous_topics = sorted(sent_events)
+                previous_topics = sorted(list(sent_events))[-50:]
                 current_topics = [
                     f"{item['canonical_topic']} | {item['title']}"
                     for item in candidates[-10:]
