@@ -445,6 +445,15 @@ async def main():
                 if dedupe_key in sent_events:
                     print(f"Geçildi tekrar konu: {dedupe_key}")
                     continue
+
+                current_keys = {
+                    item["dedupe_key"]
+                    for item in candidates
+                }
+
+                if dedupe_key in current_keys:
+                    print(f"Geçildi aynı bülten tekrar: {dedupe_key}")
+                    continue
                 
                 detected_region = data.get("detected_region", rss_region)
                 
