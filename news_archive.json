@@ -193,5 +193,31 @@
     "summary": "Cincinnati, eski bir çöp sahasını güneş enerjisi merkezine dönüştürüyor. Proje, blighted alanı temiz enerji üretimine kazandırarak hem çevresel hem de ekonomik fayda sağlamayı hedefliyor.",
     "canonical_topic": "cincinnati_landfill_ges_donusumu",
     "dedupe_key": "cincinnati_landfill_ges_donusumu"
+  },
+  {
+    "sent_at": "2026-05-26T08:30:59",
+    "sent_date": "2026-05-26",
+    "title": "EPDK’den güneş enerjisi yatırımcılarına müjde: Dağıtım bedelinde indirim - Yayla Haber",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZ0JQNGM0QkEzNnh2ZEs1LTBUTlpqX2ZLSllMWVN0d1FuN3A2Z2YyMG1jd0cybjc3TTJQUEVuSjY0ZEZDLVdoQWpiaF93VENpTjB2UXdpRFM1LXNqZ2h1OEsyeXBuaGRtRTFvR0ZZUEIwYkRnMUctNEJTZm1DVmJ2M254Z3BXN2UtbWhBT1dNSk9LRjIyaFB5RUFLN0dUbEpRV3fSAacBQVVfeXFMTlliRXlHNlVYeUIwN1AzZGx4Q2FGaGJ5Q3puejlwSkxfWTF2TVI2dFA1eW1lc1JJQm94dGZnSzlnWnREazczOXdfcUhnaHFqeWxUYkVUOHUta1JGTEtSY2pFdXFQQU00aUoyUjhrQkZ3LVhGSkV4R0luM080cmU5SWV3Z3JHU3ZIZFMyUFZvMEZpOF9vYUtNSG80dUdKN2RESkFnVzkxZkk?oc=5",
+    "region": "Türkiye",
+    "category": "Regülasyon",
+    "importance_score": 8,
+    "importance_reason": "EPDK'nın dağıtım bedelinde indirim yapması, güneş enerjisi yatırımcılarının maliyetlerini doğrudan düşürecek önemli bir regülasyon değişikliğidir.",
+    "summary": "EPDK, güneş enerjisi yatırımcıları için dağıtım bedelinde indirim kararı aldı. Bu düzenleme, lisanssız GES yatırımlarının maliyetini azaltarak sektördeki yatırım ivmesini artırabilir. İndirimin oranı ve kapsamı henüz açıklanmadı.",
+    "canonical_topic": "epdk_dagitim_bedeli_indirimi",
+    "dedupe_key": "epdk_dagitim_bedeli_indirimi"
+  },
+  {
+    "sent_at": "2026-05-26T08:30:59",
+    "sent_date": "2026-05-26",
+    "title": "Solar Panel installation to happen this week at Albert Lea City Hall - KTTC",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUGlCalQ5TDktMW5vcnNpdVlnamlLZDYtU29Ra1gxdkJTVEtXamtXY3R5MHlIdi1TSWhDeklQcEpOR1B2aFdtUms4clAzV3RrdGx1cVhkMjlLazl4WlRLNThXdWZPa0w1dkNqT2M5UEtDNTljWm1MelNTbDI3bHpDdnRxcDBPRkdIajFaNElmM2ZrOFU5QkVyS0dZMA?oc=5",
+    "region": "Küresel",
+    "category": "Yatırım",
+    "importance_score": 4,
+    "importance_reason": "Yerel ölçekli, somut kapasite veya yatırım verisi içermeyen küçük bir kamu binası çatı GES kurulumu.",
+    "summary": "Albert Lea Belediye Binası'na bu hafta güneş paneli kurulumu yapılacak. Proje kapsamında detaylı kapasite veya yatırım bilgisi paylaşılmadı.",
+    "canonical_topic": "albert_lea_belediyesi_cati_ges_kurulumu",
+    "dedupe_key": "albert_lea_belediyesi_cati_ges_kurulumu"
   }
 ]
