@@ -284,5 +284,70 @@
     "summary": "New York'ta SUNNY Act olarak bilinen yasa tasarısı, güneş enerjisini düşük gelirli haneler için daha erişilebilir hale getirmeyi amaçlıyor. Vali onayı bekleyen yasa, eyalette güneş enerjisi kullanımını yaygınlaştırmayı hedefliyor.",
     "canonical_topic": "abd_new_york_sunny_act_gunes_enerjisi_erisilebilirlik_yasasi",
     "dedupe_key": "abd_york_sunny_act_gunes_enerjisi_erisilebilirlik_yasasi"
+  },
+  {
+    "sent_at": "2026-05-28T08:41:09",
+    "sent_date": "2026-05-28",
+    "title": "Hawaiʻi solar energy projects at risk after tax credit is signed into law - Hawaii Public Radio",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNaFhfejA2QWd0dl9GSVVSOGhqQ3pfZWV4cGszYlVwQTl6Zl84bFdVRTVpR0lRai04ZW5QTU9yOHNKQko2WHJLbmtHNGIwM2RDQmc0WVNvazc4dGVmb0kzQUItcVIzR1FLMHhXTEt6bnE2VmttcVRER2RkbzVBMnV4WVMwRHV3OW5rbjdmTUZ5THBPTmVia1FYOUFWaWRFb0VpcHRtZE10Z1lPMWphV1NOWGhmdWk4SlRfQ2lUZC1DeVNUWklGUFhxdHBMM1pscXM?oc=5",
+    "region": "Küresel",
+    "category": "Regülasyon",
+    "importance_score": 7,
+    "importance_reason": "Hawaii'de yeni yasalaşan bir vergi kredisi, eyaletteki güneş enerjisi projelerini doğrudan riske atarak yatırım ortamını etkiliyor.",
+    "summary": "Hawaii'de yeni yasalaşan bir vergi kredisi, eyaletteki güneş enerjisi projelerini tehlikeye atıyor. Vergi kredisinin detayları ve projeler üzerindeki etkisi henüz netleşmedi.",
+    "canonical_topic": "hawaii_vergi_kredisi_ges_projelerini_tehlikeye_atmasi",
+    "dedupe_key": "hawaii_vergi_kredisi_ges_projelerini_tehlikeye_atmasi"
+  },
+  {
+    "sent_at": "2026-05-28T08:41:09",
+    "sent_date": "2026-05-28",
+    "title": "Solar power could soon be cheaper than natural gas power in Anchorage - Alaska Beacon",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeXZJbURBV0RWbS1qdGR6RmFOcnhhbjVjME9GTEZ0QXBlUmU1WklfWlJiYmFGOGh2cXlucENNQXNaZW14N2dFemFoanZ2LUhfdnYxbDN0YzZLeHRkSGN5X1dCNENjVFVUby05eFoyOWZuT3EtdFVkcGNORW1CdFo3eTFOaklfTzdLY09pN3hEX1RsVVpibEZqR015Q1RaRnNJMTY3bndXV3AxaDZ3?oc=5",
+    "region": "Küresel",
+    "category": "Genel",
+    "importance_score": 7,
+    "importance_reason": "Güneş enerjisinin Alaska gibi soğuk iklimde doğalgazla rekabet edebilir hale gelmesi, sektörün yaygınlaşma potansiyelini gösteriyor.",
+    "summary": "Alaska'nın Anchorage kentinde güneş enerjisinin doğalgazdan daha ucuz hale gelebileceği belirtiliyor. Bu gelişme, soğuk iklim bölgelerinde güneş enerjisinin rekabet gücünün arttığını gösteriyor.",
+    "canonical_topic": "anchorage_gunes_enerjisi_dogalgazdan_daha_ucuz_olabilir",
+    "dedupe_key": "anchorage_gunes_enerjisi_dogalgazdan_daha_ucuz_olabilir"
+  },
+  {
+    "sent_at": "2026-05-28T08:41:09",
+    "sent_date": "2026-05-28",
+    "title": "Alüminyum fiyatlarındaki %30'luk artış, ABD'de güneş enerjisi kurulum maliyetlerini yükseltiyor. - Vietnam.vn",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPLXFOaE9MbkpMWTlTd280V3c3d3V6SGxIYTByblRlYUVNbE9JaGZXb0R3SjhEOTVlSWtPM0JReTc5cDFKeWNDc2xWOFNpZ0cxOC1heGtveXpzbE5iVEZhREE5VS0tM1hFc0lFLW1icFNZelJLOFllclA4eTluT1JwTFZNWlR2WnV4QTl1WllmNnZYSkdRU1FpZg?oc=5",
+    "region": "Küresel",
+    "category": "Genel",
+    "importance_score": 6,
+    "importance_reason": "Alüminyum fiyatlarındaki %30'luk artış, ABD'de güneş enerjisi kurulum maliyetlerini doğrudan etkileyen somut bir pazar gelişmesidir.",
+    "summary": "Alüminyum fiyatlarındaki %30'luk artış, ABD'de güneş enerjisi kurulum maliyetlerini yükseltiyor. Haber, maliyet artışının sektöre etkisini vurguluyor.",
+    "canonical_topic": "aluminyum_fiyat_artisi_abd_ges_kurulum_maliyeti",
+    "dedupe_key": "aluminyum_fiyat_artisi_abd_ges_kurulum_maliyeti"
+  },
+  {
+    "sent_at": "2026-05-28T08:41:09",
+    "sent_date": "2026-05-28",
+    "title": "MarineSolar Conducts Pilot Trial of Photovoltaic Energy System - Marine News Magazine",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE52LUpYVFEyN0JURFdJdzkxbWQ4WHotUVNoYml2VlRCVnNfMENsZW5rcGZEQzBHN0k1b0Etd2lyMV9IbkFtZzUxbE9hTXV3MjlNU2JDSTlSeTY3dkVMdmQ2QkFBVnZCTEtmdFJrTmNqQWVENk5mNnRfXzN4OA?oc=5",
+    "region": "Küresel",
+    "category": "Teknoloji",
+    "importance_score": 6,
+    "importance_reason": "Deniz taşıtlarında güneş enerjisi kullanımına yönelik pilot uygulama, sektörde yeni bir kullanım alanını test ediyor.",
+    "summary": "MarineSolar, deniz araçlarında kullanılmak üzere fotovoltaik enerji sisteminin pilot denemesini başlattı. Pilot uygulama, denizcilik sektöründe güneş enerjisinin entegrasyon potansiyelini değerlendirmeyi amaçlıyor.",
+    "canonical_topic": "marinesolar_deniz_araclarinda_ges_pilot_denemesi",
+    "dedupe_key": "marinesolar_deniz_araclarinda_ges_pilot_denemesi"
+  },
+  {
+    "sent_at": "2026-05-28T08:41:14",
+    "sent_date": "2026-05-28",
+    "title": "Solar Energy Farm Must Present More Visual Impact Information to Receive Approval - Court News Ohio (.gov)",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1vN2t1Wkw5Q1Q3ckkwRC0zdGU3RndjQU1ySzBtV1pEYzNfcVFOeG45c0Zac0pDTVFmTGZQTHNLOVVoUE9ERUtkSlBkQmk0RUZFeUNJSkVndXREb3VCQjhhU3lsTzIwLWdxaXhMZA?oc=5",
+    "region": "Küresel",
+    "category": "Regülasyon",
+    "importance_score": 6,
+    "importance_reason": "ABD'de güneş enerjisi santrallerinin onay sürecinde görsel etki değerlendirmesini zorunlu kılan yeni bir mahkeme kararı, sektörde izin prosedürlerini etkileyebilir.",
+    "summary": "Ohio mahkemesi, bir güneş enerjisi çiftliğinin onay alabilmesi için görsel etki bilgilerini sunması gerektiğine hükmetti. Karar, proje geliştiricilerin çevresel ve estetik etkileri daha ayrıntılı belgelemesini zorunlu kılıyor.",
+    "canonical_topic": "ohio_ges_goruntu_etkisi_onay_sarti",
+    "dedupe_key": "ohio_ges_goruntu_etkisi_onay_sarti"
   }
 ]
