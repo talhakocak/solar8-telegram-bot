@@ -414,5 +414,70 @@
     "summary": "The Museum of Flight, büyük bir güneş enerjisi projesi için eyalet hibesi aldı. Proje, müzenin enerji maliyetlerini düşürmeyi ve sürdürülebilirliğini artırmayı hedefliyor.",
     "canonical_topic": "museum_of_flight_ges_devlet_destegi",
     "dedupe_key": "museum_flight_ges_devlet_destegi"
+  },
+  {
+    "sent_at": "2026-05-30T07:38:59",
+    "sent_date": "2026-05-30",
+    "title": "2 milyarlık GES yatırımı hazır - Posta",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1vU05MZUFFeWN4YjBDNHNfZzBxajVGbVY4cl9WcHNZcWRIbVdQQkdNdGhPZUx1Z0RRdUU1X0luM3dpQm42UmE0RFY2ZndtbGljY1RsbGlwMC1tLWtKeExaUmp2YnFlM3FIZnRCc3llNTBPQW93NEtpWXU3aw?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 8,
+    "importance_reason": "2 milyar TL'lik büyük ölçekli GES yatırımı, Türkiye güneş enerjisi sektöründe önemli bir kapasite artışı sinyali veriyor.",
+    "summary": "Türkiye'de 2 milyar TL değerinde yeni bir GES yatırımı hazırlanıyor. Yatırımın detayları ve kurulacak kapasite henüz açıklanmadı. Bu büyüklükteki yatırım, sektördeki büyüme potansiyelini gösteriyor.",
+    "canonical_topic": "2_milyarlik_ges_yatirimi",
+    "dedupe_key": "milyarlik_ges_yatirimi"
+  },
+  {
+    "sent_at": "2026-05-30T07:38:59",
+    "sent_date": "2026-05-30",
+    "title": "Astor Enerji Romanya’da Dev GES Projesine İmza Attı - Enerjimagazin",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZnBOcl9kaHMtaEJXUGxRSkRrLVF0V05JekJ2X3MtZ0hDc2t4TmRjLXlpazVvdkoyZE5zQlhBbzNlbS1zazF6dDRVZTQyckNTWkpidTRrZ1dJbjF5SExzYUs2em41aU5od0RSQkJPZ05CMXh4TXUzek8xVXdkRFBEUmVxblhZazI3SDRxTzdueGJHbGpjSGs0SlJrRWJPZw?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "Astor Enerji'nin Romanya'da dev GES projesine imza atması, Türk şirketlerinin yurtdışı güneş enerjisi yatırımlarında önemli bir adım.",
+    "summary": "Astor Enerji, Romanya'da büyük ölçekli bir güneş enerjisi santrali (GES) projesi için anlaşma imzaladı. Proje, şirketin yurtdışı yatırımlarını genişletme stratejisinin bir parçası olarak öne çıkıyor. Detaylı kapasite ve yatırım bilgisi henüz paylaşılmadı.",
+    "canonical_topic": "astor_enerji_romanya_ges_projesi",
+    "dedupe_key": "astor_enerji_romanya_ges_projesi"
+  },
+  {
+    "sent_at": "2026-05-30T07:39:00",
+    "sent_date": "2026-05-30",
+    "title": "Bakan Bayraktar: \"Güneş enerjisi bu yıl sonu zirveye çıkacak\" - turkiyedeisdunyasi",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQUZjZ2xIUFF2YnVyTHdjUi10a2w5bXdkNk43SVR6LVF5VmNoRGtWaV9TZmxxYm1uemwzVE5tam53S0hMd25yQzk0X09HRkVYckNOZ1BTTlUtLTRQblJnMjc1aHFHazlicy03cFJOdnA0em1qRGxlOHc0anA4U2NVbER0WkhoTDNtd0hUS0NXdUg4SWJIS1ktMXIxYndMZw?oc=5",
+    "region": "Türkiye",
+    "category": "Genel",
+    "importance_score": 7,
+    "importance_reason": "Bakan düzeyinde yapılan açıklama, Türkiye'de güneş enerjisi kurulu gücünün yıl sonunda rekor seviyeye ulaşacağını belirtiyor.",
+    "summary": "Enerji ve Tabii Kaynaklar Bakanı Bayraktar, güneş enerjisi kurulu gücünün bu yıl sonunda zirveye çıkacağını açıkladı. Haberde somut bir kapasite rakamı veya yatırım detayı yer almıyor.",
+    "canonical_topic": "turkiye_gunes_enerjisi_kurulu_gucleri_zirve_tahmini",
+    "dedupe_key": "turkiye_gunes_enerjisi_kurulu_gucleri_zirve_tahmini"
+  },
+  {
+    "sent_at": "2026-05-30T07:39:00",
+    "sent_date": "2026-05-30",
+    "title": "Connecticut passes solar energy bill - Environment America",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQLXBxUW5HcHZSWXVmQTZuR19nekwweUE0SjVzLTdKUl9Sd0JoYW8tbVFYNTB1MnppOHlYMkdKUHZSRnI5YllzMlZqa19fcm83cFZSWGphOGZYYmJlZzEtb19IcVVYTGt4ZHlNTWhFNlhsY0tPS01VMkJJNFljU01ZOGZCdw?oc=5",
+    "region": "Küresel",
+    "category": "Regülasyon",
+    "importance_score": 7,
+    "importance_reason": "Connecticut eyaletinde güneş enerjisini teşvik eden yeni bir yasanın kabul edilmesi, ABD'de eyalet düzeyinde önemli bir regülasyon gelişmesidir.",
+    "summary": "Connecticut eyalet meclisi, güneş enerjisi kullanımını artırmayı hedefleyen bir yasa tasarısını onayladı. Yasa, eyaletteki güneş enerjisi projelerini teşvik edecek düzenlemeler içeriyor. Detaylı yasa içeriği ve etkileri henüz açıklanmadı.",
+    "canonical_topic": "connecticut_gunes_enerjisi_kanunu",
+    "dedupe_key": "connecticut_gunes_enerjisi_kanunu"
+  },
+  {
+    "sent_at": "2026-05-30T07:39:04",
+    "sent_date": "2026-05-30",
+    "title": "Solar power could soon be cheaper than natural gas power in Anchorage - Alaska Beacon",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeXZJbURBV0RWbS1qdGR6RmFOcnhhbjVjME9GTEZ0QXBlUmU1WklfWlJiYmFGOGh2cXlucENNQXNaZW14N2dFemFoanZ2LUhfdnYxbDN0YzZLeHRkSGN5X1dCNENjVFVUby05eFoyOWZuT3EtdFVkcGNORW1CdFo3eTFOaklfTzdLY09pN3hEX1RsVVpibEZqR015Q1RaRnNJMTY3bndXV3AxaDZ3?oc=5",
+    "region": "Küresel",
+    "category": "Genel",
+    "importance_score": 7,
+    "importance_reason": "Güneş enerjisinin Alaska gibi soğuk iklimde doğalgazla rekabet edebilir hale gelmesi, maliyet düşüşünün yaygın etkisini gösteriyor.",
+    "summary": "Alaska Beacon haberine göre, Anchorage'da güneş enerjisi maliyetinin yakında doğalgazdan daha düşük olabileceği belirtiliyor. Bu gelişme, güneş enerjisinin yüksek enlemlerde bile ekonomik hale geldiğini gösteriyor.",
+    "canonical_topic": "anchorage_gunes_enerjisi_dogalgazdan_ucuz_olabilir",
+    "dedupe_key": "anchorage_gunes_enerjisi_dogalgazdan_ucuz_olabilir"
   }
 ]
