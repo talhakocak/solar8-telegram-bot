@@ -258,7 +258,7 @@ def build_report_messages(stats, ai_result, week_start, week_end):
         f"🔍 <b>Haftanın Teması</b>\n\n"
         f"💡 {tema}\n\n"
         f"📝 <b>Sektör Yorumu:</b>\n{yorum}\n\n\n"
-        f"Solar8 · Haftalık Güneş Enerjisi İstihbaratı"
+        f"Solar8 · Haftalık Güneş Enerjisi Bülteni"
     )
     messages.append(msg3)
 
