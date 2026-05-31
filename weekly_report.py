@@ -162,7 +162,6 @@ Sadece şu JSON formatında cevap ver:
         ],
         temperature=0.3,
         max_tokens=300,
-        # 🚀 İŞTE ARIZA ÇIKMASINI ENGELLEYECEK KRAL PARAMETRE:
         response_format={ 'type': 'json_object' } 
     )
 
@@ -191,12 +190,12 @@ def format_weekday_tr(date_str):
         return date_str
 
 
+#  BU YENİ BLOĞU YAPIŞTIR:
 def build_report_messages(stats, ai_result, week_start, week_end):
     """
     Telegram'a gönderilecek haftalık bülten mesajlarını oluşturur.
-    Uzun linkler HTML parse moduna uygun olarak başlığa gömülmüştür.
     """
-    import html # Eğer en üstte yoksa garanti olsun diye
+    import html
     week_label = f"{week_start.strftime('%d.%m')} – {week_end.strftime('%d.%m.%Y')}"
     messages = []
 
@@ -221,8 +220,7 @@ def build_report_messages(stats, ai_result, week_start, week_end):
 
     msg1 = (
         f"☀️ <b>Solar8 Haftalık Enerji Bülteni</b>\n"
-        f"📆 {week_label}\n"
-        f"{'─' * 32}\n\n"
+        f"📆 {week_label}\n\n"
         f"📊 <b>Haftalık Özet</b>\n\n"
         f"🔢 Toplam gönderilen haber: {total}\n"
         f"🇹🇷 Türkiye: {tr_count}  |  🌍 Küresel: {global_count}\n"
@@ -249,21 +247,17 @@ def build_report_messages(stats, ai_result, week_start, week_end):
         )
 
     msg2 = (
-        f"🏆 <b>Haftanın En Önemli 5 Haberi</b>\n"
-        f"{'─' * 32}\n\n"
+        f"🏆 <b>Haftanın En Önemli 5 Haberi</b>\n\n"
         + "\n\n".join(top_lines)
     )
     messages.append(msg2)
-
     tema = html.escape(ai_result.get("tema", ""))
     yorum = html.escape(ai_result.get("yorum", ""))
 
     msg3 = (
-        f"🔍 <b>Haftanın Teması</b>\n"
-        f"{'─' * 32}\n\n"
+        f"🔍 <b>Haftanın Teması</b>\n\n"
         f"💡 {tema}\n\n"
-        f"📝 <b>Sektör Yorumu:</b>\n{yorum}\n\n"
-        f"{'─' * 32}\n"
+        f"📝 <b>Sektör Yorumu:</b>\n{yorum}\n\n\n"
         f"Solar8 · Haftalık Güneş Enerjisi İstihbaratı"
     )
     messages.append(msg3)
