@@ -193,9 +193,10 @@ def format_weekday_tr(date_str):
 
 def build_report_messages(stats, ai_result, week_start, week_end):
     """
-    Telegram'a gönderilecek mesaj listesini oluşturur.
-    Telegram'ın 4096 karakter limitine göre bölünmüş.
+    Telegram'a gönderilecek haftalık bülten mesajlarını oluşturur.
+    Uzun linkler HTML parse moduna uygun olarak başlığa gömülmüştür.
     """
+    import html # Eğer en üstte yoksa garanti olsun diye
     week_label = f"{week_start.strftime('%d.%m')} – {week_end.strftime('%d.%m.%Y')}"
     messages = []
 
@@ -219,15 +220,15 @@ def build_report_messages(stats, ai_result, week_start, week_end):
         )
 
     msg1 = (
-        f"☀️ Solar8 Haftalık Enerji Bülteni\n"
+        f"☀️ <b>Solar8 Haftalık Enerji Bülteni</b>\n"
         f"📆 {week_label}\n"
         f"{'─' * 32}\n\n"
-        f"📊 Haftalık Özet\n\n"
+        f"📊 <b>Haftalık Özet</b>\n\n"
         f"🔢 Toplam gönderilen haber: {total}\n"
         f"🇹🇷 Türkiye: {tr_count}  |  🌍 Küresel: {global_count}\n"
         f"⭐ Haftalık ortalama önem puanı: {stats['avg_score']}/10\n"
         f"{most_active_str}\n\n"
-        f"📂 Kategori Dağılımı:\n"
+        f"📂 <b>Kategori Dağılımı:</b>\n"
         + "\n".join(cat_lines)
     )
     messages.append(msg1)
@@ -236,33 +237,32 @@ def build_report_messages(stats, ai_result, week_start, week_end):
     for i, item in enumerate(stats["top_items"], 1):
         region_emoji = REGION_EMOJI.get(item.get("region", "Küresel"), "🌍")
         score = item.get("importance_score", "?")
-        title = item.get("title", "")
-        summary = item.get("summary", "")
+        title = html.escape(item.get("title", ""))
+        summary = html.escape(item.get("summary", ""))
         link = item.get("link", "")
         sent_date = format_date_tr(item.get("sent_date", ""))
 
         top_lines.append(
-            f"{i}. {region_emoji} [{score}/10] {title}\n"
+            f"{i}. {region_emoji} [{score}/10] <a href='{link}'><b>{title}</b></a>\n"
             f"   📅 {sent_date}\n"
-            f"   {summary}\n"
-            f"   🔗 {link}"
+            f"   {summary}"
         )
 
     msg2 = (
-        f"🏆 Haftanın En Önemli 5 Haberi\n"
+        f"🏆 <b>Haftanın En Önemli 5 Haberi</b>\n"
         f"{'─' * 32}\n\n"
         + "\n\n".join(top_lines)
     )
     messages.append(msg2)
 
-    tema = ai_result.get("tema", "")
-    yorum = ai_result.get("yorum", "")
+    tema = html.escape(ai_result.get("tema", ""))
+    yorum = html.escape(ai_result.get("yorum", ""))
 
     msg3 = (
-        f"🔍 Haftanın Teması\n"
+        f"🔍 <b>Haftanın Teması</b>\n"
         f"{'─' * 32}\n\n"
         f"💡 {tema}\n\n"
-        f"📝 Sektör Yorumu:\n{yorum}\n\n"
+        f"📝 <b>Sektör Yorumu:</b>\n{yorum}\n\n"
         f"{'─' * 32}\n"
         f"Solar8 · Haftalık Güneş Enerjisi İstihbaratı"
     )
@@ -277,7 +277,8 @@ async def send_message(text):
             await bot.send_message(
                 chat_id=CHAT_ID,
                 text=text,
-                disable_web_page_preview=True,
+                parse_mode="HTML",
+                disable_web_page_preview=True
             )
             return True
         except Exception as e:
