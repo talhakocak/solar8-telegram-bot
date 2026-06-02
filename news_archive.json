@@ -609,5 +609,57 @@
     "summary": "Euronews, plug-in güneş enerjisi sistemleri ile çatı üstü güneş panellerini karşılaştıran bir rehber yayımladı. Haber, iki sistemin avantaj ve dezavantajlarını ele alıyor. Somut bir yatırım, proje veya veri içermiyor.",
     "canonical_topic": "plug_in_cati_gunes_enerjisi_karsilastirmasi",
     "dedupe_key": "plug_cati_gunes_enerjisi_karsilastirmasi"
+  },
+  {
+    "sent_at": "2026-06-02T09:05:51",
+    "sent_date": "2026-06-02",
+    "title": "Torosların zirvesinde aydınlık günler: Yörüklerin karanlığını güneş enerjisi dağıttı - Yeni Birlik Gazetesi",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRUY2ejhXYnh1R1N0SXF2QkUtWmxIQmVkOWZVQWpOZVJQZkxGaUhYODZXUm96Y3FPSzZGWXM0QTNVMmgxdkNGdFcxSmRUSTFQeEpNVHdvaG5lSl9NaHowSkRhRzJTTExfY2NzUEwyd0JYM3VSOHlLTkhFUm9iUlJlU3kwc2xXX25Kc0hsT2pxcFROU1N4N0Z0NmkwYXd5MW9TZ1pQUnJpRHpjZXUwVWVVYXc3RTE3R3RUT3hFczk5TGRmenp1Q1Vn?oc=5",
+    "region": "Türkiye",
+    "category": "Genel",
+    "importance_score": 5,
+    "importance_reason": "Yörüklerin kırsalda güneş enerjisine erişimini sağlayan sosyal fayda odaklı bir proje haberi.",
+    "summary": "Torosların zirvesinde yaşayan Yörüklerin elektrik sorunu, kurulan güneş enerjisi sistemleriyle çözüldü. Proje sayesinde bölgedeki haneler aydınlığa kavuştu ve yaşam koşulları iyileşti.",
+    "canonical_topic": "toroslar_yoruk_gunes_enerjisi_destegi",
+    "dedupe_key": "toroslar_yoruk_gunes_enerjisi_destegi"
+  },
+  {
+    "sent_at": "2026-06-02T09:05:51",
+    "sent_date": "2026-06-02",
+    "title": "Toroslar'ın Zirvesine Güneş Paneli Desteği - Sonses.tv",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1TRzhDdjhnVDlhZXVuWW56RnlVMHpfamx4NEJIeVBrbUxKc3p4NC1pNDE2M1diV0Rfa0M1X2o2dWgtSE9UbHlfc1V6SllmTGx3aHk4TjJEZFd4VkpFdnRHb0lQdTEtNjE3dFlyZVFLZEdUb0h0alktOA?oc=5",
+    "region": "Türkiye",
+    "category": "Genel",
+    "importance_score": 4,
+    "importance_reason": "Haber, Toroslar'ın zirvesine güneş paneli desteği sağlandığını belirtiyor ancak somut veri (MW, yatırım miktarı, proje detayı) içermiyor.",
+    "summary": "Toroslar'ın zirvesine güneş paneli desteği sağlandığı bildiriliyor. Haberde proje ölçeği, yatırım tutarı veya kapasite bilgisi yer almıyor.",
+    "canonical_topic": "toroslar_zirvesi_gunes_paneli_destegi",
+    "dedupe_key": "toroslar_zirvesi_gunes_paneli_destegi"
+  },
+  {
+    "sent_at": "2026-06-02T09:05:51",
+    "sent_date": "2026-06-02",
+    "title": "Temsilciler Meclisi'nin yeni tasarısı tarımsal güneş enerjisi modelini tehdit ediyor. - Vietnam.vn",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTHFSYlJZUEFkS2RTcmVzclFrWEI4RE05T3VsN3hHc1g2ZVBsR0ZQajJZbXVLQW9EY3lWWVNKQnhzTnRxdTBRNThYNmRvZ18tTjEwS0tscjVXQ2pBbGRlM0M3T19xQ0dlWXJMbndHa1BuZjZzZXVfWXNjeUl4RHplNUtTQXZ3eGRQVFBYMTNkajdqWlpsUzF0Tw?oc=5",
+    "region": "Küresel",
+    "category": "Regülasyon",
+    "importance_score": 7,
+    "importance_reason": "Tarımsal güneş enerjisi modelini doğrudan etkileyebilecek yeni bir yasa tasarısı gündeme gelmiştir.",
+    "summary": "Temsilciler Meclisi'nin yeni tasarısı, tarımsal güneş enerjisi modelini tehdit etmektedir. Tasarının yasalaşması halinde tarım arazilerinde güneş enerjisi yatırımları kısıtlanabilir. Gelişme, sektörde belirsizlik yaratma potansiyeli taşımaktadır.",
+    "canonical_topic": "temsilciler_meclisi_tarimsal_ges_modeli_tehdidi",
+    "dedupe_key": "temsilciler_meclisi_tarimsal_ges_modeli_tehdidi"
+  },
+  {
+    "sent_at": "2026-06-02T09:05:51",
+    "sent_date": "2026-06-02",
+    "title": "HAREI's solar power initiative aids Concord NH community - Concord Monitor",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOWmJrbG9lWWRsUTVNR2x1VEYxbG1BWHdqQmJxU2stVzFRekpiZjJmaFhjRVR0aS12U001cExnc3RGZ0dIOEhxNjk3Y2JLVC1xclBObTRvOEVhYkFHODZVT1JvbnZiMVNEcHU2WlYtblhRSW1rUzhTU0JrME1QQy0xc1ZHdw?oc=5",
+    "region": "Küresel",
+    "category": "Genel",
+    "importance_score": 5,
+    "importance_reason": "Yerel topluluk güneş enerjisi girişimi, somut kapasite veya yatırım verisi içermiyor.",
+    "summary": "HAREI, Concord, New Hampshire'da topluluk güneş enerjisi girişimi başlattı. Proje, bölge sakinlerine güneş enerjisinden faydalanma imkanı sunuyor. Detaylı kapasite veya yatırım bilgisi paylaşılmadı.",
+    "canonical_topic": "harei_concord_community_solar_initiative",
+    "dedupe_key": "harei_concord_community_solar_initiative"
   }
 ]
