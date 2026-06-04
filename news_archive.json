@@ -726,5 +726,70 @@
     "summary": "Çin, yörüngede güneş enerjisi santrali kurmayı planlıyor. Proje, uzaydan kesintisiz güneş enerjisi toplamayı ve Dünya'ya iletmeyi hedefliyor. Bu teknoloji, enerji üretiminde devrim yaratma potansiyeli taşıyor.",
     "canonical_topic": "cin_yorunge_gunes_enerjisi_santrali",
     "dedupe_key": "cin_yorunge_gunes_enerjisi_santrali"
+  },
+  {
+    "sent_at": "2026-06-04T08:45:57",
+    "sent_date": "2026-06-04",
+    "title": "Aksa Enerji’nin İlk Depolamalı GES Projesi Ticari Üretime Başladı - Turkchem",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT0NSWXhmUkN5TmpINHRVX3NzTkZSUzJ4MFVqRDFOX05SNUZhX1dNSUdNZ3R6THh5RHFIaFhEb1g3NjVBeEpac2g5bXRFRnI2d2dlUk9PMDlNVkNmNnJxMjNqWDVmVEZrN0NXRTE3VENsQ0pKdXdNWnVNY01vY3hEdFotNjJOaWdvZUVCOTNB?oc=5",
+    "region": "Türkiye",
+    "category": "Depolama",
+    "importance_score": 8,
+    "importance_reason": "Türkiye'de ilk depolamalı GES projesinin ticari üretime geçmesi, enerji depolama alanında önemli bir dönüm noktasıdır.",
+    "summary": "Aksa Enerji'nin ilk depolamalı GES projesi ticari üretime başladı. Proje, Türkiye'de güneş enerjisi depolama alanında bir ilk olma özelliği taşıyor. Tesisin kapasitesi ve yatırım detayları henüz açıklanmadı.",
+    "canonical_topic": "aksa_enerji_depolamali_ges_ticari_uretim",
+    "dedupe_key": "aksa_enerji_depolamali_ges_ticari_uretim"
+  },
+  {
+    "sent_at": "2026-06-04T08:45:57",
+    "sent_date": "2026-06-04",
+    "title": "Mezopotamya’nın yaşam damarları kuruyor: Dicle, Fırat ve Zap’ta yüzlerce HES ve GES projesi - İlke TV",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNekpQaHhsRk5aTTZwekZDeFBNY1VERWR6dFdPQjYzNUFuNTl3TmNMUHFqRmw4LU9fNWZVTWtPZ1plck9CMk5TdmhNMWhFNmlmQzl5LWpuVUNYWTBYV2lha2pZZUpuQU1UMjc5RF9PRXlDMVJwTWZaamVzNFd5dmU3MEY2bUNfLXp6anV6eUpkWmRJdjZVRkVNZ3IxY2pyMWJKeXFQXzc3WXcxaUx3bnBj?oc=5",
+    "region": "Türkiye",
+    "category": "Genel",
+    "importance_score": 6,
+    "importance_reason": "Dicle, Fırat ve Zap havzalarında yüzlerce HES ve GES projesinin su kaynakları üzerindeki etkisini gündeme getiriyor.",
+    "summary": "Mezopotamya'nın Dicle, Fırat ve Zap nehirlerinde yüzlerce HES ve GES projesi bulunuyor. Bu projeler bölgenin su kaynaklarını tehdit ediyor. Haber, güneş enerjisi yatırımlarının çevresel etkilerine dikkat çekiyor.",
+    "canonical_topic": "mezopotamya_dicle_firat_zap_hes_ges_projeleri",
+    "dedupe_key": "mezopotamya_dicle_firat_zap_hes_ges_projeleri"
+  },
+  {
+    "sent_at": "2026-06-04T08:45:57",
+    "sent_date": "2026-06-04",
+    "title": "Cumhurbaşkanı Erdoğan, GES açılışına canlı yayınla bağlandı - Hürriyet",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQc1RLTERTdm5MTlB4VkoybVE5TDhxMF94WUMydmNROEtzcUZNWUNUcWx0YnViYjZJY1ZYWjdfLTgyWF84bVVfdGNQLVpBSUF1RElmZFg2WXlFM2Y2V2dna0lfMVRvRl8zRFFXSlpjTHFhYWxTX1MtRDlXbGlXS1FiY19Na3FUbk1RY3hRU1hPUU9TdGZNNGZ3dnRuTWs0X0s0ZXN1S1NB?oc=5",
+    "region": "Türkiye",
+    "category": "Genel",
+    "importance_score": 5,
+    "importance_reason": "Cumhurbaşkanı düzeyinde bir GES açılışına katılım, sektöre siyasi destek sinyali verse de somut yatırım verisi içermiyor.",
+    "summary": "Cumhurbaşkanı Erdoğan, bir güneş enerjisi santrali (GES) açılışına canlı yayınla bağlandı. Haberde tesisin kapasitesi, yatırım tutarı veya lokasyonu gibi somut bilgiler yer almıyor.",
+    "canonical_topic": "cumhurbaskani_erdogan_ges_acilisi_canli_yayin",
+    "dedupe_key": "cumhurbaskani_erdogan_ges_acilisi_canli_yayin"
+  },
+  {
+    "sent_at": "2026-06-04T08:45:58",
+    "sent_date": "2026-06-04",
+    "title": "US solar panel imports fall to lowest level in nearly 7 years in Q1 - S&P Global",
+    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVGhKYUNmeGI4NE91RzdQUWdNbVk4cEQ2RE5WVXNVVFFTWDgwcEJvekkxSU5iRWl0S2thdUhfazB0YkJvMnJMQ0d3SFpHNmJCSk41YjIxS2ZXdFZZN0dFTlNBSklwT0ZLaG8zQmw4TkFNSW9NZHU0X294SlFQRjBCN1AwWXFzTmR3RFZNWDM1LXBieDNuYUh4emNvQTFiUlItcDJfcmF3Si1BWll6bE5XMjhmcUFmQUlkS1NoME5GSGxFQ2tWNGpuNmVyQXV5bDFMLW9UQ29FVHl4TXJrRFhtZmtxTUw4dWQtekJV?oc=5",
+    "region": "Küresel",
+    "category": "Genel",
+    "importance_score": 8,
+    "importance_reason": "ABD güneş paneli ithalatının 7 yılın en düşük seviyesine inmesi, küresel tedarik zinciri ve pazar dinamikleri açısından önemli bir veri noktası.",
+    "summary": "S&P Global verilerine göre, ABD güneş paneli ithalatı 2025 yılının ilk çeyreğinde son 7 yılın en düşük seviyesine geriledi. Bu düşüş, ticaret politikaları ve stok fazlası gibi faktörlerin etkisini yansıtıyor.",
+    "canonical_topic": "abd_gunes_paneli_ithalatinda_7_yilin_dip_seviyesi",
+    "dedupe_key": "abd_gunes_paneli_ithalatinda_yilin_dip_seviyesi"
+  },
+  {
+    "sent_at": "2026-06-04T08:46:02",
+    "sent_date": "2026-06-04",
+    "title": "Safer grids, higher bills? Chinese inverter ban reshapes EU energy - Euronews",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWHVsZVZ3cTRxVUEtTmlUTVZhSTRUUW55OFJ3SXBWSFcwdVdTWEdWSi1TdTdlSTRfX0lFWVpTOXhWQnVGMUJDbDZYOFo3ejBBZmhvcUN4aWNVLTFFMWs5TENCV0t5Zk1SZXdqMEpkak5heG5rT3Zmejloajg1aldlR3BEQzcwal9uWGhDNFROOGhQQkt2Q05pU1VWTllhdTZQU1dmamdpbmg0S2ZHZW96cnpYU0k4Ny1Sck9fbzhHSklBa2E4T2c?oc=5",
+    "region": "Küresel",
+    "category": "Regülasyon",
+    "importance_score": 8,
+    "importance_reason": "AB'nin Çin inverter yasağı, güneş enerjisi tedarik zincirini ve tüketici faturalarını doğrudan etkileyebilecek önemli bir regülasyon değişikliğidir.",
+    "summary": "AB, Çin yapımı güneş enerjisi inverterlerine yasak getirmeyi değerlendiriyor. Bu yasak, şebeke güvenliğini artırmayı hedeflerken, tüketici elektrik faturalarının yükselmesine neden olabilir.",
+    "canonical_topic": "cini_inverter_yasagi_ab_enerji_piyasasi_etkisi",
+    "dedupe_key": "cini_inverter_yasagi_enerji_piyasasi_etkisi"
   }
 ]
