@@ -856,5 +856,70 @@
     "summary": "Bir güneş paneli üreticisi, Virginia eyaletinin Shenandoah County bölgesinde 23.78 milyon dolar yatırımla yeni bir tesis kuracak. Yatırım, bölgedeki güneş enerjisi üretim altyapısını güçlendirecek.",
     "canonical_topic": "abd_virginia_shenandoah_23_milyon_dolar_panel_fabrikasi",
     "dedupe_key": "abd_virginia_shenandoah_milyon_dolar_panel_fabrikasi"
+  },
+  {
+    "sent_at": "2026-06-06T07:45:22",
+    "sent_date": "2026-06-06",
+    "title": "Şişecam'ın İş Enerji işbirliğiyle gerçekleştirdiği GES tamamlandı - Bloomberght",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSUJxYzc2Yk5BdXRUREtCWWItT1dpSktPM0xUUDBJd1ZXaTZhcVRxMnRDZVNBWkhnTEtFYnNkSS02VEVVdlI3azJpMTNVWFpxTU8yLVhTWm44bnVWbDlVTHhkRDhKcmNvdXN0VE5CYWozNXhabTJqclkzOTc0akNua0NGOERhRDVrQlpaMkVWLS1pTVFhVHlnVkVUT1BKeTlwZFN3?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "Şişecam gibi büyük bir sanayi kuruluşunun İş Enerji işbirliğiyle GES projesini tamamlaması sektörde önemli bir yatırım adımıdır.",
+    "summary": "Şişecam, İş Enerji işbirliğiyle gerçekleştirdiği güneş enerjisi santrali (GES) projesini tamamladı. Proje kapsamında kurulan GES'in kapasitesi ve yatırım tutarı henüz açıklanmadı. Bu yatırım, Şişecam'ın yenilenebilir enerji kullanımını artırma hedefinin bir parçası.",
+    "canonical_topic": "sisecam_is_enerji_ges_tamamlanmasi",
+    "dedupe_key": "sisecam_enerji_ges_tamamlanmasi"
+  },
+  {
+    "sent_at": "2026-06-06T07:45:23",
+    "sent_date": "2026-06-06",
+    "title": "Aksa Enerji Gaziantep’te GES yatırımını devreye aldı - Paratic Haber",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBpajRIYXFrbnNPVWYteXJZcVdWYTIzR1cwSFl4dGhhVmIycXJpSlNCQTN1Z0xNZjF1OFBWanU3U3gzWUl5YUdUSXd5Ykp0Z0hFMkowYTNWRmRTNnY4bV9CMFJweWpEaHluUXlIOXVvU0VXWHpqc1hIZ3ViVEI?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "Aksa Enerji gibi büyük bir oyuncunun Gaziantep'te yeni bir GES yatırımını devreye alması, Türkiye'deki güneş enerjisi kapasitesine doğrudan katkı sağlıyor.",
+    "summary": "Aksa Enerji, Gaziantep'te yeni bir güneş enerjisi santrali (GES) yatırımını devreye aldı. Haberde yatırımın kapasitesi veya maliyeti gibi somut veriler yer almıyor.",
+    "canonical_topic": "aksa_enerji_gaziantep_ges_devreye_alma",
+    "dedupe_key": "aksa_enerji_gaziantep_ges_devreye_alma"
+  },
+  {
+    "sent_at": "2026-06-06T07:45:23",
+    "sent_date": "2026-06-06",
+    "title": "ODTÜ-GÜNAM güneş enerjisi dünyasını Ankara'da buluşturacak - Enerji Günlüğü",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTWhZR0doN0VERmwyNUxWenBBOWRGdS1CR3FEWURPQUVNcWxsbndwTS12cnhDa3RRVEp3c1A4OHhpTk9sRl9ITXZ4UFRQRjFJcWFScWthSUVvUm9LYlVZcEZqWmczMUMtazlCNDJHc0dtRVcyaHV4dGhLVmp5OFVqT0tFZE5BeWZXWWpIYzBJVDE4V3BBRUVITnZDVzgzSjTSAa8BQVVfeXFMTUNwOE03QlJPc2RDOEJGNm93bkEtY3JrY1JaVGl2V1NtaVBFNGplQUZUelczMUhPZFlkUDVNeC1HWDRMYlpORURMRFFzZFdRQ0FEeEFFblVWSnRpY3BXdEVMZnNJWjUyZ0M1YVlVaDV4cndwWmhSWGs5SFJNOHNlUGtqcFlTR3NYcWp1czRvTmxsWW1hU0kzRjlFNXhGRm1BUlpiTnNTZGlnbHNxdXJ1NA?oc=5",
+    "region": "Türkiye",
+    "category": "Genel",
+    "importance_score": 5,
+    "importance_reason": "ODTÜ-GÜNAM'ın düzenlediği etkinlik, güneş enerjisi sektörünü bir araya getirse de somut yatırım, kapasite veya teknoloji verisi içermiyor.",
+    "summary": "ODTÜ-GÜNAM, güneş enerjisi dünyasını Ankara'da buluşturacak bir etkinlik düzenliyor. Haberde etkinliğin tarihi, içeriği veya katılımcılarına dair somut bilgi yer almıyor.",
+    "canonical_topic": "odtu_gunam_ankara_gunes_enerjisi_etkinligi",
+    "dedupe_key": "odtu_gunam_ankara_gunes_enerjisi_etkinligi"
+  },
+  {
+    "sent_at": "2026-06-06T07:45:23",
+    "sent_date": "2026-06-06",
+    "title": "Wasting China’s solar panel surplus is madness - Financial Times",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9ZR01DNFdFLVdRcmo5eGh5d01ja2xIaC0zUVd1NUgyUENfcHFHaE5rM3F0R1BXVTZ5SlFOdkdCSGY3bGlDVTQ3WnlVS0twTlUxRkdiOF9ZU0ZrUVdZNWhNdXNkVHo2eFh0a2NXemFITGk?oc=5",
+    "region": "Küresel",
+    "category": "Genel",
+    "importance_score": 8,
+    "importance_reason": "Financial Times'ın Çin'in güneş paneli fazlasını israf olarak eleştiren analizi, küresel güneş enerjisi pazarı ve tedarik zinciri için önemli bir tartışma başlatıyor.",
+    "summary": "Financial Times, Çin'in güneş paneli üretim fazlasının israf edilmesini eleştiriyor. Haber, küresel güneş enerjisi sektöründe arz-talep dengesizliğine ve kaynak kullanımına dikkat çekiyor.",
+    "canonical_topic": "china_solar_panel_surplus_waste_criticism",
+    "dedupe_key": "china_solar_panel_surplus_waste_criticism"
+  },
+  {
+    "sent_at": "2026-06-06T07:45:30",
+    "sent_date": "2026-06-06",
+    "title": "Gov. Lamont signs solar energy bill - Environment America",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbFRJaU5va3MzOWNmMVBfeUQzSHVXMlhiS3E5b3NMYi1sS1VYMDN6bUNPX2xxRnpqN1lYUjJKekpObDFWc2FGSUdaS0JMVXpYQW4zYnBZeWR5YzNiRzNUQ0JJLTFYTXRObHhRVldEM2JKUDNmNWZhemtwb1JiRkpTX3Uyb1VGUkVSQlZvdVdNaw?oc=5",
+    "region": "Küresel",
+    "category": "Regülasyon",
+    "importance_score": 7,
+    "importance_reason": "Connecticut Valisi Lamont'un güneş enerjisi yasasını imzalaması, eyalet düzeyinde yenilenebilir enerji politikasında somut bir adımı temsil ediyor.",
+    "summary": "Connecticut Valisi Ned Lamont, güneş enerjisini teşvik eden bir yasa tasarısını imzaladı. Yasa, eyalette güneş enerjisi kullanımını artırmayı hedefliyor.",
+    "canonical_topic": "connecticut_lamont_solar_energy_bill",
+    "dedupe_key": "connecticut_lamont_solar_energy_bill"
   }
 ]
