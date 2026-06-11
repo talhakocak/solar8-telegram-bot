@@ -1,5 +1,6 @@
 [
   "abd_elektrik_uretiminde_gunes_enerjisi_komuru_geride_birakti",
+  "abd_gunes_enerjisi_komuru_geride_birakti",
   "abd_gunes_paneli_ithalatinda_yilin_dip_seviyesi",
   "abd_trump_donemi_gunes_enerjisi_buyumesi",
   "abd_virginia_shenandoah_milyon_dolar_panel_fabrikasi",
@@ -36,11 +37,13 @@
   "cincinnati_landfill_ges_donusumu",
   "cini_inverter_yasagi_enerji_piyasasi_etkisi",
   "connecticut_gunes_enerjisi_kanunu",
+  "connecticut_gunes_enerjisi_yasasi",
   "connecticut_lamont_solar_energy_bill",
   "corum_cati_ges_tamiri_olum",
   "cubuk_ges_projesi_elektrik_uretim_baslangici",
   "cumhurbaskani_erdogan_ges_acilisi_canli_yayin",
   "dicle_firat_havzasi_hes_ges_ekolojik_etki",
+  "dort_yeni_yeka_ges_alani",
   "duke_energy_florida_sumter_ges_250_milyon_dolar_tasarruf",
   "duke_energy_florida_sumter_ges_tamamlanmasi",
   "earthrise_energy_600_ges_izni_illinois",
@@ -54,6 +57,7 @@
   "evansville_gunes_enerjisi_kooperatifi_toplantisi",
   "fairfax_county_landfill_ges_projesi",
   "ges_tamiri_sirasinda_olum",
+  "girisim_elektrik_azerbaycan_ges_projesi",
   "gunes_enerjisi_ozel_bakterilerle_temiz_kimyasal_uretimi",
   "gunes_paneli_fiyatlari_yukselise_gecti_yatirim_yapmak_dogru_zaman_euronews",
   "harei_concord_community_solar_initiative",
@@ -118,5 +122,6 @@
   "vietnam_kirsal_ges_muhalefeti",
   "vietnam_sanayi_bolgeleri_cati_ustu_gunes_enerjisi",
   "yeni_aday_yeka_ges_sahasi_belirlenmesi",
-  "yeni_yeka_ges_sahasi_belirlenmesi"
+  "yeni_yeka_ges_sahasi_belirlenmesi",
+  "yukon_coffee_ges_destegi"
 ]
