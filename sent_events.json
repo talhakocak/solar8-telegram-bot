@@ -1,6 +1,7 @@
 [
   "abd_elektrik_uretiminde_gunes_enerjisi_komuru_geride_birakti",
   "abd_gunes_enerjisi_komuru_geride_birakti",
+  "abd_gunes_enerjisi_uretim_komuru_geride_birakti",
   "abd_gunes_paneli_ithalatinda_yilin_dip_seviyesi",
   "abd_trump_donemi_gunes_enerjisi_buyumesi",
   "abd_virginia_shenandoah_milyon_dolar_panel_fabrikasi",
@@ -47,10 +48,12 @@
   "duke_energy_florida_sumter_ges_250_milyon_dolar_tasarruf",
   "duke_energy_florida_sumter_ges_tamamlanmasi",
   "earthrise_energy_600_ges_izni_illinois",
+  "egirdir_1500_kwe_ges_projesi",
   "elektrik_faturalarindaki_artis_nedeniyle_cati_gunes_enerjisi_sistemlerine_talebin_artmasi",
   "elektrikli_motosiklete_gunes_paneli_takarak_ucretsiz_yolculuk",
   "elon_musk_gunes_enerjisinden_vazgecti",
   "emo_gunes_enerjisi_sistemleri_denetimsizlik_yangin_riski_uyarisi",
+  "enerji_nakil_res_ges_acele_kamulastirma",
   "epdk_dagitim_bedeli_indirimi",
   "epdk_ilk_nesil_lisanssiz_ges_veris_bedeli_indirimi",
   "erc_solar_erzurum_depolamali_ges",
@@ -105,6 +108,7 @@
   "saticilar_izinsiz_ges_kurulumu",
   "selva_gida_ges_yatirimi",
   "selva_gida_ges_yatirimi_elektrik_maliyeti_azaltma",
+  "singapur_yuzen_ges_122bin_panel",
   "sisecam_enerji_ges_tamamlanmasi",
   "smart_gunes_enerjisi_milyon_dolar_anlasmasi",
   "spacex_gunes_enerjisi_yatirimi",
@@ -128,5 +132,6 @@
   "vietnam_sanayi_bolgeleri_cati_ustu_gunes_enerjisi",
   "yeni_aday_yeka_ges_sahasi_belirlenmesi",
   "yeni_yeka_ges_sahasi_belirlenmesi",
+  "yilini_dolduran_ges_sahipleri_elektrik_duzenlemesi",
   "yukon_coffee_ges_destegi"
 ]
