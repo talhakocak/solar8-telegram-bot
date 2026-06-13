@@ -170,7 +170,6 @@ Sadece şu JSON formatında cevap ver:
 
     return json.loads(content)
 
-
 def format_date_tr(date_str):
     """2026-05-23 → 23.05.2026"""
     try:
@@ -178,7 +177,6 @@ def format_date_tr(date_str):
         return d.strftime("%d.%m.%Y")
     except Exception:
         return date_str
-
 
 def format_weekday_tr(date_str):
     """2026-05-23 → Cuma"""
@@ -189,8 +187,6 @@ def format_weekday_tr(date_str):
     except Exception:
         return date_str
 
-
-#  BU YENİ BLOĞU YAPIŞTIR:
 def build_report_messages(stats, ai_result, week_start, week_end):
     """
     Telegram'a gönderilecek haftalık bülten mesajlarını oluşturur.
@@ -264,7 +260,6 @@ def build_report_messages(stats, ai_result, week_start, week_end):
 
     return messages
 
-
 async def send_message(text):
     for attempt in range(3):
         try:
@@ -280,7 +275,6 @@ async def send_message(text):
             await asyncio.sleep(5)
     print("Telegram mesajı 3 denemede gönderilemedi.")
     return False
-
 
 async def main(force=False, week_offset=0):
     """
@@ -338,7 +332,6 @@ async def main(force=False, week_offset=0):
         await asyncio.sleep(1)
 
     print("Haftalık rapor tamamlandı.")
-
 
 if __name__ == "__main__":
     force = "force" in sys.argv
