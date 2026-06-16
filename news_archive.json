@@ -1493,5 +1493,70 @@
     "summary": "New York Times, küçük ölçekli güneş panellerinin Amerika'nın enerji sistemini dönüştürme potansiyelini tartışan bir görüş yazısı yayımladı. Yazı, dağıtık güneş enerjisinin yaygınlaşmasının etkilerine odaklanıyor.",
     "canonical_topic": "nytimes_kucuk_gunes_paneli_abd_degisim",
     "dedupe_key": "nytimes_kucuk_gunes_paneli_abd_degisim"
+  },
+  {
+    "sent_at": "2026-06-16T10:05:20",
+    "sent_date": "2026-06-16",
+    "title": "Türkiye'de dün güneş enerjisi rekoru kırıldı - Yeniçağ Gazetesi",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcWkzTlJueDNjLVg2eHNDZGxJTEU3elVNcVVHUi03UzB6WTU2d3JJYWtHVU1SVklZVXlNZEt1M2Z5eGVJd0duVGpYZzRrMnQ4b0VuWFZrRDVoQlhsdXBuYWJ1bFJtWHdTV05UZnh0QVJMMWFpWi1UQ0x0QkVKbTlzYlc5dVpHNWk5b3NFN3NlZWFCUQ?oc=5",
+    "region": "Türkiye",
+    "category": "Genel",
+    "importance_score": 7,
+    "importance_reason": "Türkiye'de güneş enerjisi üretiminde günlük rekor kırılması sektörün büyüme ivmesini ve kapasite artışını somut olarak gösteriyor.",
+    "summary": "Türkiye'de dün güneş enerjisi üretiminde günlük rekor kırıldı. Rekorun hangi kapasite veya üretim miktarına ulaştığı haberde belirtilmemiş. Gelişme, Türkiye'nin artan güneş enerjisi kurulu gücü ve üretim potansiyelini yansıtıyor.",
+    "canonical_topic": "turkiye_gunes_enerjisi_rekoru",
+    "dedupe_key": "turkiye_gunes_enerjisi_rekoru"
+  },
+  {
+    "sent_at": "2026-06-16T10:05:20",
+    "sent_date": "2026-06-16",
+    "title": "Kahramanmaraş OSB'de yeşil dönüşüm: Elektriğin yarısını GES'lerden karşılıyor - TRT Haber",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbGpyRlR2NU5kMkRET2Z3MVlReWo0bXlKT3ZqMllVNzR3cVJ2c3hvR1VPQlo4TTJhN3paMGR4NjFNSHlMMlo1dGlpTW9nQW1fclBtRl9TN1plT1dFTEwxTzNXalRic2JLMHBPcVROWkk4Y2x3elFmUFE0cm5BRzJ6VlJOazFiYjM2cVVWMkc0eHdRZk9OcjBGcnhCMXppaVJnX19sckJQRjBMa3RfWU5uVXlGTlBwT3JrMHJ1QUc1MjJjcms?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "Bir organize sanayi bölgesinin elektrik ihtiyacının yarısını GES'ten karşılaması, Türkiye'de OSB'lerde yeşil dönüşümün ölçeklenebilir bir örneğini sunuyor.",
+    "summary": "Kahramanmaraş OSB, elektrik ihtiyacının yarısını güneş enerjisi santrallerinden (GES) karşılıyor. Bu dönüşüm, OSB'nin enerji maliyetlerini düşürürken karbon ayak izini de azaltmayı hedefliyor.",
+    "canonical_topic": "kahramanmaras_osb_ges_elektrik_yarisi",
+    "dedupe_key": "kahramanmaras_osb_ges_elektrik_yarisi"
+  },
+  {
+    "sent_at": "2026-06-16T10:05:20",
+    "sent_date": "2026-06-16",
+    "title": "Ladik GES’te çiftçiler için örnek model: Tarım ve enerji bir arada İhlas Haber Ajansı - IHA",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTHhzRXZiZjJTSkdmNVZyVXhvenJkLTRGTHRyczFsN3hwaG11bzdMb3dIZEpZOEd2NkVKVWYwRjJBSzVIZklDcG1Ca1BjNzRJRzZVcG1uYm9VSDJCNzVvbGVmeFNJaDU3M3R1UGVEajBSS1Y1dU5wVkZweXM1MzlxenpGT2prTktWa2w4TTlCUlcwRTEwUmVKUjFaODhRcmpMdk15OGZ2S1dNV28zQ2VPZjVTaXg?oc=5",
+    "region": "Türkiye",
+    "category": "Genel",
+    "importance_score": 6,
+    "importance_reason": "Tarım ve enerjinin bir arada yürütüldüğü örnek bir model olarak sektörde dikkat çekiyor.",
+    "summary": "Ladik GES projesinde tarım ve güneş enerjisi üretimi bir arada yapılıyor. Bu model, çiftçilere örnek teşkil edecek şekilde uygulanıyor. Haberde somut kapasite veya yatırım verisi bulunmuyor.",
+    "canonical_topic": "ladik_ges_tarim_enerji_bir_arada_model",
+    "dedupe_key": "ladik_ges_tarim_enerji_arada_model"
+  },
+  {
+    "sent_at": "2026-06-16T10:05:20",
+    "sent_date": "2026-06-16",
+    "title": "Çin, çorak bir çölden 'Güneş Enerjisi Büyük Duvarı'nı inşa etti. - Vietnam.vn",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVlpkQS1OZTd0LVNWd0V4VUxDUktYUjNPOUgyZ05Cc19aOFdrRHctczd2ZHhic0RWVGdrelhvT3VrMXVCQW9OeUNNMG1ITTRJUFZkSDdBdmxEN3VZS3ptMG55QWVCSFRfRlMwNk1lSjVweDV3aXdQYUx3UkFEcnVoeVFHbEx3bmtxcTRzY3VTd2FDNFFQTDAtTXU2SDdvMkk?oc=5",
+    "region": "Küresel",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "Çin'in çölde büyük ölçekli bir güneş enerjisi projesi inşa etmesi, küresel güneş enerjisi kapasitesine önemli katkı sağlayacak bir gelişmedir.",
+    "summary": "Çin, çorak bir çölde 'Güneş Enerjisi Büyük Duvarı' adı verilen dev bir güneş enerjisi projesi inşa etti. Proje, büyük ölçekli bir GES yatırımı olarak dikkat çekiyor. Haberde somut kapasite veya yatırım miktarı belirtilmemiştir.",
+    "canonical_topic": "cin_corak_col_gunes_enerjisi_buyuk_duvari",
+    "dedupe_key": "cin_corak_col_gunes_enerjisi_buyuk_duvari"
+  },
+  {
+    "sent_at": "2026-06-16T10:05:25",
+    "sent_date": "2026-06-16",
+    "title": "Spain Could Have Nearly 7 Gigawatts of Offshore Solar Power - CleanTechnica",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdHl4OFFDOTJFb0YxdkZxdFV0UTJZWjZXYXgyYzFCdEFlQUdZQ21ZYV9iSktJazJUeXpLcEJGSlFEYmlTNzlDMVc4VFo3bzhDYUxIUHFXcEVzYVlyY2h5REJLMXo2YnR3Z2ZuYnEtQzYwaWNJVl80d2Q0N3NGamNiTFFyT3pWYVQxd3Fla0dEelhWMGdqRlA4cDdyMmdBQQ?oc=5",
+    "region": "Küresel",
+    "category": "Araştırma",
+    "importance_score": 7,
+    "importance_reason": "İspanya'nın açık deniz güneş enerjisi potansiyelinin 7 GW'a yakın olduğunu ortaya koyan somut bir araştırma verisi sunuyor.",
+    "summary": "CleanTechnica'ya göre İspanya, yaklaşık 7 GW açık deniz güneş enerjisi potansiyeline sahip. Bu rakam, ülkenin deniz üstü güneş enerjisi kapasitesinin önemli bir büyüklükte olabileceğini gösteriyor.",
+    "canonical_topic": "ispanya_acik_deniz_ges_7_gw_potansiyel",
+    "dedupe_key": "ispanya_acik_deniz_ges_potansiyel"
   }
 ]
