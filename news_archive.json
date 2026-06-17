@@ -1558,5 +1558,70 @@
     "summary": "CleanTechnica'ya göre İspanya, yaklaşık 7 GW açık deniz güneş enerjisi potansiyeline sahip. Bu rakam, ülkenin deniz üstü güneş enerjisi kapasitesinin önemli bir büyüklükte olabileceğini gösteriyor.",
     "canonical_topic": "ispanya_acik_deniz_ges_7_gw_potansiyel",
     "dedupe_key": "ispanya_acik_deniz_ges_potansiyel"
+  },
+  {
+    "sent_at": "2026-06-17T09:29:08",
+    "sent_date": "2026-06-17",
+    "title": "Gün ortasında talep zirveye çıktı, güneş enerjisi üretimde rekor kırdı - T24",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONlJVSW5lSnFyeU5ud3pPaDB4QV83TDM0anZUZFRGU2U1eVRYc1NoR1RjMXpaV2tOUUUwZndwdGxmNk9SRDg1c19Yb1NkdGV4NjdlaENsdGdOZ2dUdW9KZmlNeTZaOUlpT25iMUVGakNnVE5ucm42cEhpQUh4NC1uTGJTM1VEa3lwZlFWT2lCeTk1Uk5QbnBJa2tHR1k4OEhyY2tZaEdHQQ?oc=5",
+    "region": "Türkiye",
+    "category": "Genel",
+    "importance_score": 7,
+    "importance_reason": "Türkiye'de güneş enerjisi üretiminin gün ortasında rekor kırması, sektörün büyüme ve talep karşılama potansiyelini somut olarak gösteriyor.",
+    "summary": "Türkiye'de gün ortasında elektrik talebinin zirve yapmasıyla güneş enerjisi üretimi rekor seviyeye ulaştı. Bu gelişme, güneş enerjisinin pik talebi karşılamadaki artan rolünü ortaya koyuyor.",
+    "canonical_topic": "turkiye_gunes_enerjisi_uretim_rekoru",
+    "dedupe_key": "turkiye_gunes_enerjisi_uretim_rekoru"
+  },
+  {
+    "sent_at": "2026-06-17T09:29:09",
+    "sent_date": "2026-06-17",
+    "title": "Cebrayil Güneş Enerjisi Santrali İçin 28,3 Milyon Dolarlık Anlaşma - SonDakika",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSUJ6RDZxQVY2ZjNPZ2laekJiRkdjRnd5UXowMjdyLTF3RWx0OHBNZmQyMk5zbDU0OXI0NEhnb3BFc09LaEpfWnRLNXdVa1NqODB0NmU0OEhoLXpEZnhaNDNhb25pYVNkMmhRUl9aNHQ5N2tNTld5TVpEbm9UbG55Vm5Gd0ZQSTFkVlFrVWpxWVpYQmFtblRSY3B1QmZ3RkprMmfSAZwBQVVfeXFMTTlpTnp4V21ZMC1GSWhwaHB3anFheTExUWV3N2VZZU9jVFFDRXI0cGJ1Q3ZzTUhUUW0xLVA0NHNEMHphRFNGZUFwZmxxcDN2Ujd2Mk10Q1RfbE5MWk1pZEh2alZjUWFKUmJJLUcwWFNOY3lNQTZQTWZsblVyWnJPb2g5TDRPNWFCN0xIalpMSjRZSzlaQWw2cDlyV1Ns?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "Cebrayil'de 28,3 milyon dolarlık güneş enerjisi santrali anlaşması, bölgesel enerji yatırımı açısından önemli bir gelişmedir.",
+    "summary": "Cebrayil Güneş Enerji Santrali için 28,3 milyon dolar değerinde anlaşma imzalandı. Proje, bölgenin yenilenebilir enerji kapasitesine katkı sağlayacak.",
+    "canonical_topic": "cebrayil_ges_28_milyon_dolar_anlasma",
+    "dedupe_key": "cebrayil_ges_milyon_dolar_anlasma"
+  },
+  {
+    "sent_at": "2026-06-17T09:29:09",
+    "sent_date": "2026-06-17",
+    "title": "Petrol City AVM’den 7 MW’lık Güneş Enerjisi Hamlesi - Mall Report",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSzN4LTBQQXYzNWVELU9saGZkdWRnUjZVc2ljWVJFZUNmS1J0dmZNemhkSEhuTFlacnAzQkpXOUJGR3B2YlRMQTdmTmZjb1ZfanZJeHdFMWdJZGo3LTJ0dFdOd1RvWlJ5MXI3d3B3SkdrZEpPYVNyN0VROVBFZnUweExiU044cnhFdU5ESmdWQ0M?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "Ticari bir AVM'nin 7 MW kapasiteli güneş enerjisi yatırımı, Türkiye'de perakende sektöründe ölçeklenebilir bir örnek oluşturuyor.",
+    "summary": "Petrol City AVM, 7 MW kapasiteli bir güneş enerjisi santrali yatırımı yapıyor. Proje, AVM'nin enerji maliyetlerini düşürmeyi ve sürdürülebilirlik hedeflerine katkı sağlamayı amaçlıyor.",
+    "canonical_topic": "petrol_city_avm_7_mw_ges_yatirimi",
+    "dedupe_key": "petrol_city_avm_ges_yatirimi"
+  },
+  {
+    "sent_at": "2026-06-17T09:29:09",
+    "sent_date": "2026-06-17",
+    "title": "Solar Energy Corporation of India invites bids for 4.8GWh of energy storage-backed FDRE capacity - Energy-Storage.News",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQdjVZNDVKYThDR0NmWWtqUmRTU3RQR1NKaGFTRGpwdzdsYTFLQUdrdE9EWTkyX0tvRXM0cXViXzI1WXoxcTNiNmp6dlVUYzd2RGt6clhiREpjbHp0ZHM0VE1PTnVXeDRVOUJoYm9janBsMFV4NFo5QUduYzVKUmVwWFlwWFdfUkhHSi03UlFvNjZnRVc4ZEphaHd5QmtZWWMzVkJEWmppbVo3VERvVlhOREdiLWNRblpvVDB0bXEyRGhZOFV6YUdVSA?oc=5",
+    "region": "Küresel",
+    "category": "Depolama",
+    "importance_score": 8,
+    "importance_reason": "Hindistan'ın 4.8 GWh'lik büyük ölçekli enerji depolamalı FDRE kapasite ihalesi, güneş enerjisi ve depolama entegrasyonunda önemli bir adım.",
+    "summary": "Hindistan Güneş Enerjisi Kurumu (SECI), 4.8 GWh enerji depolama destekli FDRE (Firm and Dispatchable Renewable Energy) kapasitesi için ihale açtı. Bu ihale, kesintisiz ve planlanabilir yenilenebilir enerji arzını hedefliyor.",
+    "canonical_topic": "hindistan_4_8gwh_enerji_depolamali_fdre_kapasite_ihalesi",
+    "dedupe_key": "hindistan_8gwh_enerji_depolamali_fdre_kapasite_ihalesi"
+  },
+  {
+    "sent_at": "2026-06-17T09:29:13",
+    "sent_date": "2026-06-17",
+    "title": "Why Solar Power Is Booming Under Trump - Crude Oil Prices Today | OilPrice.com",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNS01QRzZiaFVZcktQMFpNY0lNeVFfZ2FxWHk1LXFEYV9DZEtrV1BCTFB6S3BIUnlqSHZtd0pieXlXWkIzZHB2dmNVdk82eXpUSGZqNXNZLVhqd3Z3bkkxb1BOc2hRMm5OaUQweDRvdV9rLXlTM0ZGYlY1THZ4ajVhdDRJamRsbVBvWEJsSUR1ZVh3bklBTS1PNklhdETSAaIBQVVfeXFMUG9Wd2ZQYmxlWWZBR0tUc012TjFLT3VvOWwzZmM0YTNrRkRaNGRTSGd0N0hJYjhlNVc4eUlwVzhPaUZDdExGempCTy1rc3pTSWd5alBYSHpKSGFyUTI3dGtPXzFvaXp2Z3VkY2FBVU4wYW8xaFVmS0V6aGx2VFZLU3c3QUN6TnVnZ0xncUUtbzg1NDdHcVUwU0xDUW5MemF3UndB?oc=5",
+    "region": "Küresel",
+    "category": "Genel",
+    "importance_score": 7,
+    "importance_reason": "Trump yönetimi altında güneş enerjisinin beklenmedik büyümesini analiz eden, sektörün politika bağımsız ivmesini gösteren önemli bir pazar değerlendirmesi.",
+    "summary": "ABD'de Trump döneminde güneş enerjisi yatırımları beklenenin aksine hızla artıyor. Haber, bu büyümenin arkasındaki ekonomik ve teknolojik faktörleri inceliyor.",
+    "canonical_topic": "abd_gunes_enerjisi_buyumesi_trump_donemi",
+    "dedupe_key": "abd_gunes_enerjisi_buyumesi_trump_donemi"
   }
 ]
