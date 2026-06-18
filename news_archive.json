@@ -1623,5 +1623,70 @@
     "summary": "ABD'de Trump döneminde güneş enerjisi yatırımları beklenenin aksine hızla artıyor. Haber, bu büyümenin arkasındaki ekonomik ve teknolojik faktörleri inceliyor.",
     "canonical_topic": "abd_gunes_enerjisi_buyumesi_trump_donemi",
     "dedupe_key": "abd_gunes_enerjisi_buyumesi_trump_donemi"
+  },
+  {
+    "sent_at": "2026-06-18T09:30:04",
+    "sent_date": "2026-06-18",
+    "title": "1000 Yatırımlar, GES yatırımını Meta Mobilite’ye devredecek Yazar Investing.com - Investing.com Türkiye",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVzc4OGIyblB3YV9iMmUtNTJsVTBnX0YyZUlzM095cDlOLVU1WC1ObTZva0NJV1FJYktMZ0FGalJLTDlZczRGZ1BfZ2NiWjFBTlRTcjYyMk94dWMwWF9yeGJKblJ3Q1BIN2JjMUFKNDhMbGtoSWc4VVpCS2VMM1dSRENZMFVmUVZpcXltWWhEc2tFUllEUHNyemR5SVFGdGg0bm5oT2pJUGkzeW1tN3RoQ3F3bHFmal9jRXdJdU9n?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 6,
+    "importance_reason": "Bir yatırım şirketinin GES projesini başka bir firmaya devretmesi sektördeki varlık transferini gösteriyor.",
+    "summary": "1000 Yatırımlar, sahip olduğu GES yatırımını Meta Mobilite'ye devredecek. Devir işleminin detayları ve yatırım büyüklüğü henüz açıklanmadı.",
+    "canonical_topic": "1000 Yatırımlar GES yatırımını Meta Mobilite'ye devredecek",
+    "dedupe_key": "1000_yatirimlar_ges_yatirimini_meta_mobilite_devredecek"
+  },
+  {
+    "sent_at": "2026-06-18T09:30:05",
+    "sent_date": "2026-06-18",
+    "title": "Merada GES Projesi Tartışması; Köye Girişler Kapatıldı - Yapı.com.tr",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTnpvRkJnTThEN0dWWTF1OC1iemNmekdnUXhhZzFpSVpaYVZkd0pVbUxpRGZLUWMwS284SHVHVmZKcXNRQnJsaGtHRXlzN19CdHZSZ0hfNnJXOEJ5Z3ljd20xMTdJRmZnR3BxbjhyUC1LU2VQTkhGNm5QYzNvWW5ldWZwa3JBVUZSM2UwYzVDYnZoOUNYS3lfeEZJamIzUQ?oc=5",
+    "region": "Türkiye",
+    "category": "Genel",
+    "importance_score": 6,
+    "importance_reason": "Mera alanında GES projesi nedeniyle köy girişlerinin kapatılması, yerel düzeyde önemli bir toplumsal gerilim ve arazi kullanımı tartışmasını yansıtıyor.",
+    "summary": "Bir mera alanında GES projesi tartışması yaşanıyor. Tartışmalar nedeniyle köye girişler kapatıldı. Haberde projenin ölçeği veya yatırım tutarına dair somut veri bulunmuyor.",
+    "canonical_topic": "mera_ges_projesi_tartismasi_koye_girisler_kapatildi",
+    "dedupe_key": "mera_ges_projesi_tartismasi_koye_girisler_kapatildi"
+  },
+  {
+    "sent_at": "2026-06-18T09:30:05",
+    "sent_date": "2026-06-18",
+    "title": "Smart Güneş Enerjisi yurt içinde yeni santral projesi yürütüyor - Dünya Gazetesi",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWE9XRXFrNEp3QXNyYW81a2FTOUxRd3ItODhEUVE4V24xSExHZzUtU1pKNmNnRURhYXptTnBkdlRmWENMS0NPRGVWdDZnNkJYMDBOYVZsY2lIS3R3YkFXdngtWlBtT3NJZmhYcHVMN0hEcFQ2V0ZHa1BoRjNRdk53VWJBZ3FqUlF1T1J0YXhfZjlJQWpjVkJhYVUwN214X2plakFVaDBVMjlndzRFUWd0Umo1QXhQQQ?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 6,
+    "importance_reason": "Smart Güneş Enerjisi'nin yeni bir yurt içi GES santral projesi yürüttüğünü duyurması, şirketin büyüme stratejisi açısından kayda değer bir gelişmedir.",
+    "summary": "Smart Güneş Enerjisi, yurt içinde yeni bir güneş enerjisi santral projesi yürütüyor. Projenin kapasitesi, yatırım tutarı veya lokasyonu hakkında henüz detay paylaşılmadı.",
+    "canonical_topic": "smart_gunes_enerjisi_yeni_santral_projesi",
+    "dedupe_key": "smart_gunes_enerjisi_yeni_santral_projesi"
+  },
+  {
+    "sent_at": "2026-06-18T09:30:05",
+    "sent_date": "2026-06-18",
+    "title": "China's firm sets world record with new perovskite tandem solar panel - Interesting Engineering",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdjI1eWJzSG41T2lUYzhObVp0RTZRUDRSaEREcmJHU3drSnJIdE5Bb2RDVmExbFhZZ01RdFZkOENIcnZNLWtMdWFvMzl1NEN1cXc3YmNhMXJmVEloWngxV3FjRGpjb1JpUUpRZjVDZ3ozX19zZ3ZKazdzcmtmSDdqd2FOVkQ1aEFoZFFN?oc=5",
+    "region": "Küresel",
+    "category": "Teknoloji",
+    "importance_score": 8,
+    "importance_reason": "Perovskite tandem güneş panelinde dünya verimlilik rekoru kırılması, sektörde teknolojik dönüşümün habercisi.",
+    "summary": "Çin merkezli bir firma, perovskite tandem güneş panelinde dünya verimlilik rekoru kırdı. Yeni panel, geleneksel silikon panellere kıyasla çok daha yüksek enerji dönüşüm verimliliği sunuyor. Bu gelişme, güneş enerjisi maliyetlerini düşürme potansiyeli taşıyor.",
+    "canonical_topic": "perovskite_tandem_solar_panel_dunya_rekoru_cin",
+    "dedupe_key": "perovskite_tandem_solar_panel_dunya_rekoru_cin"
+  },
+  {
+    "sent_at": "2026-06-18T09:30:09",
+    "sent_date": "2026-06-18",
+    "title": "\"Mucize malzeme\" Çin'i yeniden güneş paneli liderliğine taşıdı - Independent Türkçe",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOa19qSUVXeTZDVXVyN3VkSjZDUWdpVDF0NjN2amZoajh6R1VRcEM3LXo3QlpuNFFUcmZGME1RN0hVMXZsbDNLaU9vbUtIRWkxcWhXVDg2Tzg5UFI0WXhJQ215N0pjZlVfUnZ1QkViUW0wREZ3ZzluUldObk1NeElZWUN4cExHM3E0NXF6MloxQXJmdDdhVlFIX1JLQUo4S0ZrQWN4MFpxUTFkMWtPU291Q3RWeFl6VXp1TjRJQ182a1BLSVp4V0c5SHhiTnROWTMxT3ZLVFJqR2UzdjBfbWF6VHduZw?oc=5",
+    "region": "Küresel",
+    "category": "Teknoloji",
+    "importance_score": 7,
+    "importance_reason": "Çin'in güneş paneli üretiminde liderliğini yeniden sağlayan yeni bir malzeme teknolojisini konu alması sektör için önemli.",
+    "summary": "Independent Türkçe'de yayımlanan haberde, 'mucize malzeme' olarak nitelendirilen yeni bir teknolojinin Çin'i güneş paneli üretiminde yeniden lider konuma taşıdığı belirtiliyor. Haber, bu malzemenin sektördeki rekabeti ve üretim dinamiklerini nasıl etkilediğine dair somut veriler içermiyor.",
+    "canonical_topic": "cini_gunes_paneli_liderligine_tasiyan_mucize_malzeme",
+    "dedupe_key": "cini_gunes_paneli_liderligine_tasiyan_mucize_malzeme"
   }
 ]
