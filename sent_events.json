@@ -1,11 +1,13 @@
 [
   "1000_yatirimlar_ges_yatirimini_meta_mobilite_devredecek",
   "1000_yatirimlar_holding_mardin_mwe_ges_sozlesmesi",
+  "150_yillik_komur_madeni_ges_donusumu",
   "150_yillik_komur_madeni_gunes_enerjisi_santraline_donusturuldu",
   "abd_elektrik_uretiminde_gunes_enerjisi_komuru_geride_birakti",
   "abd_gunes_enerjisi_buyumesi_trump_donemi",
   "abd_gunes_enerjisi_komuru_geride_birakti",
   "abd_gunes_enerjisi_komuru_geride_birakti_trump",
+  "abd_gunes_enerjisi_uretim_komeri_geride_birakti",
   "abd_gunes_enerjisi_uretim_komuru_geride_birakti",
   "abd_gunes_paneli_ithalatinda_yilin_dip_seviyesi",
   "abd_trump_donemi_gunes_enerjisi_buyumesi",
@@ -51,6 +53,7 @@
   "corum_cati_ges_tamiri_olum",
   "cubuk_ges_projesi_elektrik_uretim_baslangici",
   "cumhurbaskani_erdogan_ges_acilisi_canli_yayin",
+  "darende_milyon_ges_yatirimi",
   "dicle_firat_havzasi_hes_ges_ekolojik_etki",
   "dort_yeni_yeka_ges_alani",
   "duke_energy_florida_sumter_ges_250_milyon_dolar_tasarruf",
@@ -146,6 +149,7 @@
   "toroslar_zirvesi_gunes_paneli_destegi",
   "tracers_elektron_izleme_gunes_enerjisi_yolu",
   "trina_vertex_shield_dolu_dayanikli_panel_abd_pazari",
+  "trump_gunes_enerjisi_yatirimlari_dusus",
   "turkiye_gunes_enerjisi_kurulu_gucleri_bin_769",
   "turkiye_gunes_enerjisi_kurulu_gucleri_zirve_tahmini",
   "turkiye_gunes_enerjisi_rekoru",
@@ -163,5 +167,6 @@
   "yeni_aday_yeka_ges_sahasi_belirlenmesi",
   "yeni_yeka_ges_sahasi_belirlenmesi",
   "yilini_dolduran_ges_sahipleri_elektrik_duzenlemesi",
+  "ymz_enerji_bingol_depolamali_ges",
   "yukon_coffee_ges_destegi"
 ]
