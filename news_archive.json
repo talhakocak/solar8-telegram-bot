@@ -2273,5 +2273,70 @@
     "summary": "Güneş panellerinde biriken toz ve kir, uzun vadeli güneş enerjisi varlıklarında işletme ve bakım (O&M) zorluklarını artırıyor. Kirlenme verim kaybına yol açarak temizlik maliyetlerini yükseltiyor. Haber, bu sorunun büyüyen bir O&M problemi haline geldiğine dikkat çekiyor.",
     "canonical_topic": "solar_panel_soiling_om_challenge",
     "dedupe_key": "solar_panel_soiling_challenge"
+  },
+  {
+    "sent_at": "2026-06-28T08:19:13",
+    "sent_date": "2026-06-28",
+    "title": "Muğla'da zeytinlik alana GES onayı: 97 futbol sahası büyüklüğünde proje - T24",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMmlmVk5veDctZXcxSjg1c2hSMmc2aUs2SGNFWUFMdzE4b19ob3hrTElNWDQ4SXVUN3dmczNmZW9CZk11dkhuR0QyMzZaT3NvYVlpck1rYXZkZHdMVkhkQlA4X3J4LWJhcGI1eU5wRWtmTVlHMThteElic1A5Nlc5NVAyTVBuajhNb1RNTzJBaE52RXpZN01BUDZyajNHZmRrVTJEQQ?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "Zeytinlik alana GES onayı, Türkiye'de tarım arazilerinde güneş enerjisi yatırımlarının genişlemesi açısından önemli bir emsal oluşturuyor.",
+    "summary": "Muğla'da 97 futbol sahası büyüklüğündeki zeytinlik alana GES kurulumu için onay verildi. Proje, tarım arazilerinde güneş enerjisi yatırımlarının önünü açabilecek nitelikte.",
+    "canonical_topic": "mugla_zeytinlik_ges_onayi_97_futbol_sahasi",
+    "dedupe_key": "mugla_zeytinlik_ges_onayi_futbol_sahasi"
+  },
+  {
+    "sent_at": "2026-06-28T08:19:13",
+    "sent_date": "2026-06-28",
+    "title": "Türkiye rüzgarda 5'inci, güneşte 10'uncu büyük kurulum pazarı oldu - Anadolu Ajansı",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOOTh6bmVNcDVlemdBUEZBemt4MXNiLTBhRjZCdkpTYi1tMEtPY1dMdWI1YXVxUFVxV0F4cXJrNmVkcnZlN2FRdDVxZU1jMDhvcXlEMlE0R1EzUDI1NHZOY296S3lNWERVLWN4U1J0aURINV9RcFN5QkVEcThGV0lhUHZJSjlYT1lSSGRHcVhjZE9faXc0Vll2MGZoNktFUVRZSzVnRXhfQQ?oc=5",
+    "region": "Türkiye",
+    "category": "Genel",
+    "importance_score": 7,
+    "importance_reason": "Türkiye'nin küresel güneş ve rüzgar kurulum pazarındaki sıralamasını gösteren güncel veri, sektörün büyüklüğünü ortaya koyuyor.",
+    "summary": "Türkiye, rüzgar enerjisi kurulumunda dünyada 5'inci, güneş enerjisi kurulumunda ise 10'uncu büyük pazar oldu. Bu sıralama, Türkiye'nin yenilenebilir enerji yatırımlarındaki küresel konumunu yansıtıyor.",
+    "canonical_topic": "turkiye_ruzgar_5inci_gunes_10uncu_kurulum_pazari",
+    "dedupe_key": "turkiye_ruzgar_5inci_gunes_10uncu_kurulum_pazari"
+  },
+  {
+    "sent_at": "2026-06-28T08:19:13",
+    "sent_date": "2026-06-28",
+    "title": "Üçay Mühendislik: Saatlik Mahsuplaşma GES Fizibilitelerini Değiştirdi - Enerjimagazin",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZHJ1czZrbjRhdk5mUVhWaUJRVVZHMUNreW9FSDdmLWxlb2ttNHdXbGdHT0kxeGRzZ0tDV0ROWFhsX1E5TUpZYVMzSlBRRzNWVHpQVGpRdllSY0hrOWNKb19Ra2dTdXVEZXVEc3hEUEVaU2VodXloUVQ2bFlnenB6WG1MM0Y2d0tQd1FrdlJBUThja3pHZEo1ZGs4Z2dKTThZWF9Sclg4cklrNzh3NVNSMVpleEQ?oc=5",
+    "region": "Türkiye",
+    "category": "Regülasyon",
+    "importance_score": 7,
+    "importance_reason": "Saatlik mahsuplaşma düzenlemesi, GES fizibilitelerini doğrudan etkileyen önemli bir regülasyon değişikliğidir.",
+    "summary": "Üçay Mühendislik, saatlik mahsuplaşma uygulamasının GES fizibilitelerini değiştirdiğini belirtti. Düzenleme, güneş enerjisi yatırımlarının hesaplama ve geri dönüş sürelerini etkiliyor.",
+    "canonical_topic": "ucay_muhendislik_saatlik_mahsuplasma_ges_fizibilite",
+    "dedupe_key": "ucay_muhendislik_saatlik_mahsuplasma_ges_fizibilite"
+  },
+  {
+    "sent_at": "2026-06-28T08:19:14",
+    "sent_date": "2026-06-28",
+    "title": "\"Mucize malzeme\" Çin'i yeniden güneş paneli liderliğine taşıdı - Independent Türkçe",
+    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1ubjRnUF9QZ19GZW43R3NPSzRMb181OTRvc2FwcWVUOXgwR1UxSkozbTlkSFp6M3ZKSTh5aWxFTXJfbm1aQmFfRnR3Y3Q?oc=5",
+    "region": "Küresel",
+    "category": "Teknoloji",
+    "importance_score": 8,
+    "importance_reason": "Perovskit güneş paneli teknolojisindeki gelişme, Çin'in küresel güneş enerjisi liderliğini yeniden şekillendirebilecek potansiyele sahip.",
+    "summary": "Independent Türkçe'ye göre, 'mucize malzeme' olarak adlandırılan perovskit, Çin'i güneş paneli üretiminde yeniden lider konuma taşıdı. Haber, perovskit teknolojisinin verimlilik ve maliyet avantajlarına dikkat çekiyor.",
+    "canonical_topic": "cin_perovskit_gunes_paneli_liderligi",
+    "dedupe_key": "cin_perovskit_gunes_paneli_liderligi"
+  },
+  {
+    "sent_at": "2026-06-28T08:19:20",
+    "sent_date": "2026-06-28",
+    "title": "Waaree Energies: U.S. Investigation Did Not Find Co Exported Solar Panel Made With Chinese Cells - TradingView",
+    "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQRWhQczBMa0h2a0dhdTE0bXVoNnhvTjkwRXNBLVdDQVJiYkQtOGZtQTdHYTFLNjd5Z3R3Zmk0LThOTjZRd2lLRENyeGw4bXk3cmRWazU2QVozSFNXbG9aN1pyWUE3TnJBeXBYTHJFUk5vcG93elVValE4NmxPRXo0MGRQUGJfZDJPZzEzZGJwcEpuV1FhNmpYWnRiREllVVd2U2t0REROQS1XcWhyS2h4VVM5aGNvbU53TG9Qc0k1LVRpRzQ3MVRVazE3MlZINEVNVFNhYXl1bVRfczlqekUtbWlQZlNfa1Iza1BGOXNka1hGNDM2bUxF?oc=5",
+    "region": "Küresel",
+    "category": "Regülasyon",
+    "importance_score": 7,
+    "importance_reason": "ABD soruşturmasının Waaree Energies'in Çin hücreli panel ihraç etmediğini tespit etmesi, Hindistanlı üretici için ticaret engelini kaldıran önemli bir gelişme.",
+    "summary": "ABD soruşturması, Waaree Energies'in Çin menşeli hücre kullanarak panel ihraç ettiği iddiasını doğrulamadı. Bu karar, şirketin ABD pazarına ihracatının önünü açıyor.",
+    "canonical_topic": "waaree_energies_abd_sorusturmasi_cin_hucresi_panel",
+    "dedupe_key": "waaree_energies_abd_sorusturmasi_cin_hucresi_panel"
   }
 ]
