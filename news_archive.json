@@ -2403,5 +2403,70 @@
     "summary": "LONGi, Yunanistan'da toplam 81,66 MW kapasiteli güneş enerjisi projeleri için panel siparişi aldı. Sipariş, şirketin Avrupa'daki varlığını güçlendiriyor.",
     "canonical_topic": "longi_yunanistan_81_66_mw_ges_panel_siparisi",
     "dedupe_key": "longi_yunanistan_ges_panel_siparisi"
+  },
+  {
+    "sent_at": "2026-06-30T08:27:45",
+    "sent_date": "2026-06-30",
+    "title": "Diyarbakır'daki GES Projesi Dosyasındaki Usulsüzlükler Tepki Çekiyor - Yapı.com.tr",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdXUyaTd2OUNtck5QVGxWcG9qSFM5NWwzaTJCUFczMDkxOVJUZDRySmo1cV9OX3g4eHJ2R0RrdWpHeTBRejJDOTdLS1d2YnRjWWNVUE51V2VwNEFIOFZMRGt0c1p5blQxeUdzczFIX1RvZy1vY2tNNTRmV2FYQ3FwbVJKZ2dBdDVXRW44WWpERXV5c2JVSDBKUGRaZF9jbmVtaXdwRDlJWlZfd1pjdDN6Sw?oc=5",
+    "region": "Türkiye",
+    "category": "Regülasyon",
+    "importance_score": 7,
+    "importance_reason": "Diyarbakır'daki GES projesinde tespit edilen usulsüzlükler, sektördeki denetim ve şeffaflık tartışmalarını alevlendirebilir.",
+    "summary": "Diyarbakır'da bir GES projesinin dosyasında usulsüzlükler tespit edildi. Bu durum, projeye yönelik tepkilere ve denetim sürecinin sorgulanmasına yol açtı.",
+    "canonical_topic": "diyarbakir_ges_projesi_usulsuzluk",
+    "dedupe_key": "diyarbakir_ges_projesi_usulsuzluk"
+  },
+  {
+    "sent_at": "2026-06-30T08:27:45",
+    "sent_date": "2026-06-30",
+    "title": "Borsa şirketinden 14,5 milyon euroluk GES sözleşmesi - CNBC-e",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRlZrVjc0WTRzWXNMVEFvbHF4bURBSlZ4bVJXX2tXMjdnbjNqWFhaclpIcDNZbFBDZDVNT0M2OFRXRENDQTNveHdiSXNxT2o0YnhlNHFwOEI1RU0yZm81WVJMc1BqbUczRzBNNmtVUkYtRkxzX0c1ckh6WFktV2FfZFNKaUhDTFpZb2tsTl9zZw?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "Borsa şirketinin 14,5 milyon euroluk GES sözleşmesi, somut yatırım büyüklüğüyle sektörde dikkat çekici bir gelişme.",
+    "summary": "Bir borsa şirketi, 14,5 milyon euro değerinde güneş enerjisi santrali (GES) sözleşmesi imzaladı. Sözleşme kapsamında yeni bir GES kurulumu gerçekleştirilecek. Haberde şirket adı ve proje detayları yer almıyor.",
+    "canonical_topic": "borsa_sirketi_14_5_milyon_euro_ges_sozlesmesi",
+    "dedupe_key": "borsa_sirketi_milyon_euro_ges_sozlesmesi"
+  },
+  {
+    "sent_at": "2026-06-30T08:27:45",
+    "sent_date": "2026-06-30",
+    "title": "Kocasinan Belediyesi’nden GES yatırımı - Ekonomi Gazetesi",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbUxMdUpSTG1qWU13TlJ3eWRtbk9nYVBJZlhDM21fTDF3c0l0c3JiM3hiaERpZjNReml1Z1F4ZjVhVkdEX0lBdHMtREF0MWlseWZJMDdISndYZ1pKNklLWWpZRTJlUk5zU0x0S1loRGFISWlkUy1MQ3ZoelZ4a0xFQTNaMV82a0lqbVFmWA?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 6,
+    "importance_reason": "Belediye ölçeğinde yeni bir GES yatırımı haberi, somut kapasite veya yatırım miktarı bilgisi içermiyor.",
+    "summary": "Kocasinan Belediyesi güneş enerjisi santrali (GES) yatırımı yapacak. Haberde yatırımın büyüklüğü veya kapasitesine dair somut veri bulunmuyor.",
+    "canonical_topic": "kocasinan_belediyesi_ges_yatirimi",
+    "dedupe_key": "kocasinan_belediyesi_ges_yatirimi"
+  },
+  {
+    "sent_at": "2026-06-30T08:27:45",
+    "sent_date": "2026-06-30",
+    "title": "Philippines Becomes World's Top Solar Panel Buyer - Crude Oil Prices Today | OilPrice.com",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPakFEdFFxc0E1M2tfZVE1VDhwb3U4ckJCMWFFT0MxSG4yOEQ1X0V4M1VnMDRXeEZUbXU4bUJONFdPT2JyUVc3enRNaGlJQ2JWeDUxN0w2eE1keTdsQ0JSM2JfaGExWThvQjd2ZThsWG4tSURWWUtQekVVZXUyc2lrbUk0d25zaXVIVzZmT0lFbTlFQkVqWWlGd3NsYUhTdC14VFBRTnlWY9IBrAFBVV95cUxQOXQwSUREME8zRDhyZHAyaktWUC1wOXZ3dktEQ3cxQ3Z1bEM0bjRSeF8xVEtfdUExQUVBY3ZYaU5rY0FsRHBiQmM3X3JTRFVGbDNjZnA5Y2tab1dUakhqUHhVb1NpOWotcFRVYVo3cEdCNnlmWG82RHRBdklLVTdTRHVHSXh0MWtFRWFscWw4cDZNNzFEeEg0Mmo1OUJDajVKWXNSS09YWm5CT3ZR?oc=5",
+    "region": "Küresel",
+    "category": "Pazar/Veri",
+    "importance_score": 8,
+    "importance_reason": "Filipinler'in dünyanın en büyük güneş paneli alıcısı olması, küresel güneş enerjisi pazarında önemli bir talep kaymasına işaret ediyor.",
+    "summary": "Filipinler, dünyanın en büyük güneş paneli alıcısı konumuna yükseldi. Bu gelişme, ülkenin yenilenebilir enerjiye yönelik artan talebini ve yatırım iştahını gösteriyor.",
+    "canonical_topic": "philippines_dunyanin_en_buyuk_gunes_paneli_alicisi",
+    "dedupe_key": "philippines_dunyanin_buyuk_gunes_paneli_alicisi"
+  },
+  {
+    "sent_at": "2026-06-30T08:27:49",
+    "sent_date": "2026-06-30",
+    "title": "Çin’in kuzeydoğusundaki ilk güneş enerjisi santrali elektrik üretimine başladı - hibya.com",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdjA5U0J0UXNPdGNsNWpWVGhvbTlpMEljRjhyWjNITUlJTlR2TTItbmJ5WDd4QzdGOGFzaXhmLUJXR0NWeHR6c2lvZlVzd2JNOWxfTnY4NmZ1SHRrUDdyY1BFWkRMTHZ2ZnVOTk0zMlFKcU5uU1dDRDZPQU1aYWhxcjhnd3Z4SmFJM1FDNndGQU05MGJNcnZpa1BpaGtYZWxWeURrSA?oc=5",
+    "region": "Küresel",
+    "category": "Yatırım",
+    "importance_score": 6,
+    "importance_reason": "Çin'in kuzeydoğusundaki ilk güneş enerjisi santralinin devreye girmesi, bölgesel enerji dönüşümü açısından dikkat çekici bir gelişme.",
+    "summary": "Çin'in kuzeydoğusundaki ilk güneş enerjisi santrali elektrik üretimine başladı. Santralin kapasitesi veya yatırım tutarı haberde belirtilmemiştir.",
+    "canonical_topic": "cin_kuzeydogu_ilk_ges_elektrik_uretim",
+    "dedupe_key": "cin_kuzeydogu_ilk_ges_elektrik_uretim"
   }
 ]
