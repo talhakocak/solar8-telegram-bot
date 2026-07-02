@@ -2533,5 +2533,70 @@
     "summary": "Florida'nın Treasure Coast bölgesinde güneş paneli şirketlerine yönelik şikayetler artarken, eyalet başsavcısı soruşturma başlattı. Şikayetlerin odağında yanıltıcı satış uygulamaları ve sözleşme ihlalleri yer alıyor.",
     "canonical_topic": "treasure_coast_solar_panel_complaints_investigation",
     "dedupe_key": "treasure_coast_solar_panel_complaints_investigation"
+  },
+  {
+    "sent_at": "2026-07-02T08:14:22",
+    "sent_date": "2026-07-02",
+    "title": "Otokar yeni GES yatırımını devreye aldı - platinonline.com",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOX3k1RmQyQzZQdG5qWDgzYTVDM0tTN0xEZS1uR0NhQVd4Wkpud2F5V3NhS1ZIdWlSN25BY0NLdExxc3lra2h5Y2FGUU5fLXdPRkd5RjZWcHg5RXo0TTdwM25IU3NJZlpSSHlFMm1pUG9iaHYtUXUyeVhXNUI3VFczX1VnY2IwRVdIemxmcnpucw?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "Otokar gibi büyük bir sanayi şirketinin yeni GES yatırımını devreye alması, Türkiye'de kurumsal güneş enerjisi kullanımının yaygınlaştığını gösteriyor.",
+    "summary": "Otokar, yeni güneş enerjisi santrali (GES) yatırımını devreye aldı. Yatırımın kapasitesi ve detayları haber metninde belirtilmemiş.",
+    "canonical_topic": "otokar_ges_yatirimi",
+    "dedupe_key": "otokar_ges_yatirimi"
+  },
+  {
+    "sent_at": "2026-07-02T08:14:22",
+    "sent_date": "2026-07-02",
+    "title": "Rize Valiliği: \"GES projesiyle yıllık yaklaşık 10 milyon TL tasarruf sağlanacak\" - Miahaber",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaXRTNW5GdmEyd0hUalFQYUliRlF4ZVJfTVZYVmM3UF9YVDhmeUN6Wk1MaWp5YmdBVnBiWWhxa3hkU25jYVVKTDRka2J2VzQ2UjJ3U296U294SlA2RkV4V05KeXdtRTZfRzJfS0F3X0JDekdBSE9kaUpoYks0SkZuLUtzTVBpSXFpMWt6VWduaG1GdHByaUtIVWFxT2Q1eEFRSXpaNm1VaWRkc0psUHhVLU55NA?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 6,
+    "importance_reason": "Kamu kurumunun GES yatırımıyla yıllık 10 milyon TL tasarruf hedefi somut veri içeriyor.",
+    "summary": "Rize Valiliği, GES projesiyle yıllık yaklaşık 10 milyon TL tasarruf sağlanacağını açıkladı. Proje kamu binalarının elektrik maliyetini düşürmeyi hedefliyor.",
+    "canonical_topic": "rize_valiligi_ges_tasarrufu",
+    "dedupe_key": "rize_valiligi_ges_tasarrufu"
+  },
+  {
+    "sent_at": "2026-07-02T08:14:22",
+    "sent_date": "2026-07-02",
+    "title": "Çekerek’te GES gücü 1,6 mw’a ulaşıyor - yeniufukgazetesi.com.tr",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE85bGJCc2xveUdscFNMSmtIZlctV1Bram1QMmlhMTZoVVZFbk9DQ2tOYUtJalZKWU9Hc1pvZXI2cnBKUmVjYUJKWjZiRkNTb0ZydWZqRVVmYWZqS05ZOXp2V2gzRHNYSzBlWTdkbDdyNGRieXQ3eXc?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 5,
+    "importance_reason": "Yerel ölçekte küçük bir kapasite artışı haberi, sektörel etkisi sınırlı.",
+    "summary": "Çekerek ilçesinde GES gücü 1,6 MW'a ulaşıyor. Haberde proje detayı veya yatırımcı bilgisi yer almıyor.",
+    "canonical_topic": "cekerek_ges_1_6_mw_kapasite_artisi",
+    "dedupe_key": "cekerek_ges_kapasite_artisi"
+  },
+  {
+    "sent_at": "2026-07-02T08:14:23",
+    "sent_date": "2026-07-02",
+    "title": "Solar energy produces hydrogen fuel from waste - Chemical & Engineering News",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZmRGTHFQQVFLY2FBQzJlOWg2RU9RcUpTcWVVd0NrRXloeVM0MFRXZjRlSWlmRkpwc3ZnNHdrXzA5c2d4NTBvVUVjak9IcWhFQXBUVXBaRXhmckhUSmh0cmdNMU03RVRycWhaaVZMZDN5bm9GNFFtcFk5MlR0UFBoQ0IwaWZPTmQ4VEYzRXBTWllvQVQ5YnpWbndxaw?oc=5",
+    "region": "Küresel",
+    "category": "Teknoloji",
+    "importance_score": 7,
+    "importance_reason": "Güneş enerjisiyle atıktan hidrojen üretimi, temiz enerji ve atık yönetimini birleştiren yenilikçi bir teknolojik gelişmedir.",
+    "summary": "Chemical & Engineering News, güneş enerjisi kullanılarak atıklardan hidrojen yakıtı üretildiğini bildirdi. Bu teknoloji, hem atık sorununa çözüm sunuyor hem de yenilenebilir hidrojen üretimini mümkün kılıyor. Haber, sektörde yeni bir uygulama alanı olarak dikkat çekiyor.",
+    "canonical_topic": "gunes_enerjisi_atiktan_hidrojen_uretim_teknolojisi",
+    "dedupe_key": "gunes_enerjisi_atiktan_hidrojen_uretim_teknolojisi"
+  },
+  {
+    "sent_at": "2026-07-02T08:14:30",
+    "sent_date": "2026-07-02",
+    "title": "Pakistan's biggest source of electricity is now solar power - Firstpost",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNOHhhOFZwOG9kR3FMTEdFSXdVMl9IMWE3TTJSRUh6RVlidl9lNXp6ek81X0ZqZ3dmWGhsdnZheGdIc3Z5SFlDSXRJOTlJdzJqYXlXZmR2YmwyLWR6S2pVNFExd3cxTFNUVjNLdFh0R1ptcXJMX3JrSG91M25oeS1kR1pUcWZ0WVFnMjZEUVhNdENveWE3eVZ2Nlh4b25TQ0huMEVDTV9Wb9IBrAFBVV95cUxQUUZNZktBR1E1b0xuc1BMMUpva21VTWVSaEM4dUVleWJzRTRnXzFONUE4VWhmcGFWWVdSOUdpYXFkYUQ1UFgwSENYbHBTWVRCU1VReldXZEo1Z09FdDZzdDJTUzJBaU5sM3dmZDBuc0Z5UGprcTVNcUFuSDVoSXJSNnRKLTJvMjVQM3pKWEtJOXpoMVNhRmFBaEhfQUszUnVuRGNScDhremhqbjRy?oc=5",
+    "region": "Küresel",
+    "category": "Genel",
+    "importance_score": 7,
+    "importance_reason": "Pakistan'ın en büyük elektrik kaynağının güneş enerjisi olması, ülkenin enerji dönüşümünde kritik bir eşiği işaret ediyor.",
+    "summary": "Pakistan'da güneş enerjisi, ülkenin en büyük elektrik kaynağı haline geldi. Bu gelişme, Pakistan'ın enerji üretiminde güneşin artan payını ve fosil yakıtlardan uzaklaşma eğilimini gösteriyor.",
+    "canonical_topic": "pakistan_en_buyuk_elektrik_kaynagi_gunes_enerjisi",
+    "dedupe_key": "pakistan_buyuk_elektrik_kaynagi_gunes_enerjisi"
   }
 ]
