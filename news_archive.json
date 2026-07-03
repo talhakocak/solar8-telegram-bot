@@ -2598,5 +2598,70 @@
     "summary": "Pakistan'da güneş enerjisi, ülkenin en büyük elektrik kaynağı haline geldi. Bu gelişme, Pakistan'ın enerji üretiminde güneşin artan payını ve fosil yakıtlardan uzaklaşma eğilimini gösteriyor.",
     "canonical_topic": "pakistan_en_buyuk_elektrik_kaynagi_gunes_enerjisi",
     "dedupe_key": "pakistan_buyuk_elektrik_kaynagi_gunes_enerjisi"
+  },
+  {
+    "sent_at": "2026-07-03T08:00:19",
+    "sent_date": "2026-07-03",
+    "title": "Çin menşeli güneş paneli ithalatına ek gümrük vergisi getirildi - Dünya Gazetesi",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZndjbWx5QXhONGU3QUJENWpZOWI1Qlc2SzNBVjhVUVBMUTdMTC1XQ0RwVmU5ckczTjZiVEM5ZzMxSDV1SS1zQm1IeXhBNGdVSjBpaFQ4SWxHYjNxWlFsenNrNEJWNnByaVJ3dzZuNXpOZEhaMkg4eTBlb0dBWjROYzBzTXpxZUdmZHh3a1hHLVpjTVZGbUdXRnNKU0pQMnpLdEcyN2dWVHloMHM?oc=5",
+    "region": "Türkiye",
+    "category": "Regülasyon",
+    "importance_score": 8,
+    "importance_reason": "Çin menşeli güneş paneli ithalatına getirilen ek gümrük vergisi, Türkiye'deki güneş enerjisi yatırımlarının maliyetini doğrudan etkileyerek sektör dinamiklerini değiştirebilir.",
+    "summary": "Türkiye, Çin menşeli güneş paneli ithalatına ek gümrük vergisi getirdi. Bu düzenleme, yerli üreticileri korumayı ve ithalata bağımlılığı azaltmayı hedefliyor. Vergi oranı ve yürürlük tarihi henüz açıklanmadı.",
+    "canonical_topic": "cin_menseli_gunes_paneli_ithalatina_ek_gumruk_vergisi",
+    "dedupe_key": "cin_menseli_gunes_paneli_ithalatina_gumruk_vergisi"
+  },
+  {
+    "sent_at": "2026-07-03T08:00:20",
+    "sent_date": "2026-07-03",
+    "title": "Rayların arasına güneş paneli döşediler - Sözcü Gazetesi",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5zUGEyQ09wMkw1dUh2M25xVVE4YmJaTWVnQUFLMDlTZ255UXVkLWRJNnBKZTBhNFAwWmhsbVN3QUhwV1ZidFJQMVhtM1IxMDJJQ0YxT3VUc0Y3VjRVLW5iS2VZVFRScmtZNnlQUFV4d0h3X19EaVpJOWVCbng?oc=5",
+    "region": "Türkiye",
+    "category": "Teknoloji",
+    "importance_score": 6,
+    "importance_reason": "Raylar arasına güneş paneli döşenmesi yenilikçi bir uygulama olup sektörde farklı kullanım alanlarına örnek teşkil ediyor.",
+    "summary": "Türkiye'de rayların arasına güneş paneli döşenerek yenilikçi bir uygulama hayata geçirildi. Proje, mevcut altyapıyı kullanarak enerji üretimini artırmayı hedefliyor.",
+    "canonical_topic": "ray_arasi_gunes_paneli_uygulamasi",
+    "dedupe_key": "ray_arasi_gunes_paneli_uygulamasi"
+  },
+  {
+    "sent_at": "2026-07-03T08:00:20",
+    "sent_date": "2026-07-03",
+    "title": "İletişim Bilimleri Fakültesi çatısındaki GES yaklaşık 400 bin kWh elektrik üretti - Anadolu Üniversitesi",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOX1BHcFN5QUYzV1M0dDhkdDFwSDJBVmlFck8yRGtfM0lQNUlQb3dId0tTbWtZTWNaUDhObnRTTW9qT3JhT2JRTHRTMGY1TXBjaFJpdGtoWm9ycTRkby1GWTBhYlk1N2dIdnlhRDA0UEEzdGVha2lSb2xNYV9VQ2VlWVhBajBIYkNDeU5LbEVUVW9VVGNXR3g5OVVTWlFXZG9iWXdHd1d1cmlxQ2VRanJhY0VnZTZaRktzSXJLWngxeHlLQzg?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 5,
+    "importance_reason": "Kamu üniversitesinde çatı GES'inin somut üretim verisini paylaşan, yerel ölçekte dikkat çekici ancak sektörel etkisi sınırlı bir haber.",
+    "summary": "Anadolu Üniversitesi İletişim Bilimleri Fakültesi çatısına kurulan güneş enerjisi santrali yaklaşık 400 bin kWh elektrik üretti. Bu üretim, fakültenin elektrik ihtiyacının bir kısmını karşılayarak enerji maliyetlerini düşürdü.",
+    "canonical_topic": "anadolu_universitesi_iletisim_fakultesi_ges_uretim",
+    "dedupe_key": "anadolu_universitesi_iletisim_fakultesi_ges_uretim"
+  },
+  {
+    "sent_at": "2026-07-03T08:00:20",
+    "sent_date": "2026-07-03",
+    "title": "Perovskite solar panel startup Verde Technologies shifts focus to space - SpaceNews",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdThzNUpXNTdrZk5xbkYtSDMwVG5BMDZHLWFVdkMxdm1mX0NJUFJqNUtJYXo2d2dTcnJ6NzdRV1poZmREZ2t4ZlQyc3dpYVh4WFVwLTJsbUVET0ZKWGQ2d0tVRTdDS0J5LXozNGpOcTBkdmJHVXkxRmF4NEtOV0hkblhoNnJYd0hWUVFrRENxTGVONDJGNjFDbDZR?oc=5",
+    "region": "Küresel",
+    "category": "Teknoloji",
+    "importance_score": 7,
+    "importance_reason": "Perovskit güneş paneli girişiminin uzay uygulamalarına yönelmesi, bu teknolojinin ticarileşmesi ve yeni pazar alanı açısından dikkat çekici bir gelişme.",
+    "summary": "Perovskit güneş paneli girişimi Verde Technologies, odağını uzay uygulamalarına çevirdi. Şirket, ince ve esnek perovskit panellerinin uzayda düşük maliyetli ve yüksek verimli enerji çözümü sunacağını belirtiyor.",
+    "canonical_topic": "verde_technologies_perovskite_uzay_odagi",
+    "dedupe_key": "verde_technologies_perovskite_uzay_odagi"
+  },
+  {
+    "sent_at": "2026-07-03T08:00:27",
+    "sent_date": "2026-07-03",
+    "title": "Acciona preps construction of 235-MWp solar park in Kentucky - Renewables Now",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZGJxbHc0SFNwZkZta29WdVRKeVF2cGJDVmFQU3hRaUdKUnFkUm5Ga2dwY2pJUWZpczl3X3JmZEFWaEJKZmVJMFR5UDluTEx0eXBBblY5c1FFaV81VjVUT3BlN1E2RzNTLUNuaUlqV1RTT0RnVk1HbWFMX2M5RmphYkpKV2xPcTFxQUJPcldvdmlteTl0Mk5XX0dZdUlJZGNpd3c?oc=5",
+    "region": "Küresel",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "Acciona'nın Kentucky'de 235 MWp'lik yeni bir güneş enerjisi santrali inşaatına hazırlanması, ABD'deki büyük ölçekli GES yatırımlarının devam ettiğini gösteriyor.",
+    "summary": "Acciona, Kentucky'de 235 MWp kapasiteli bir güneş enerjisi santrali inşaatına hazırlanıyor. Proje, şirketin ABD'deki yenilenebilir enerji portföyünü genişletme stratejisinin bir parçası.",
+    "canonical_topic": "acciona_235_mwp_ges_kentucky",
+    "dedupe_key": "acciona_235_mwp_ges_kentucky"
   }
 ]
