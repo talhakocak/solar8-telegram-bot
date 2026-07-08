@@ -2858,5 +2858,70 @@
     "summary": "Avustralya'da artan güneş paneli kullanımı, gündüz saatlerinde elektrik fiyatlarını sıfıra indirdi. Bu durum, güneş enerjisinin şebeke dengesi ve enerji piyasası üzerindeki dönüştürücü etkisini ortaya koyuyor.",
     "canonical_topic": "Avustralya gündüz elektriği bedava güneş paneli devrimi",
     "dedupe_key": "avustralya_gunduz_elektrigi_bedava_gunes_paneli_devrimi"
+  },
+  {
+    "sent_at": "2026-07-08T07:26:12",
+    "sent_date": "2026-07-08",
+    "title": "Ödemiş GES projesi ihaleye çıktı - Enerji Günlüğü",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbVdTVFJfTjlLb2xpbHRRcm14LUF5aEx5cDg5SVZ2aExubWMtN0hITjFRQ2F5RWdMZTBWTk4wSEVuREVlWlQzN29ITVJQTW5UcVFRQjkzYktWTTlBUmtad0dsRUhoVDZsMXlpb0lvVWlObzlGLWlDS0Y2OVRZMDM5YTQ2RdIBkwFBVV95cUxNd0lvZEFvTGRDTTRwa0FsbTZScFNFQ2lWMDU3NDhrYzFScVZMUUZqdEhBc21MdVkzdzVhOEdYOGxPNDdySEwzejdhc3laaTdmb1BQYklHRS1FS2NTWFpGZVN2RkFpOThNWF9fRzNfbWhxc2U4XzFkdDU1bDFwTjZnU0lwVExrS2FMM0ZjTzctc0hRalE?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 6,
+    "importance_reason": "Yeni bir GES projesinin ihaleye çıkması sektörde yatırım fırsatı yaratıyor.",
+    "summary": "Ödemiş'te bir güneş enerjisi santrali (GES) projesi ihaleye çıktı. Proje detayları henüz açıklanmadı.",
+    "canonical_topic": "Ödemiş GES projesi ihale",
+    "dedupe_key": "odemis_ges_projesi_ihale"
+  },
+  {
+    "sent_at": "2026-07-08T07:26:12",
+    "sent_date": "2026-07-08",
+    "title": "İçme Suyunda GES Dönemi - Edirne Gazetesi",
+    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBzbW1NcU02Tkg1X3hhcnF2NXFWMFZCN1p5b3BQWTE2cHVxWmJYMnF3cndEY1M2UU5iVWNYRzB4TUtjVmtWTTFqV01KR2JGTHFkSnRHaWViNjhhYl9lbnFIN185d05HRHEwSkRmbEJaTlptdw?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 6,
+    "importance_reason": "İçme suyu tesislerinde GES kullanımına yönelik yeni bir uygulama dönemini işaret ediyor.",
+    "summary": "Edirne'de içme suyu tesislerinde güneş enerjisi sistemleri (GES) kullanımına başlanıyor. Proje kapsamında su pompalama ve arıtma tesislerinin elektrik ihtiyacı GES ile karşılanacak. Uygulama, belediye bütçesine önemli tasarruf sağlamayı hedefliyor.",
+    "canonical_topic": "icme_suyu_ges_edirne",
+    "dedupe_key": "icme_suyu_ges_edirne"
+  },
+  {
+    "sent_at": "2026-07-08T07:26:12",
+    "sent_date": "2026-07-08",
+    "title": "New York Now at 8 Gigawatts of Distributed Solar Power - CleanTechnica",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdHFoT1E2NkFYRGg5UnNHdnppN3RMZ29BZjk0V0pzNWo2eUZ4Y2YxTlpFelVDQ0pLSFdzR0RpMlNta2d1ckd2dmFyQWZ2ZWFGXzgxZUpfUy1UWnZCeFhMQTVsNTB4WGFuazc3X3ZnVURJX20xOFEtbVpqMlc4OEFzR1JfUHdFTWFNRUo5N2hIRjFtZVE0X0tV?oc=5",
+    "region": "Küresel",
+    "category": "Genel",
+    "importance_score": 8,
+    "importance_reason": "New York eyaletinin dağıtık güneş enerjisi kapasitesinde 8 GW'a ulaşması, ABD'deki eyalet düzeyinde önemli bir dönüm noktasını temsil ediyor.",
+    "summary": "New York eyaleti, dağıtık güneş enerjisi kurulu gücünde 8 gigawatt (GW) seviyesine ulaştı. Bu rakam, eyaletin güneş enerjisi hedefleri doğrultusunda kaydettiği somut ilerlemeyi gösteriyor.",
+    "canonical_topic": "new_york_8_gw_dagıtık_gunes_enerjisi",
+    "dedupe_key": "york_dagitik_gunes_enerjisi"
+  },
+  {
+    "sent_at": "2026-07-08T07:26:12",
+    "sent_date": "2026-07-08",
+    "title": "ES Foundry reaches full 3-GW production capacity at cell factory in SC - Solar Power World",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYjhMZlFQcE5pYzAzbjF3MWNCMEtEbGRVSF93aXNnY2g1cWhGaXRSSVBmUHRxUmpvdlgxbEp0eEwzZGc1enFINWwzWmVPcmtBdDRjcHUwNG9zcjFubVJuN0YzNV9EVWNFLVl3WGlXWktNcHFmNFRWUks0amJZblY5dkEtaXBCUW5XM01paFgtbWh4b0VvN1JOQVdNSncxcTlyYlhzdE5GaFlXM1Y2MnA0dnl2cGdhd216?oc=5",
+    "region": "Küresel",
+    "category": "Yatırım",
+    "importance_score": 8,
+    "importance_reason": "ABD'de yeni bir güneş hücresi fabrikasının 3 GW tam kapasiteye ulaşması, yerli üretim kapasitesinde önemli bir artışı temsil ediyor.",
+    "summary": "ES Foundry, Güney Carolina'daki güneş hücresi fabrikasında 3 GW tam üretim kapasitesine ulaştı. Bu, ABD'de yerli güneş hücresi üretiminde önemli bir kilometre taşı. Fabrika, ülkenin ithalata bağımlılığını azaltmayı hedefliyor.",
+    "canonical_topic": "es_foundry_3_gw_hücre_fabrikası_tam_kapasite",
+    "dedupe_key": "foundry_hucre_fabrikasi_tam_kapasite"
+  },
+  {
+    "sent_at": "2026-07-08T07:26:17",
+    "sent_date": "2026-07-08",
+    "title": "Powering up: why Philippines’ rooftop solar boom is here to stay - South China Morning Post",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVXFnTUtoMmlFQXZJby1xVkp0d256ZVg0RUdxOWJtRFpHQlhmRzJkeHpIOVo2WXBtYnJER1oweVJZc01uNkRoMUJQM1RZNTgwMXhDRWJrWWRCTkNSVldGNFVmM3lXUmdSX0tFdUx2ODdDUm1YRGtiWE5ZU0VCaVdKYnpZV3ZEUWFDMGF1Y3E1cVNaekkzRGhWWEV0Y1l0V28tZkN4UHM4Ync1OWQwbmhjRHBJUHZKVzdBOTVsVGtFTnpmTHhK0gHEAUFVX3lxTFBLSDlrQXRkdjBscEp4TUwyM2dUWHRWSWVUQ2VuSHM3VFRzb0lPckIxdzltUVhSR08wVmJsbGh2RVpONGJHSktoTXNob3NqSFFIaE1HdWd4VWo2SlJHcnFHek1fMEI1OGJXeGg0ckZwNG52eDc4ZlpTQi1ObDVoU0p4Z0pLWVVKU1h2ZDZSSWxRWDhydTJQd1ctcVZCSVFKVG1BN2Ryb0FRSmg3cjR6U3M0RHZIang1OTItR0VHMGlWSXdoSmU?oc=5",
+    "region": "Küresel",
+    "category": "Genel",
+    "importance_score": 7,
+    "importance_reason": "Filipinler'de çatı üstü güneş enerjisinin kalıcı büyüme potansiyelini analiz eden kapsamlı bir haber.",
+    "summary": "Filipinler'de çatı üstü güneş enerjisi patlamasının süreceği öngörülüyor. Artan elektrik fiyatları ve düşen panel maliyetleri bu büyümeyi destekliyor. Ülkede güneş enerjisi kurulumları hızla artıyor.",
+    "canonical_topic": "philippines_rooftop_solar_boom",
+    "dedupe_key": "philippines_rooftop_solar_boom"
   }
 ]
