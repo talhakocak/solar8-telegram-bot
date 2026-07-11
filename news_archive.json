@@ -3053,5 +3053,70 @@
     "summary": "Çin'de geliştirilen bataryasız bir güneş santrali, 8 saat boyunca enerji sağlayabiliyor. Bu teknoloji, enerji depolama maliyetlerini azaltma potansiyeli taşıyor.",
     "canonical_topic": "cin_bataryasiz_gunes_santrali_8_saat_enerji",
     "dedupe_key": "cin_bataryasiz_gunes_santrali_saat_enerji"
+  },
+  {
+    "sent_at": "2026-07-11T07:09:58",
+    "sent_date": "2026-07-11",
+    "title": "Korkuteli'nde 660 milyon liralık GES projesi için ÇED süreci - Yeni Alanya",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZ19yd2hkQXlVOEJyWlRWVk5tY2ExckZNMzNhc0lWb3RJVU5XNF9jMEl2SnZjUXhLX1FwVExlMjBkLTZvRFJUUVFCcHdJemZvZzViMF9NelpuZW15LUE0a2NwcUtwbzZlLXUyZTBfN2k3N2ZpQkhvanZKZjlJbVdVdGxaN3NoVmptTlRndDViRQ?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "660 milyon lira yatırım bütçeli yeni bir GES projesi için ÇED sürecinin başlaması, yerel ölçekte önemli bir gelişmedir.",
+    "summary": "Antalya Korkuteli'nde 660 milyon lira yatırım bedelli bir güneş enerjisi santrali (GES) projesi için Çevresel Etki Değerlendirmesi (ÇED) süreci başlatıldı. Proje, bölgedeki yenilenebilir enerji yatırımlarına katkı sağlayacak.",
+    "canonical_topic": "korkuteli_660_milyon_lira_ges_ced_sureci",
+    "dedupe_key": "korkuteli_660_milyon_lira_ges_ced_sureci"
+  },
+  {
+    "sent_at": "2026-07-11T07:09:59",
+    "sent_date": "2026-07-11",
+    "title": "İklimsa GES yatırımlarına talip - Ekonomi Gazetesi",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQX1lVZU14RlFMUFd3dnhLZFV2b29HQ0t1OFFqd0xtczlXcGNWOTJMcVhWQXRJM0pFU3VzUzlWOEtDS29qbnM0bFJ2cnk2OEVuMWFyOS1sY3hhZDNobU5IVkFCckxMOVd6WFRqcU1tS1FqN2ptLUVfT192S01oYUY1eVVBeVo0dHRiOUc3MjZhSQ?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 6,
+    "importance_reason": "İklimsa'nın GES yatırımlarına talip olması sektörde yeni bir yatırımcı iştahını gösteriyor ancak somut proje detayı içermiyor.",
+    "summary": "İklimsa, güneş enerjisi santrali (GES) yatırımlarına talip olduğunu duyurdu. Şirketin bu alandaki yatırım planlarına ilişkin henüz somut kapasite veya proje detayı paylaşılmadı.",
+    "canonical_topic": "iklimsa_ges_yatirimlari_talip",
+    "dedupe_key": "iklimsa_ges_yatirimlari_talip"
+  },
+  {
+    "sent_at": "2026-07-11T07:09:59",
+    "sent_date": "2026-07-11",
+    "title": "Illuminate USA's solar panel factory in Pataskala employs 1,600 - The Columbus Dispatch",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQOUlSYmtLbnd6UTI3RDEyYm83YjRZYzhZbDRzZ1lDNGR5ZlJpOUhkZGR6Qndra3B0WXA5UUFleU56cDgzU0R5b2cxTFltQ1ItakozaVg4b1g4dzczRkg2WERtYkpPYTlHNFFvT2QtdTRHNUtaMFNjcnVNWWRweXUyNHY1OV9uXzA2Z0UwU1ctbE03WUY4MXVuMUlzTXZhT3NGR29id0NWMmpsQWV0RlRUdURTZ2M3Yy1tYUdZc3dGaEFVeW02SGpQU25lZw?oc=5",
+    "region": "Küresel",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "ABD'de büyük ölçekli bir güneş paneli fabrikasının 1.600 kişi istihdam etmesi, yerli üretim kapasitesi ve istihdam açısından önemli bir gelişmedir.",
+    "summary": "Illuminate USA'nın Ohio, Pataskala'daki güneş paneli fabrikasında 1.600 kişi çalışıyor. Tesis, ABD'de yerli güneş paneli üretim kapasitesini artıran önemli bir yatırım olarak öne çıkıyor.",
+    "canonical_topic": "illuminate_usa_pataskala_panel_fabrikasi_1600_calisan",
+    "dedupe_key": "illuminate_usa_pataskala_panel_fabrikasi_1600_calisan"
+  },
+  {
+    "sent_at": "2026-07-11T07:09:59",
+    "sent_date": "2026-07-11",
+    "title": "Even With Tariffs and Tax Changes, Solar Power Is Soaring - Inside Climate News",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMy1ZVldWMWY1TVF0bmQ4MzRHR1ZiOXVQTlZYQmtTbktJY05DNWVFaXUzOGpGd29uM2c4SWZ0SGt2REdLdDJBUHB4YUNfcy13LVBGcXBGT1RJQmNlbDBHWW9UbUJKMTFvQ2dITmZiV2FWWkV0dTZQTEtGaTREcTZOU2kxMW9CZklEWXVIYXVndzRKSllHdk0w?oc=5",
+    "region": "Küresel",
+    "category": "Genel",
+    "importance_score": 7,
+    "importance_reason": "ABD'de güneş enerjisinin tarife ve vergi değişikliklerine rağmen hızla büyüdüğünü gösteren somut pazar verisi sunuyor.",
+    "summary": "ABD'de güneş enerjisi kurulumları, uygulanan tarifeler ve vergi değişikliklerine rağmen hızla artmaya devam ediyor. Haber, sektörün bu engellere karşı direncini ve büyüme ivmesini vurguluyor.",
+    "canonical_topic": "abd_gunes_enerjisi_buyumesi_tarife_vergi_degisiklikleri",
+    "dedupe_key": "abd_gunes_enerjisi_buyumesi_tarife_vergi_degisiklikleri"
+  },
+  {
+    "sent_at": "2026-07-11T07:10:03",
+    "sent_date": "2026-07-11",
+    "title": "With over 12 GW of solar power planned by 2029, Mexico faces the challenge of building on time to meet its COD targets. - Energía Estratégica",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQSm5DQ3VkRmlyOHgyS1ZINWxUQVlzNkdpdHNQb2pMSmtyeHhyYUhiR0pwdFNUNUtrMXZ1aGdKRXQtbzdyb1U5VFNfU2N4SGJrSTh2M1AtSTlkRnpBb3lTSFQ5UnlhMkZuU3ozbnpSSTFnMThvQUdLazl6ZENfLVhTaW1vZW9IUTBVX1UwMG1ZY04zWFc3UXdyZXFNalhaVW9FNF9ZdURhVlJEWFNWYzlWdkdrek9SbWN3a001eWdoSW1XWkFLRUFfcnM1eE9OYWZCdTJ0RUVlOA?oc=5",
+    "region": "Küresel",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "Meksika'nın 2029'a kadar 12 GW'ın üzerinde güneş enerjisi planı, büyük ölçekli bir yatırım hedefini ve zamanında inşa zorluğunu ortaya koyuyor.",
+    "summary": "Meksika, 2029 yılına kadar 12 GW'ın üzerinde güneş enerjisi kapasitesi planlıyor. Ülke, bu kapasiteyi devreye alma tarihlerine yetiştirmek için inşaat sürecinde zorluklarla karşı karşıya.",
+    "canonical_topic": "meksika_12_gw_gunes_enerjisi_hedefi_2029",
+    "dedupe_key": "meksika_gunes_enerjisi_hedefi_2029"
   }
 ]
