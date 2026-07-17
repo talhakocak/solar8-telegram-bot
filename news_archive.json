@@ -3443,5 +3443,70 @@
     "summary": "38 North analizi, Kuzey Kore'nin yaptırımlar altında güneş enerjisini yerel kaynakları harekete geçirmek için nasıl kullandığını ve model işletmelerin bu süreçteki rolünü inceliyor.",
     "canonical_topic": "kuzey_kore_yaptirim_altinda_gunes_enerjisi_model_isletmeler",
     "dedupe_key": "kuzey_kore_yaptirim_altinda_gunes_enerjisi_model_isletmeler"
+  },
+  {
+    "sent_at": "2026-07-17T07:14:23",
+    "sent_date": "2026-07-17",
+    "title": "Karapınar GES yeni fazı İçin 49 Yıllık onay çıktı - Enerji Günlüğü",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUTRVbjcwNGxHZGMyS1RreEVubVJ2dTktcU1CaE9QMVRIalFpM2JoekRNMEpnNEREdFQyaDBXR1d0bXNZbTVMalBHeFlpVEpRMVhLNFBsNFJ5Z2NuTkU1YnE4NGEyak91VE53aGotSk51UGJDbHQwMk9fZUc4bjVFU0p4bC1GLThPNm9saTJUcWNEck95ZV9NR1c4VVMyLTJ40gGwAUFVX3lxTFBnU292dndsLXh0d1dlc3FpejFtQm1qS0dDWXl2ekxmOXNxTU9hRkRTREQyY1lRU2NNQVR2djNrdUloSUFJQVBPa2RBdWx5R2pjamx0SjQ2amV1QWdiZm13XzM5bFRIYW81MndyeTdLY0taeFFVUHhHS3VLaDdNYWthbU1XTDVEdXhjMzZJMWVjTFU1WTVzQ1hNdEZlZGRoQnpSSHVaYWhXRElvZ1NLQmJs?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 8,
+    "importance_reason": "Karapınar GES'in yeni fazı için 49 yıllık onay çıkması, Türkiye'nin en büyük GES projelerinden birinde önemli bir yatırım adımıdır.",
+    "summary": "Karapınar GES'in yeni fazı için 49 yıllık kullanım onayı alındı. Bu onay, projenin uzun vadeli işletilmesinin önünü açıyor. Detaylı kapasite ve yatırım bilgisi henüz paylaşılmadı.",
+    "canonical_topic": "karapinar_ges_yeni_faz_49_yil_onay",
+    "dedupe_key": "karapinar_ges_yeni_faz_yil_onay"
+  },
+  {
+    "sent_at": "2026-07-17T07:14:23",
+    "sent_date": "2026-07-17",
+    "title": "YEO, Birleşik Krallık’ta üç GES projesi için imzaları attı - Paratic Haber",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbTFfTFY2c09PaHc4MXBxUWtTTTV5R01YVXJBRnc5R1RmeU1WSkNDNjBIWmlzZzVLbEIweVpQQzdXNXNBMGhVZWJEdmtQbS1TaTZ1M0tDZEJrTkJBV1k2azNUVWRzSmFMVnk2ZHRjUklKSWxpQnNhNml4UEN0QWk2NW5LUQ?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "YEO'nun Birleşik Krallık'ta üç yeni GES projesi için imza atması, şirketin uluslararası yatırımını ve büyümesini gösteriyor.",
+    "summary": "YEO, Birleşik Krallık'ta üç güneş enerjisi santrali (GES) projesi için anlaşma imzaladı. Projelerin kapasitesi ve yatırım tutarı henüz açıklanmadı. Bu adım, YEO'nun yurtdışındaki GES yatırımlarını genişletme stratejisinin bir parçası.",
+    "canonical_topic": "yeo_birlesik_krallik_uc_ges_projesi",
+    "dedupe_key": "yeo_birlesik_krallik_ges_projesi"
+  },
+  {
+    "sent_at": "2026-07-17T07:14:23",
+    "sent_date": "2026-07-17",
+    "title": "Malê Sala’deki yurttaşlar: GES’e karşı direneceğiz, talana izin vermeyeceğiz - Yeni Yaşam Gazetesi",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOd2JOQWRwalhETF9ta2Z6RF9EdWpUcmJZUlZHdVgwODRER2NfU3JOSmVNaEI3b2hORGtVQ05OYmZlb3FITmpUQUQ1MjY2aVktTzViT05RcFE0Q1Ita1hZbW1hTVF3ZGNyZS0wYkladGdBQTNRNWJOd2U5MDBlejFseDFubmc1TS0yREw3bm9DSnBXVVVRS0pkOUxiRTloM0hjMG5Ya0plMA?oc=5",
+    "region": "Türkiye",
+    "category": "Genel",
+    "importance_score": 5,
+    "importance_reason": "Yerel halkın GES projesine karşı direnişi, sektördeki toplumsal kabul sorununa işaret ediyor.",
+    "summary": "Malê Sala’daki yurttaşlar, bölgede planlanan güneş enerjisi santraline (GES) karşı direneceklerini ve talana izin vermeyeceklerini açıkladı. Haber, GES projesine yönelik yerel muhalefeti ve çevresel kaygıları öne çıkarıyor.",
+    "canonical_topic": "male_sala_ges_karsi_direnc",
+    "dedupe_key": "male_sala_ges_karsi_direnc"
+  },
+  {
+    "sent_at": "2026-07-17T07:14:23",
+    "sent_date": "2026-07-17",
+    "title": "How Google is Powering AI Data Centres With US Solar Energy - Data Centre Magazine",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOS0lhRlh6V1lrckJ4Yi02RV9yVVE5OHpCeE1YOVNOYUxJcUUxZnlJemhLUWx6ZzRhZmZYOFd0SDg5V1lxdlRQWVRURnE2dlRPcEtSM2tDek1YWXNFNTZnaHNCWXN2V0JJS1JEOFJZMjk0ZWxna0liNE9UelNKdUV6b1d0YkYzWTVyQk5EckJfUnc2cC1nQU12ZkUzaw?oc=5",
+    "region": "Küresel",
+    "category": "Yatırım",
+    "importance_score": 7,
+    "importance_reason": "Google'ın yapay zeka veri merkezlerini ABD'deki güneş enerjisiyle beslemesi, büyük teknoloji şirketlerinin yenilenebilir enerjiye yönelimini ve AI enerji talebinin karşılanmasında güneşin rolünü gösteriyor.",
+    "summary": "Google, ABD'deki yapay zeka veri merkezlerine güneş enerjisi sağlamak için yeni anlaşmalar yaptı. Bu adım, artan AI enerji ihtiyacının temiz kaynaklarla karşılanması hedefinin bir parçası.",
+    "canonical_topic": "google_ai_veri_merkezleri_abd_gunes_enerjisi",
+    "dedupe_key": "google_veri_merkezleri_abd_gunes_enerjisi"
+  },
+  {
+    "sent_at": "2026-07-17T07:14:28",
+    "sent_date": "2026-07-17",
+    "title": "Pentagon pursues space-based solar power - Breaking Defense",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQME9fS194ZUJJcll0UFZ0VWNkbWc3MDZMeUlITmdKOXhkYzRMUGlPTmt3M3ZOVUtadG9jLUpCb3dMdWRETmJzOURSM2JvNnM4MVVtVGl4RVRDWnMtcFc0dDlxZVNsNTc3NEF1MmFfbnFVZFZvc0dJdGZac18zNDV4WFhPQQ?oc=5",
+    "region": "Küresel",
+    "category": "Teknoloji",
+    "importance_score": 7,
+    "importance_reason": "ABD Savunma Bakanlığı'nın uzay tabanlı güneş enerjisi teknolojisine yönelmesi, askeri enerji altyapısında potansiyel bir dönüşümün habercisi olabilir.",
+    "summary": "Pentagon, uzay tabanlı güneş enerjisi sistemlerini araştırmaya başladı. Bu teknoloji, uzayda toplanan güneş enerjisinin Dünya'ya kablosuz olarak iletilmesini hedefliyor. Askeri enerji güvenliği ve sürekli güç kaynağı sağlama potansiyeli taşıyor.",
+    "canonical_topic": "pentagon_uzay_tabanli_gunes_enerjisi",
+    "dedupe_key": "pentagon_uzay_tabanli_gunes_enerjisi"
   }
 ]
