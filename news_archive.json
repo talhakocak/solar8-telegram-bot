@@ -3898,5 +3898,70 @@
     "summary": "Reuters haberine göre Hindistan'ın güneş enerjisi hamlesi, Çin'e olan bağımlılığını kıramayan fabrikaları atıl kapasiteye mahkum ediyor. Yerli üretim teşviklerine rağmen sektör, Çin menşeli hücre ve modüllere bağımlı kalmaya devam ediyor.",
     "canonical_topic": "hindistan_gunes_enerjisi_cin_bagimliligi_fabrika_atil_kapasite",
     "dedupe_key": "hindistan_gunes_enerjisi_cin_bagimliligi_fabrika_atil_kapasite"
+  },
+  {
+    "sent_at": "2026-07-24T07:29:07",
+    "sent_date": "2026-07-24",
+    "title": "Resmi Gazete yayımladı: RES ve GES projelerinde imar süreçleri yeniden düzenlendi - birgun.net",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMF92SU5RcVJ6TnNyVjBhSXNTQm5vaHlxM0JtQ2w1NG1ESVBUTHhFNWYyOEFVeExyS29pLWJ6OW1DUVBtd3NWczZZeGZNTEZlLW5ENDBKX25UU3hHQTRyMDN0NDdfV2VNOEZBUlV4a1BMLVplTnI3WlhvQTRSWWtmVHpEeHowMGpKOEhkVU9vMEtLSmRzN1R4VFgtYnZlQ3dxT2UwcTlBaHpsNUIzV1NuZEg2cXlpdmM?oc=5",
+    "region": "Türkiye",
+    "category": "Regülasyon",
+    "importance_score": 8,
+    "importance_reason": "RES ve GES projelerinde imar süreçlerinin yeniden düzenlenmesi, sektördeki yatırım ve izin süreçlerini doğrudan etkileyecek önemli bir regülasyon değişikliğidir.",
+    "summary": "Resmi Gazete'de yayımlanan düzenleme ile RES ve GES projelerinde imar süreçleri yeniden düzenlendi. Değişiklik, güneş enerjisi yatırımlarının önünü açmayı ve bürokratik süreçleri hızlandırmayı hedefliyor.",
+    "canonical_topic": "res_ges_imar_surecleri_duzenlemesi",
+    "dedupe_key": "res_ges_imar_surecleri_duzenlemesi"
+  },
+  {
+    "sent_at": "2026-07-24T07:29:07",
+    "sent_date": "2026-07-24",
+    "title": "Mercan Kimya’nın Romanya GES’ine 1,6 milyon Euro kredi - Paratic Haber",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBwNkVCNUVIUlNpYjFOalVNM0lSM3ZtNy1JZ2NvdUVzMUdaTzFraEstWUJ1NDdZS21KV29PWWZ3dmpxcjNEVU8zYkFJWFR1d2oyNElSelNoTFM2aGJYaEdkQXFuX0NOV3BuUnctTFRmcTBfN2YwRWJPc1o4RTFVZw?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 6,
+    "importance_reason": "Türk kimya şirketinin yurtdışı GES yatırımı için 1,6 milyon Euro kredi alması sektördeki uluslararası finansman eğilimini gösteriyor.",
+    "summary": "Mercan Kimya, Romanya'daki güneş enerjisi santrali yatırımı için 1,6 milyon Euro kredi sağladı. Kredi, şirketin yurtdışı yenilenebilir enerji projelerini desteklemek amacıyla kullanılacak.",
+    "canonical_topic": "mercan_kimya_romanya_ges_kredisi",
+    "dedupe_key": "mercan_kimya_romanya_ges_kredisi"
+  },
+  {
+    "sent_at": "2026-07-24T07:29:08",
+    "sent_date": "2026-07-24",
+    "title": "Eleşkirt Belediyesi Güneş Enerjisi Santrali İçin Sözleşmeyi İmzaladı - Ajans04",
+    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAyeWxGbnM4TXlnV0N1SVBRSWFZcGpORlZ5NDV0anBQVTRiZzFiZEVyX3haZFNfdUhNbS16a1JWMlEzdWdnS014b0UyOXN4NXVwa3dmSVF5SGxHY0xx?oc=5",
+    "region": "Türkiye",
+    "category": "Yatırım",
+    "importance_score": 5,
+    "importance_reason": "Yerel bir belediyenin GES yatırımı için sözleşme imzalaması sektörel gelişme olup, somut kapasite veya yatırım miktarı bilgisi içermediği için orta düzeyde önemlidir.",
+    "summary": "Eleşkirt Belediyesi, güneş enerjisi santrali kurulumu için sözleşme imzaladı. Proje kapsamında belediyenin enerji maliyetlerini düşürmesi hedefleniyor. Haberde santralin kapasitesi veya yatırım tutarına ilişkin somut veri yer almıyor.",
+    "canonical_topic": "eleskirt_belediyesi_ges_sozlesmesi",
+    "dedupe_key": "eleskirt_belediyesi_ges_sozlesmesi"
+  },
+  {
+    "sent_at": "2026-07-24T07:29:08",
+    "sent_date": "2026-07-24",
+    "title": "Panamint turns sod on 1.2-GWp solar park in Texas - Renewables Now",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZEVETnIycENFWWk1blhNSG0wNlQ0azVpcHhnbmhFZzFuVllZWFF5eUljWTRYWlMwVE1nWXZRWkNFaUEzbkRMNDYzdTJVZkpYSy1OS01nX0ljUjFrUjVDdUJsT053SDExNEVjNThqRmVVTm56d2gtZ2ZHdGtoZkJIcFg0aVgxR3gwbVdzX2pBWkxzY1k?oc=5",
+    "region": "Küresel",
+    "category": "Yatırım",
+    "importance_score": 8,
+    "importance_reason": "1,2 GWp ölçeğindeki büyük güneş enerjisi santrali yatırımı, ABD'deki kapasite artışını ve sektörün büyüme ivmesini yansıtıyor.",
+    "summary": "Panamint, Teksas'ta 1,2 GWp kapasiteli güneş enerjisi santrali için temel atma töreni düzenledi. Proje, bölgenin en büyük güneş enerjisi yatırımlarından biri olarak öne çıkıyor.",
+    "canonical_topic": "panamint_1_2_gwp_solar_park_texas_temel_atma",
+    "dedupe_key": "panamint_gwp_solar_park_texas_temel_atma"
+  },
+  {
+    "sent_at": "2026-07-24T07:29:12",
+    "sent_date": "2026-07-24",
+    "title": "Solar power prices just dipped. Will fading tax credits send them back up? - E&E News by POLITICO",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRW1VRk8ySDlENGYxWjItbkVXMFRkY1lHY2c5akpDV0VaUmJnUnB1NnFFUk8yM2NhcXNTZHR0M2ZQVGVQakpGck5IOWI1NW8yUk1VSFo3N2xYbUhmZER1OGoyWWdZN21YQ1hlelJNWk5xdFo3WWlPc3R4N3lRTk1IN3lmSldqcTRqSzVfLXRIN0lzM2w3RV9CVUQ1elk2Z0FLa3NDSGNzRVY?oc=5",
+    "region": "Küresel",
+    "category": "Pazar/Veri",
+    "importance_score": 7,
+    "importance_reason": "ABD'de güneş enerjisi fiyatlarındaki düşüş ve vergi kredilerinin azalmasının sektöre olası etkisini analiz eden önemli bir pazar gelişmesi.",
+    "summary": "ABD'de güneş enerjisi fiyatları düştü ancak vergi kredilerinin azalması fiyatları yeniden yükseltebilir. Politika değişikliklerinin sektöre etkisi değerlendiriliyor.",
+    "canonical_topic": "abd_gunes_enerjisi_fiyatlari_vergi_kredileri_etkisi",
+    "dedupe_key": "abd_gunes_enerjisi_fiyatlari_vergi_kredileri_etkisi"
   }
 ]
